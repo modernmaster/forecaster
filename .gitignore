@@ -32,3 +32,4 @@ buildNumber.properties
 /nbdist/
 /.nb-gradle/
 /.mvn
+/node_modules

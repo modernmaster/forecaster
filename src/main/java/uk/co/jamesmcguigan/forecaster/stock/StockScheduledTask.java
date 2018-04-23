@@ -20,7 +20,8 @@ public class StockScheduledTask {
 
     @Scheduled(fixedRate = 30000)
     public void updateStockRepository() {
-        List<Stock> stockList = stockService.getStocks();
+//        List<Stock> stockList = stockService.getStocks();
+        List<Stock> stockList = stockService.getTop20HighestGrowthStocks();
         stockRepository.saveAll(stockList);
         log.info(STOCK_LISTING_UPDATED);
     }
