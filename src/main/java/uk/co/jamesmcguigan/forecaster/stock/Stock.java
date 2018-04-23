@@ -1,10 +1,20 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Data
+@Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Stock {
 
+    private @Id
+    @GeneratedValue
+    Long id;
     private String admissionDate;
     private String companyName;
     private String symbol;
@@ -23,6 +33,8 @@ public class Stock {
     private String high52;
     private String low52;
     private String delay;
+
+    public Stock() {}
 
     public Stock(String admissionDate, String companyName, String symbol, String icbIndustry, String icbSuperSector, String countryOfIncorporation, String worldRegion, String market, String internationalIssuer, String companyMarketCap, String price, String percentageChange, String avgVolume, String volume, String pe, String high52, String low52, String delay) {
         this.admissionDate = admissionDate;
