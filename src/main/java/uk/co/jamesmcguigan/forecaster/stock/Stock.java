@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Data
@@ -12,12 +11,10 @@ import javax.persistence.Id;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Stock {
 
-    private @Id
-    @GeneratedValue
-    Long id;
     private String admissionDate;
     private String companyName;
-    private String symbol;
+    private @Id
+    String symbol;
     private String icbIndustry;
     private String icbSuperSector;
     private String countryOfIncorporation;
@@ -34,7 +31,8 @@ public class Stock {
     private String low52;
     private String delay;
 
-    public Stock() {}
+    public Stock() {
+    }
 
     public Stock(String admissionDate, String companyName, String symbol, String icbIndustry, String icbSuperSector, String countryOfIncorporation, String worldRegion, String market, String internationalIssuer, String companyMarketCap, String price, String percentageChange, String avgVolume, String volume, String pe, String high52, String low52, String delay) {
         this.admissionDate = admissionDate;
