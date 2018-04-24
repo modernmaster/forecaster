@@ -1,6 +1,6 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface StockRepository extends CrudRepository<Stock, String> {
+public interface StockRepository extends PagingAndSortingRepository<Stock, String> {
 }
