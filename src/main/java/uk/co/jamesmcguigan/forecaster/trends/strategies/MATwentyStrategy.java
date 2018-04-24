@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.trends.Strategies;
+package uk.co.jamesmcguigan.forecaster.trends.strategies;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;

@@ -23,8 +23,8 @@ public class TrendCalculatorTest {
     @Autowired
     private TrendCalculator trendCalculator;
     private Document document;
-    private static final String BEAR_PATH_TXT = "\\uk\\co\\jamesmcguigan\\forecaster\\trends\\BEAR_UPM.html";
-    private static final String BULL_PATH_TXT = "\\uk\\co\\jamesmcguigan\\forecaster\\trends\\BULL_FEVR.html";
+    private static final String BEAR_PATH_TXT = "./strategies/BEAR_UPM.html";
+    private static final String BULL_PATH_TXT = "./strategies/BULL_FEVR.html";
 
     @Test
     public void testShouldShowAStockAsBullish() throws IOException {
@@ -45,7 +45,7 @@ public class TrendCalculatorTest {
     }
 
     private Document loadResource(String file) throws IOException {
-            URL url = Resources.getResource(file);
+            URL url = Resources.getResource(getClass(), file);
             String html = Resources.toString(url, Charsets.UTF_8);
             return Jsoup.parse(html);
     }
