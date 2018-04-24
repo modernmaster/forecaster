@@ -46,8 +46,6 @@
 
 	'use strict';
 	
-	// tag::vars[]
-	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -59,274 +57,405 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(37);
 	var client = __webpack_require__(184);
-	// end::vars[]
-	
+	var follow = __webpack_require__(232);
+	var root = '/api';
 	
 	var App = function (_React$Component) {
-		_inherits(App, _React$Component);
+	  _inherits(App, _React$Component);
 	
-		function App(props) {
-			_classCallCheck(this, App);
+	  function App(props) {
+	    _classCallCheck(this, App);
 	
-			var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 	
-			_this.state = { stocks: [] };
-			return _this;
-		}
+	    _this.state = { stocks: [], attributes: [], pageSize: 2, links: {} };
+	    _this.updatePageSize = _this.updatePageSize.bind(_this);
+	    _this.onNavigate = _this.onNavigate.bind(_this);
+	    return _this;
+	  }
 	
-		_createClass(App, [{
-			key: 'componentDidMount',
-			value: function componentDidMount() {
-				var _this2 = this;
+	  _createClass(App, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.loadFromServer(this.state.pageSize);
+	      //		client({method: 'GET', path: '/api/stocks'}).done(response => {
+	      //			this.setState({stocks: response.entity._embedded.stocks});
+	      //		});
+	    }
+	  }, {
+	    key: 'loadFromServer',
+	    value: function loadFromServer(pageSize) {
+	      var _this2 = this;
 	
-				client({ method: 'GET', path: '/api/stocks' }).done(function (response) {
-					_this2.setState({ stocks: response.entity._embedded.stocks });
-				});
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				return React.createElement(StockList, { stocks: this.state.stocks });
-			}
-		}]);
+	      follow(client, root, [{ rel: 'stocks', params: { size: pageSize } }]).then(function (stockCollection) {
+	        return client({
+	          method: 'GET',
+	          path: stockCollection.entity._links.profile.href,
+	          headers: { 'Accept': 'application/schema+json' }
+	        }).then(function (schema) {
+	          _this2.schema = schema.entity;
+	          return stockCollection;
+	        });
+	      }).done(function (stockCollection) {
+	        _this2.setState({
+	          stocks: stockCollection.entity._embedded.stocks,
+	          attributes: Object.keys(_this2.schema.properties),
+	          pageSize: pageSize,
+	          links: stockCollection.entity._links });
+	      });
+	    }
+	  }, {
+	    key: 'onNavigate',
+	    value: function onNavigate(navUri) {
+	      var _this3 = this;
 	
-		return App;
+	      client({ method: 'GET', path: navUri }).done(function (employeeCollection) {
+	        _this3.setState({
+	          employees: employeeCollection.entity._embedded.employees,
+	          attributes: _this3.state.attributes,
+	          pageSize: _this3.state.pageSize,
+	          links: employeeCollection.entity._links
+	        });
+	      });
+	    }
+	  }, {
+	    key: 'updatePageSize',
+	    value: function updatePageSize(pageSize) {
+	      if (pageSize !== this.state.pageSize) {
+	        this.loadFromServer(pageSize);
+	      }
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	
+	      return React.createElement(StockList, { stocks: this.state.stocks,
+	        links: this.state.links,
+	        pageSize: this.state.pageSize,
+	        onNavigate: this.onNavigate,
+	        updatePageSize: this.updatePageSize });
+	    }
+	  }]);
+	
+	  return App;
 	}(React.Component);
 	
 	var StockList = function (_React$Component2) {
-		_inherits(StockList, _React$Component2);
+	  _inherits(StockList, _React$Component2);
 	
-		function StockList() {
-			_classCallCheck(this, StockList);
+	  function StockList(props) {
+	    _classCallCheck(this, StockList);
 	
-			return _possibleConstructorReturn(this, (StockList.__proto__ || Object.getPrototypeOf(StockList)).apply(this, arguments));
-		}
+	    var _this4 = _possibleConstructorReturn(this, (StockList.__proto__ || Object.getPrototypeOf(StockList)).call(this, props));
 	
-		_createClass(StockList, [{
-			key: 'render',
-			value: function render() {
-				var stocks = this.props.stocks.map(function (stock) {
-					return React.createElement(Stock, { key: stock._links.self.href, stock: stock });
-				});
-				return React.createElement(
-					'table',
-					null,
-					React.createElement(
-						'tbody',
-						null,
-						React.createElement(
-							'tr',
-							null,
-							React.createElement(
-								'th',
-								null,
-								'Admission Date}'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Company Name}'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Symbol'
-							),
-							React.createElement(
-								'th',
-								null,
-								'ICB Industry'
-							),
-							React.createElement(
-								'th',
-								null,
-								'ICB Super Sector'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Country Of Incorporation'
-							),
-							React.createElement(
-								'th',
-								null,
-								'World Region'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Market'
-							),
-							React.createElement(
-								'th',
-								null,
-								'International Issuer'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Company Market Cap'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Price'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Percentage Change'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Volume'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Avg Volume'
-							),
-							React.createElement(
-								'th',
-								null,
-								'PE'
-							),
-							React.createElement(
-								'th',
-								null,
-								'High 52'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Low 52'
-							),
-							React.createElement(
-								'th',
-								null,
-								'Delay'
-							)
-						),
-						stocks
-					)
-				);
-			}
-		}]);
+	    _this4.handleNavFirst = _this4.handleNavFirst.bind(_this4);
+	    _this4.handleNavPrev = _this4.handleNavPrev.bind(_this4);
+	    _this4.handleNavNext = _this4.handleNavNext.bind(_this4);
+	    _this4.handleNavLast = _this4.handleNavLast.bind(_this4);
+	    _this4.handleInput = _this4.handleInput.bind(_this4);
+	    return _this4;
+	  }
 	
-		return StockList;
+	  _createClass(StockList, [{
+	    key: 'handleInput',
+	    value: function handleInput(e) {
+	      e.preventDefault();
+	      var pageSize = ReactDOM.findDOMNode(this.refs.pageSize).value;
+	      if (/^[0-9]+$/.test(pageSize)) {
+	        this.props.updatePageSize(pageSize);
+	      } else {
+	        ReactDOM.findDOMNode(this.refs.pageSize).value = pageSize.substring(0, pageSize.length - 1);
+	      }
+	    }
+	  }, {
+	    key: 'handleNavFirst',
+	    value: function handleNavFirst(e) {
+	      e.preventDefault();
+	      this.props.onNavigate(this.props.links.first.href);
+	    }
+	  }, {
+	    key: 'handleNavPrev',
+	    value: function handleNavPrev(e) {
+	      e.preventDefault();
+	      this.props.onNavigate(this.props.links.prev.href);
+	    }
+	  }, {
+	    key: 'handleNavNext',
+	    value: function handleNavNext(e) {
+	      e.preventDefault();
+	      this.props.onNavigate(this.props.links.next.href);
+	    }
+	  }, {
+	    key: 'handleNavLast',
+	    value: function handleNavLast(e) {
+	      e.preventDefault();
+	      this.props.onNavigate(this.props.links.last.href);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var stocks = this.props.stocks.map(function (stock) {
+	        return React.createElement(Stock, { key: stock._links.self.href, stock: stock });
+	      });
+	      var navLinks = [];
+	      if ("first" in this.props.links) {
+	        navLinks.push(React.createElement(
+	          'button',
+	          { key: 'first', onClick: this.handleNavFirst },
+	          '<<'
+	        ));
+	      }
+	      if ("prev" in this.props.links) {
+	        navLinks.push(React.createElement(
+	          'button',
+	          { key: 'prev', onClick: this.handleNavPrev },
+	          '<'
+	        ));
+	      }
+	      if ("next" in this.props.links) {
+	        navLinks.push(React.createElement(
+	          'button',
+	          { key: 'next', onClick: this.handleNavNext },
+	          '>'
+	        ));
+	      }
+	      if ("last" in this.props.links) {
+	        navLinks.push(React.createElement(
+	          'button',
+	          { key: 'last', onClick: this.handleNavLast },
+	          '>>'
+	        ));
+	      }
+	
+	      return React.createElement(
+	        'div',
+	        null,
+	        React.createElement('input', { ref: 'pageSize', defaultValue: this.props.pageSize, onInput: this.handleInput }),
+	        React.createElement(
+	          'table',
+	          null,
+	          React.createElement(
+	            'tbody',
+	            null,
+	            React.createElement(
+	              'tr',
+	              null,
+	              React.createElement(
+	                'th',
+	                null,
+	                'Admission Date'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Company Name'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Symbol'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'ICB Industry'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'ICB Super Sector'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Country Of Incorporation'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'World Region'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Market'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'International Issuer'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Company Market Cap'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Price'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Percentage Change'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Volume'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Avg Volume'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'PE'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'High 52'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Low 52'
+	              ),
+	              React.createElement(
+	                'th',
+	                null,
+	                'Delay'
+	              )
+	            ),
+	            stocks
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          null,
+	          navLinks
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return StockList;
 	}(React.Component);
 	
 	var Stock = function (_React$Component3) {
-		_inherits(Stock, _React$Component3);
+	  _inherits(Stock, _React$Component3);
 	
-		function Stock() {
-			_classCallCheck(this, Stock);
+	  function Stock(props) {
+	    _classCallCheck(this, Stock);
 	
-			return _possibleConstructorReturn(this, (Stock.__proto__ || Object.getPrototypeOf(Stock)).apply(this, arguments));
-		}
+	    return _possibleConstructorReturn(this, (Stock.__proto__ || Object.getPrototypeOf(Stock)).call(this, props));
+	  }
 	
-		_createClass(Stock, [{
-			key: 'render',
-			value: function render() {
-				return React.createElement(
-					'tr',
-					null,
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.admissionDate
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.companyName
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.symbol
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.icbIndustry
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.icbSuperSector
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.countryOfIncorporation
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.worldRegion
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.market
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.internationalIssuer
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.companyMarketCap
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.price
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.percentageChange
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.volume
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.avgVolume
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.pe
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.high52
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.low52
-					),
-					React.createElement(
-						'td',
-						null,
-						this.props.stock.delay
-					)
-				);
-			}
-		}]);
+	  _createClass(Stock, [{
+	    key: 'render',
+	    value: function render() {
+	      return React.createElement(
+	        'tr',
+	        null,
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.admissionDate
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.companyName
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.symbol
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.icbIndustry
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.icbSuperSector
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.countryOfIncorporation
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.worldRegion
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.market
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.internationalIssuer
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.companyMarketCap
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.price
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.percentageChange
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.volume
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.avgVolume
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.pe
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.high52
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.low52
+	        ),
+	        React.createElement(
+	          'td',
+	          null,
+	          this.props.stock.delay
+	        )
+	      );
+	    }
+	  }]);
 	
-		return Stock;
+	  return Stock;
 	}(React.Component);
 	
 	ReactDOM.render(React.createElement(App, null), document.getElementById('react'));
@@ -27217,6 +27346,53 @@
 			}
 		};
 	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+/***/ }),
+/* 232 */
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	module.exports = function follow(api, rootPath, relArray) {
+		var root = api({
+			method: 'GET',
+			path: rootPath
+		});
+	
+		return relArray.reduce(function (root, arrayItem) {
+			var rel = typeof arrayItem === 'string' ? arrayItem : arrayItem.rel;
+			return traverseNext(root, rel, arrayItem);
+		}, root);
+	
+		function traverseNext(root, rel, arrayItem) {
+			return root.then(function (response) {
+				if (hasEmbeddedRel(response.entity, rel)) {
+					return response.entity._embedded[rel];
+				}
+	
+				if (!response.entity._links) {
+					return [];
+				}
+	
+				if (typeof arrayItem === 'string') {
+					return api({
+						method: 'GET',
+						path: response.entity._links[rel].href
+					});
+				} else {
+					return api({
+						method: 'GET',
+						path: response.entity._links[rel].href,
+						params: arrayItem.params
+					});
+				}
+			});
+		}
+	
+		function hasEmbeddedRel(entity, rel) {
+			return entity._embedded && entity._embedded.hasOwnProperty(rel);
+		}
+	};
 
 /***/ })
 /******/ ]);
