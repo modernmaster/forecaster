@@ -14,7 +14,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertNotNull;
 
 public class PointServiceTests {
-    private static final String PATH_TXT = "\\uk\\co\\jamesmcguigan\\forecaster\\point\\Path.txt";
+    private static final String PATH_TXT = "Path.txt";
     private PointService pointService;
     private String html;
 
@@ -23,7 +23,7 @@ public class PointServiceTests {
 
         pointService = new PointService();
         try {
-            URL url = Resources.getResource(PATH_TXT);
+            URL url = Resources.getResource(getClass(),PATH_TXT);
             html = Resources.toString(url, Charsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();

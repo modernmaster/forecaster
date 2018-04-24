@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.trends.Strategies;
+package uk.co.jamesmcguigan.forecaster.trends.strategies;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -11,15 +11,15 @@ import java.util.Collections;
 import java.util.List;
 
 @Service
-public class PriceStrategy implements TrendStrategy{
+public class MAFiftyStrategy implements TrendStrategy {
 
     @Autowired
     private PointService pointService;
-    //price is #142635
+
     public List<Point> process(Document html) {
-        Elements graphPoints = html.select(".highcharts-series path[stroke=\"#142635\"]");
+        Elements maFiftyElement = html.select(".highcharts-series path[stroke=\"#00b000\"");
         try {
-            return pointService.process(graphPoints.toString());
+            return pointService.process(maFiftyElement.toString());
         } catch (Exception e) {
             e.printStackTrace();
             return Collections.emptyList();

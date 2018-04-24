@@ -3,7 +3,7 @@ package uk.co.jamesmcguigan.forecaster.trends;
 import org.jsoup.nodes.Document;
 import org.springframework.stereotype.Service;
 import uk.co.jamesmcguigan.forecaster.point.Point;
-import uk.co.jamesmcguigan.forecaster.trends.Strategies.TrendStrategy;
+import uk.co.jamesmcguigan.forecaster.trends.strategies.TrendStrategy;
 
 import java.util.List;
 

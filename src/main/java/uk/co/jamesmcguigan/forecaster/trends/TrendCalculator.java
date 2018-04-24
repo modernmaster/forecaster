@@ -1,14 +1,13 @@
 package uk.co.jamesmcguigan.forecaster.trends;
 
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uk.co.jamesmcguigan.forecaster.point.Point;
-import uk.co.jamesmcguigan.forecaster.trends.Strategies.MAFiftyStrategy;
-import uk.co.jamesmcguigan.forecaster.trends.Strategies.MATwentyStrategy;
-import uk.co.jamesmcguigan.forecaster.trends.Strategies.PriceStrategy;
-import uk.co.jamesmcguigan.forecaster.trends.Strategies.TrendStrategy;
+import uk.co.jamesmcguigan.forecaster.trends.strategies.MAFiftyStrategy;
+import uk.co.jamesmcguigan.forecaster.trends.strategies.MATwentyStrategy;
+import uk.co.jamesmcguigan.forecaster.trends.strategies.PriceStrategy;
+import uk.co.jamesmcguigan.forecaster.trends.strategies.TrendStrategy;
 
 import java.util.List;
 

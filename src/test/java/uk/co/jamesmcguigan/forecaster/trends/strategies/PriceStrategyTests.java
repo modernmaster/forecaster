@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.trends.Strategies;
+package uk.co.jamesmcguigan.forecaster.trends.strategies;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
@@ -20,17 +20,17 @@ import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MATwentyStrategyTests {
+public class PriceStrategyTests {
 
     @Autowired
-    private MATwentyStrategy trendStrategy;
+    private PriceStrategy trendStrategy;
     private Document document;
-    private static final String PATH_TXT = "\\uk\\co\\jamesmcguigan\\forecaster\\trends\\BEAR_UPM.html";
+    private static final String PATH_TXT = "BEAR_UPM.html";
 
     @Before
     public void setUp() {
         try {
-            URL url = Resources.getResource(PATH_TXT);
+            URL url = Resources.getResource(getClass(), PATH_TXT);
             String html = Resources.toString(url, Charsets.UTF_8);
             document = Jsoup.parse(html);
         } catch (IOException e) {
