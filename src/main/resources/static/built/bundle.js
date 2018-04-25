@@ -68,7 +68,7 @@
 	
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 	
-	    _this.state = { stocks: [], attributes: [], pageSize: 2, links: {} };
+	    _this.state = { stocks: [], attributes: [], pageSize: 20, links: {} };
 	    _this.updatePageSize = _this.updatePageSize.bind(_this);
 	    _this.onNavigate = _this.onNavigate.bind(_this);
 	    return _this;
@@ -78,9 +78,6 @@
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.loadFromServer(this.state.pageSize);
-	      //		client({method: 'GET', path: '/api/stocks'}).done(response => {
-	      //			this.setState({stocks: response.entity._embedded.stocks});
-	      //		});
 	    }
 	  }, {
 	    key: 'loadFromServer',
