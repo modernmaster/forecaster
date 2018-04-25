@@ -4,22 +4,27 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const client = require('./client');
 const follow = require('./follow');
-const root = '/api';    
+const root = '/api';
+
+const stompClient = require('./websocket-listener');
+
 
 class App extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {stocks: [], attributes: [], pageSize: 2, links: {}};
+		this.state = {stocks: [], attributes: [], pageSize: 20, links: {}};
 		this.updatePageSize = this.updatePageSize.bind(this);
 		this.onNavigate = this.onNavigate.bind(this);
 	}
 
 	componentDidMount() {
     	this.loadFromServer(this.state.pageSize);
-//		client({method: 'GET', path: '/api/stocks'}).done(response => {
-//			this.setState({stocks: response.entity._embedded.stocks});
-//		});
+        stompClient.register([
+            {route: '/topic/newStock', callback: this.refreshAndGoToLastPage},
+            {route: '/topic/updateStock', callback: this.refreshCurrentPage},
+            {route: '/topic/deleteStock', callback: this.refreshCurrentPage}
+        ]);
 	}
 
     loadFromServer(pageSize) {
@@ -44,12 +49,12 @@ class App extends React.Component {
     }
 
     onNavigate(navUri) {
-        client({method: 'GET', path: navUri}).done(employeeCollection => {
+        client({method: 'GET', path: navUri}).done(stockCollection => {
             this.setState({
-                employees: employeeCollection.entity._embedded.employees,
+                stocks: stockCollection.entity._embedded.stocks,
                 attributes: this.state.attributes,
                 pageSize: this.state.pageSize,
-                links: employeeCollection.entity._links
+                links: stockCollection.entity._links
             });
         });
     }
@@ -58,6 +63,92 @@ class App extends React.Component {
         if (pageSize !== this.state.pageSize) {
             this.loadFromServer(pageSize);
         }
+    }
+
+    refreshAndGoToLastPage(message) {
+    	follow(client, root, [{
+    		rel: 'stocks',
+    		params: {size: this.state.pageSize}
+    	}]).done(response => {
+    		if (response.entity._links.last !== undefined) {
+    			this.onNavigate(response.entity._links.last.href);
+    		} else {
+    			this.onNavigate(response.entity._links.self.href);
+    		}
+    	})
+    }
+
+    refreshCurrentPage(message) {
+    	follow(client, root, [{
+    		rel: 'stocks',
+    		params: {
+    			size: this.state.pageSize,
+    			page: this.state.page.number
+    		}
+    	}]).then(stockCollection => {
+    		this.links = stockCollection.entity._links;
+    		this.page = stockCollection.entity.page;
+
+    		return stockCollection.entity._embedded.stocks.map(stock => {
+    			return client({
+    				method: 'GET',
+    				path: stock._links.self.href
+    			})
+    		});
+    	}).then(stockPromises => {
+    		return when.all(stockPromises);
+    	}).then(stocks => {
+    		this.setState({
+    			page: this.page,
+    			stocks: stocks,
+    			attributes: Object.keys(this.schema.properties),
+    			pageSize: this.state.pageSize,
+    			links: this.links
+    		});
+    	});
+    }
+
+    refreshAndGoToLastPage(message) {
+    	follow(client, root, [{
+    		rel: 'stocks',
+    		params: {size: this.state.pageSize}
+    	}]).done(response => {
+    		if (response.entity._links.last !== undefined) {
+    			this.onNavigate(response.entity._links.last.href);
+    		} else {
+    			this.onNavigate(response.entity._links.self.href);
+    		}
+    	})
+    }
+
+    refreshCurrentPage(message) {
+    	follow(client, root, [{
+    		rel: 'stocks',
+    		params: {
+    			size: this.state.pageSize,
+    			page: this.state.page.number
+    		}
+    	}]).then(stockCollection => {
+    		this.links = stockCollection.entity._links;
+    		this.page = stockCollection.entity.page;
+
+    		return stockCollection.entity._embedded.stocks.map(stock => {
+    			return client({
+    				method: 'GET',
+    				path: stock._links.self.href
+    			})
+    		});
+    	}).then(stockPromises => {
+    		return when.all(stockPromises);
+    	}).then(stocks => {
+    		this.setState({
+    			page: this.page,
+    			stocks: stocks,
+    			attributes: Object.keys(this.schema.properties),
+    			pageSize: this.state.pageSize,
+    			links: this.links
+    		});
+    	});
     }
 
 	render() {
