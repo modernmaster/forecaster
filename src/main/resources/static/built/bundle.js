@@ -70,9 +70,10 @@
 	
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 	
-	    _this.state = { stocks: [], attributes: [], pageSize: 20, links: {} };
+	    _this.state = { stocks: [], attributes: [], pageSize: 100, links: {} };
 	    _this.updatePageSize = _this.updatePageSize.bind(_this);
 	    _this.onNavigate = _this.onNavigate.bind(_this);
+	    _this.refreshCurrentPage = _this.refreshCurrentPage.bind(_this);
 	    return _this;
 	  }
 	
@@ -80,7 +81,7 @@
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.loadFromServer(this.state.pageSize);
-	      stompClient.register([{ route: '/topic/newStock', callback: this.refreshAndGoToLastPage }, { route: '/topic/updateStock', callback: this.refreshCurrentPage }, { route: '/topic/deleteStock', callback: this.refreshCurrentPage }]);
+	      stompClient.register([{ route: '/topic/newstock', callback: this.refreshAndGoToLastPage }, { route: '/topic/updatestock', callback: this.refreshCurrentPage }, { route: '/topic/deletestock', callback: this.refreshCurrentPage }]);
 	    }
 	  }, {
 	    key: 'loadFromServer',
@@ -101,7 +102,8 @@
 	          stocks: stockCollection.entity._embedded.stocks,
 	          attributes: Object.keys(_this2.schema.properties),
 	          pageSize: pageSize,
-	          links: stockCollection.entity._links });
+	          links: stockCollection.entity._links
+	        });
 	      });
 	    }
 	  }, {
@@ -144,85 +146,57 @@
 	  }, {
 	    key: 'refreshCurrentPage',
 	    value: function refreshCurrentPage(message) {
-	      var _this5 = this;
+	      //Add new property to deal with _changeEvent
+	      var updatedStock = JSON.parse(message.body);
+	      var stock = this.state.stocks.find(function (x) {
+	        return x.companyName === updatedStock.companyName;
+	      });
+	      if (parseInt(updatedStock.price) > parseInt(stock.price)) {
+	        updatedStock._changeEvent = 'increase';
+	      } else if (parseInt(updatedStock.price) < parseInt(stock.price)) {
+	        updatedStock._changeEvent = 'decrease';
+	      }
 	
-	      follow(client, root, [{
-	        rel: 'stocks',
-	        params: {
-	          size: this.state.pageSize,
-	          page: this.state.page.number
-	        }
-	      }]).then(function (stockCollection) {
-	        _this5.links = stockCollection.entity._links;
-	        _this5.page = stockCollection.entity.page;
-	
-	        return stockCollection.entity._embedded.stocks.map(function (stock) {
-	          return client({
-	            method: 'GET',
-	            path: stock._links.self.href
-	          });
-	        });
-	      }).then(function (stockPromises) {
-	        return when.all(stockPromises);
-	      }).then(function (stocks) {
-	        _this5.setState({
-	          page: _this5.page,
-	          stocks: stocks,
-	          attributes: Object.keys(_this5.schema.properties),
-	          pageSize: _this5.state.pageSize,
-	          links: _this5.links
-	        });
+	      this.setState({
+	        page: this.page,
+	        stocks: this.state.stocks.map(function (x) {
+	          return x.companyName === updatedStock.companyName ? updatedStock : x;
+	        }),
+	        attributes: Object.keys(this.schema.properties),
+	        pageSize: this.state.pageSize,
+	        links: this.links
 	      });
 	    }
-	  }, {
-	    key: 'refreshAndGoToLastPage',
-	    value: function refreshAndGoToLastPage(message) {
-	      var _this6 = this;
 	
-	      follow(client, root, [{
-	        rel: 'stocks',
-	        params: { size: this.state.pageSize }
-	      }]).done(function (response) {
-	        if (response.entity._links.last !== undefined) {
-	          _this6.onNavigate(response.entity._links.last.href);
-	        } else {
-	          _this6.onNavigate(response.entity._links.self.href);
-	        }
-	      });
-	    }
-	  }, {
-	    key: 'refreshCurrentPage',
-	    value: function refreshCurrentPage(message) {
-	      var _this7 = this;
+	    // console.log("REFRESH PAGE");
+	    // 	follow(client, root, [{
+	    // 		rel: 'stocks',
+	    // 		params: {
+	    // 			size: this.state.pageSize
+	    // 		}
+	    // 	}]).then(stockCollection => {
+	    // 		this.links = stockCollection.entity._links;
+	    // 		this.page = stockCollection.entity.page;
+	    //
+	    // 		return stockCollection.entity._embedded.stocks.map(stock => {
+	    // 			return client({
+	    // 				method: 'GET',
+	    // 				path: stock._links.self.href
+	    // 			})
+	    // 		});
+	    // 	// })
+	    //     // .then(stockPromises => {
+	    // 	// 	return when.all(stockPromises);
+	    // 	}).then(stocks => {
+	    // 		this.setState({
+	    // 			page: this.page,
+	    // 			stocks: stocks,
+	    // 			attributes: Object.keys(this.schema.properties),
+	    // 			pageSize: this.state.pageSize,
+	    // 			links: this.links
+	    // 		});
+	    // 	});
 	
-	      follow(client, root, [{
-	        rel: 'stocks',
-	        params: {
-	          size: this.state.pageSize,
-	          page: this.state.page.number
-	        }
-	      }]).then(function (stockCollection) {
-	        _this7.links = stockCollection.entity._links;
-	        _this7.page = stockCollection.entity.page;
-	
-	        return stockCollection.entity._embedded.stocks.map(function (stock) {
-	          return client({
-	            method: 'GET',
-	            path: stock._links.self.href
-	          });
-	        });
-	      }).then(function (stockPromises) {
-	        return when.all(stockPromises);
-	      }).then(function (stocks) {
-	        _this7.setState({
-	          page: _this7.page,
-	          stocks: stocks,
-	          attributes: Object.keys(_this7.schema.properties),
-	          pageSize: _this7.state.pageSize,
-	          links: _this7.links
-	        });
-	      });
-	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -244,14 +218,14 @@
 	  function StockList(props) {
 	    _classCallCheck(this, StockList);
 	
-	    var _this8 = _possibleConstructorReturn(this, (StockList.__proto__ || Object.getPrototypeOf(StockList)).call(this, props));
+	    var _this5 = _possibleConstructorReturn(this, (StockList.__proto__ || Object.getPrototypeOf(StockList)).call(this, props));
 	
-	    _this8.handleNavFirst = _this8.handleNavFirst.bind(_this8);
-	    _this8.handleNavPrev = _this8.handleNavPrev.bind(_this8);
-	    _this8.handleNavNext = _this8.handleNavNext.bind(_this8);
-	    _this8.handleNavLast = _this8.handleNavLast.bind(_this8);
-	    _this8.handleInput = _this8.handleInput.bind(_this8);
-	    return _this8;
+	    _this5.handleNavFirst = _this5.handleNavFirst.bind(_this5);
+	    _this5.handleNavPrev = _this5.handleNavPrev.bind(_this5);
+	    _this5.handleNavNext = _this5.handleNavNext.bind(_this5);
+	    _this5.handleNavLast = _this5.handleNavLast.bind(_this5);
+	    _this5.handleInput = _this5.handleInput.bind(_this5);
+	    return _this5;
 	  }
 	
 	  _createClass(StockList, [{
@@ -292,43 +266,30 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var stocks = this.props.stocks.map(function (stock) {
-	        return React.createElement(Stock, { key: stock._links.self.href, stock: stock });
+	      var stocks = this.props.stocks.sort(function (a, b) {
+	        return b.percentageChange - a.percentageChange;
+	      }).map(function (stock) {
+	        return React.createElement(Stock, { key: stock.symbol, stock: stock });
 	      });
 	      var navLinks = [];
-	      if ("first" in this.props.links) {
-	        navLinks.push(React.createElement(
-	          'button',
-	          { key: 'first', onClick: this.handleNavFirst },
-	          '<<'
-	        ));
-	      }
-	      if ("prev" in this.props.links) {
-	        navLinks.push(React.createElement(
-	          'button',
-	          { key: 'prev', onClick: this.handleNavPrev },
-	          '<'
-	        ));
-	      }
-	      if ("next" in this.props.links) {
-	        navLinks.push(React.createElement(
-	          'button',
-	          { key: 'next', onClick: this.handleNavNext },
-	          '>'
-	        ));
-	      }
-	      if ("last" in this.props.links) {
-	        navLinks.push(React.createElement(
-	          'button',
-	          { key: 'last', onClick: this.handleNavLast },
-	          '>>'
-	        ));
-	      }
+	      // 	if ("first" in this.props.links) {
+	      // 		navLinks.push(<button key="first" onClick={this.handleNavFirst}>&lt;&lt;</button>);
+	      // 	}
+	      // 	if ("prev" in this.props.links) {
+	      // 		navLinks.push(<button key="prev" onClick={this.handleNavPrev}>&lt;</button>);
+	      // 	}
+	      // 	if ("next" in this.props.links) {
+	      // 		navLinks.push(<button key="next" onClick={this.handleNavNext}>&gt;</button>);
+	      // 	}
+	      // 	if ("last" in this.props.links) {
+	      // 		navLinks.push(<button key="last" onClick={this.handleNavLast}>&gt;&gt;</button>);
+	      // 	}
 	
 	      return React.createElement(
 	        'div',
 	        null,
-	        React.createElement('input', { ref: 'pageSize', defaultValue: this.props.pageSize, onInput: this.handleInput }),
+	        React.createElement('input', { ref: 'pageSize', defaultValue: this.props.pageSize,
+	          onInput: this.handleInput }),
 	        React.createElement(
 	          'table',
 	          null,
@@ -456,9 +417,14 @@
 	  _createClass(Stock, [{
 	    key: 'render',
 	    value: function render() {
+	      var className = 'stock';
+	      if (this.props.stock._changeEvent) {
+	        className += ' ' + this.props.stock._changeEvent;
+	      }
+	
 	      return React.createElement(
 	        'tr',
-	        null,
+	        { className: className },
 	        React.createElement(
 	          'td',
 	          null,
@@ -27502,7 +27468,7 @@
 	__webpack_require__(297); // <2>
 	
 	function register(registrations) {
-		var socket = SockJS('/payroll'); // <3>
+		var socket = SockJS('/stock'); // <3>
 		var stompClient = Stomp.over(socket);
 		stompClient.connect({}, function (frame) {
 			registrations.forEach(function (registration) {
@@ -27910,7 +27876,8 @@
 	 * @api public
 	 */
 	function lolcation(loc) {
-	  loc = loc || global.location || {};
+	  var location = global && global.location || {};
+	  loc = loc || location;
 	
 	  var finaldestination = {}
 	    , type = typeof loc
@@ -29623,7 +29590,7 @@
 	    // Mozilla docs says https://developer.mozilla.org/en/XMLHttpRequest :
 	    // "This never affects same-site requests."
 	
-	    this.xhr.withCredentials = 'true';
+	    this.xhr.withCredentials = true;
 	  }
 	  if (opts && opts.headers) {
 	    for (var key in opts.headers) {
@@ -31186,7 +31153,7 @@
 /* 271 */
 /***/ (function(module, exports) {
 
-	module.exports = '1.1.4';
+	module.exports = '1.1.5';
 
 
 /***/ }),
@@ -31266,17 +31233,17 @@
 	    };
 	    var post = function(msg, origin) {
 	      debug('post', msg, origin);
-	      try {
-	        // When the iframe is not loaded, IE raises an exception
-	        // on 'contentWindow'.
-	        setTimeout(function() {
+	      setTimeout(function() {
+	        try {
+	          // When the iframe is not loaded, IE raises an exception
+	          // on 'contentWindow'.
 	          if (iframe && iframe.contentWindow) {
 	            iframe.contentWindow.postMessage(msg, origin);
 	          }
-	        }, 0);
-	      } catch (x) {
-	        // intentionally empty
-	      }
+	        } catch (x) {
+	          // intentionally empty
+	        }
+	      }, 0);
 	    };
 	
 	    iframe.src = iframeUrl;
@@ -32023,7 +31990,7 @@
 	
 	  var secure = parsedUrl.protocol === 'https:';
 	  // Step 2 - don't allow secure origin with an insecure protocol
-	  if (loc.protocol === 'https' && !secure) {
+	  if (loc.protocol === 'https:' && !secure) {
 	    throw new Error('SecurityError: An insecure SockJS connection may not be initiated from a page loaded over HTTPS');
 	  }
 	
@@ -32178,6 +32145,10 @@
 	SockJS.prototype._transportTimeout = function() {
 	  debug('_transportTimeout');
 	  if (this.readyState === SockJS.CONNECTING) {
+	    if (this._transport) {
+	      this._transport.close();
+	    }
+	
 	    this._transportClose(2007, 'Transport timed out');
 	  }
 	};
@@ -32962,7 +32933,7 @@
 	
 	module.exports = global.location || {
 	  origin: 'http://localhost:80'
-	, protocol: 'http'
+	, protocol: 'http:'
 	, host: 'localhost'
 	, port: 80
 	, href: 'http://localhost/'

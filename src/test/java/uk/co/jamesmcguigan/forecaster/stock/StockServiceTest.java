@@ -48,7 +48,7 @@ public class StockServiceTest {
     @Test
     public void testReturnOfTop20HighestGrowthStocks() {
 
-        List<Stock> top20HighestGrowthStocks = stockService.getTop20HighestGrowthStocks();
+        List<Stock> top20HighestGrowthStocks = stockService.getUpdatedStocks();
         assertNotNull(top20HighestGrowthStocks);
     }
 
