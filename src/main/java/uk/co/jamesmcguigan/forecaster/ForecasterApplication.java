@@ -11,13 +11,13 @@ import org.springframework.web.client.RestTemplate;
 @EnableScheduling
 public class ForecasterApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ForecasterApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(ForecasterApplication.class, args);
+  }
 
-    @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder builder) {
-        // Do any additional configuration here
-        return builder.build();
-    }
+  @Bean
+  public RestTemplate restTemplate(RestTemplateBuilder builder) {
+    // Do any additional configuration here
+    return builder.build();
+  }
 }

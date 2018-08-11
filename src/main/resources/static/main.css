@@ -1,0 +1,56 @@
+
+@-webkit-keyframes increase {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #00FF00; }
+}
+@-moz-keyframes increase {
+  0%   { background-color: #00FF00; }
+  49% { background-color: #00FF00; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #00FF00; }
+}
+@keyframes increase {
+  0%   { background-color: #00FF00; }
+  49% { background-color: #00FF00; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #00FF00; }
+}
+
+@-webkit-keyframes decrease {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #ff0000; }
+}
+@-moz-keyframes decrease {
+  0%   { background-color: #ff0000; }
+  49% { background-color: #ff0000; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #ff0000; }
+}
+@keyframes decrease {
+  0%   { background-color: #ff0000; }
+  49% { background-color: #ff0000; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #ff0000; }
+}
+
+.stock.increase {
+  -webkit-animation: increase 0.5s 2s;
+  -moz-animation:    increase 0.5s 2s;
+  animation:         increase 0.5s 2s;
+}
+
+.stock.decrease {
+  -webkit-animation: decrease 0.5s 2s;
+  -moz-animation:    decrease 0.5s 2s;
+  animation:         decrease 0.5s 2s;
+}
