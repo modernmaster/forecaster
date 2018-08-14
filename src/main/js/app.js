@@ -5,6 +5,7 @@ const ReactDOM = require('react-dom');
 const client = require('./client');
 const follow = require('./follow');
 const root = '/api';
+const PushNotification = require('./push-notification');
 
 const stompClient = require('./websocket-listener');
 
@@ -134,11 +135,14 @@ class App extends React.Component {
   render() {
 
     return (
+        <main>
+        <PushNotification/>
         <StockList stocks={this.state.stocks}
                    links={this.state.links}
                    pageSize={this.state.pageSize}
                    onNavigate={this.onNavigate}
                    updatePageSize={this.updatePageSize}/>
+        </main>
     )
   }
 }
