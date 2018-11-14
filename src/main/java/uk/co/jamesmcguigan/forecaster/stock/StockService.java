@@ -1,6 +1,7 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
 import com.google.common.collect.Lists;
+import uk.co.jamesmcguigan.forecaster.notification.PushNotificationService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

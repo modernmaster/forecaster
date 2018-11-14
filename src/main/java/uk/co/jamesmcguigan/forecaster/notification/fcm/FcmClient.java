@@ -1,16 +1,5 @@
 package uk.co.jamesmcguigan.forecaster.notification.fcm;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Collections;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
-
-import org.springframework.stereotype.Service;
-
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
@@ -22,32 +11,45 @@ import com.google.firebase.messaging.WebpushNotification;
 import uk.co.jamesmcguigan.forecaster.Application;
 import uk.co.jamesmcguigan.forecaster.notification.FcmSettings;
 
+import org.springframework.stereotype.Service;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Collections;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
+
 
 @Service
 public class FcmClient {
 
   private static final String TOKENS_WERE_SUBSCRIBED_SUCCESSFULLY = " tokens were subscribed successfully";
 
-  public FcmClient(FcmSettings settings) {
+  public FcmClient(FcmSettings settings) throws IOException {
     Path p = Paths.get(settings.getServiceAccountFile());
-    try (InputStream serviceAccount = Files.newInputStream(p)) {
-      FirebaseOptions options = new FirebaseOptions.Builder()
-          .setCredentials(GoogleCredentials.fromStream(serviceAccount)).build();
-
-      FirebaseApp.initializeApp(options);
+    InputStream inputStream =
+        this.getClass().getResourceAsStream(
+            "/forecaster-push-notifications-firebase-adminsdk-w8xjr-61e90f0ce9.json");
+    if (inputStream == null) {
+      Application.logger.error("init fcm", new FileNotFoundException());
+      return;
     }
-    catch (IOException e) {
-      Application.logger.error("init fcm", e);
-    }
+    FirebaseOptions options = new FirebaseOptions.Builder()
+        .setCredentials(GoogleCredentials.fromStream(inputStream)).build();
+    FirebaseApp.initializeApp(options);
   }
 
   public void send(Map<String, String> data)
       throws InterruptedException, ExecutionException {
-
+    String id = data.get("id");
+    String stockMessage = data.get("stock");
     Message message = Message.builder().putAllData(data).setTopic("chuck")
         .setWebpushConfig(WebpushConfig.builder().putHeader("ttl", "300")
-            .setNotification(new WebpushNotification("Background Title (server)",
-                "Background Body (server)", "mail2.png"))
+            .setNotification(new WebpushNotification(id,
+                stockMessage, "mail2.png"))
             .build())
         .build();
 
@@ -60,8 +62,7 @@ public class FcmClient {
       TopicManagementResponse response = FirebaseMessaging.getInstance()
           .subscribeToTopicAsync(Collections.singletonList(clientToken), topic).get();
       Application.logger.info(response.getSuccessCount() + TOKENS_WERE_SUBSCRIBED_SUCCESSFULLY);
-    }
-    catch (InterruptedException | ExecutionException e) {
+    } catch (InterruptedException | ExecutionException e) {
       Application.logger.error("subscribe", e);
     }
   }

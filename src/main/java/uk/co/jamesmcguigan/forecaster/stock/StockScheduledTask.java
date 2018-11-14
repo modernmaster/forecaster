@@ -20,8 +20,8 @@ public class StockScheduledTask extends HttpServlet {
   private final SimpMessagingTemplate simpMessagingTemplate;
 
   @Autowired
-  public StockScheduledTask(StockService stockService, StockRepository stockRepository,
-      StockEventHandler stockEventHandler, SimpMessagingTemplate simpMessagingTemplate) {
+  public StockScheduledTask(StockService stockService,
+      SimpMessagingTemplate simpMessagingTemplate) {
     this.stockService = stockService;
     this.simpMessagingTemplate = simpMessagingTemplate;
   }

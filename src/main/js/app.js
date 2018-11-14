@@ -6,6 +6,7 @@ const client = require('./client');
 const follow = require('./follow');
 const root = '/api';
 const PushNotification = require('./push-notification');
+import registerServiceWorker from './register-service-worker';
 
 const stompClient = require('./websocket-listener');
 
@@ -136,12 +137,12 @@ class App extends React.Component {
 
     return (
         <main>
-        <PushNotification/>
-        <StockList stocks={this.state.stocks}
-                   links={this.state.links}
-                   pageSize={this.state.pageSize}
-                   onNavigate={this.onNavigate}
-                   updatePageSize={this.updatePageSize}/>
+          <PushNotification/>
+          <StockList stocks={this.state.stocks}
+                     links={this.state.links}
+                     pageSize={this.state.pageSize}
+                     onNavigate={this.onNavigate}
+                     updatePageSize={this.updatePageSize}/>
         </main>
     )
   }
@@ -284,4 +285,6 @@ class Stock extends React.Component {
 ReactDOM.render(
     <App/>,
     document.getElementById('react')
-)
+);
+
+registerServiceWorker.register();
