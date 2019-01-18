@@ -9,12 +9,12 @@ import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Data
-@Entity
-@JsonIgnoreProperties(ignoreUnknown = true)
+//@Data
+//@Entity
+//@JsonIgnoreProperties(ignoreUnknown = true)
 public class Trend {
 
-  @Id
+ // @Id
   private long id;
   private Stock stock;
   private TrendCategory trendCategory;

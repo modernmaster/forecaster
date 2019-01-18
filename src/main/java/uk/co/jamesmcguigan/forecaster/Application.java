@@ -21,12 +21,6 @@ public class Application {
   }
 
   @Bean
-  public RestTemplate restTemplate(RestTemplateBuilder builder) {
-    // Do any additional configuration here
-    return builder.build();
-  }
-
-  @Bean
   public WebClient webClient() {
     return WebClient.create();
   }

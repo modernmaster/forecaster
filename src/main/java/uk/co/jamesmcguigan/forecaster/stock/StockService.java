@@ -1,6 +1,8 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
 import com.google.common.collect.Lists;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Flux;
 import uk.co.jamesmcguigan.forecaster.notification.PushNotificationService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,16 +16,17 @@ import java.util.stream.Collectors;
 public class StockService {
 
   private final StockTransformer stockTransformer;
-  private final RestTemplate restTemplate;
   private final StockRepository stockRepository;
+
+  private final WebClient webClient;
 
   private String apiUrl = "https://sheets.googleapis.com/v4/spreadsheets/1mrRNCwJuvkeUoyGMs30Dubd9RGojdDwEfLVsK00gVvA/values/A1:R6500?key=AIzaSyCt9MonR8WBE0vsPoV_HBnB5k0-S3yhnZQ";
 
   @Autowired
-  public StockService(StockTransformer stockTransformer, RestTemplate restTemplate,
+  public StockService(StockTransformer stockTransformer, WebClient webClient,
       StockRepository stockRepository) {
     this.stockTransformer = stockTransformer;
-    this.restTemplate = restTemplate;
+    this.webClient = webClient;
     this.stockRepository = stockRepository;
   }
 
@@ -50,8 +53,12 @@ public class StockService {
   }
 
   List<Stock> getStocks() {
-    GoogleSheetRepresentation googleSheetRepresentation = restTemplate
-        .getForObject(apiUrl, GoogleSheetRepresentation.class);
+    GoogleSheetRepresentation googleSheetRepresentation = webClient
+            .get()
+            .uri(apiUrl)
+            .retrieve().bodyToFlux(GoogleSheetRepresentation.class)
+            .blockFirst();
+
     List<Stock> stocks = stockTransformer.transform(googleSheetRepresentation);
     return stocks.stream()
         .filter(stock -> !stock.getPercentageChange().equals("#N/A"))
