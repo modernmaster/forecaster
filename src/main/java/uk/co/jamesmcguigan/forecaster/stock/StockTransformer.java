@@ -1,43 +1,51 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
+import com.google.common.collect.Lists;
 import org.springframework.stereotype.Component;
+import uk.co.jamesmcguigan.forecaster.stock.historicalprice.HistoricalPrice;
+import uk.co.jamesmcguigan.forecaster.stock.historicalprice.Price;
+import uk.co.jamesmcguigan.forecaster.stock.liveprice.GoogleSheetRepresentation;
 
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class StockTransformer {
 
   public List<Stock> transform(GoogleSheetRepresentation googleSheetRepresentation) {
-
-    List<List<String>> values = googleSheetRepresentation.getValues();
-    List<Stock> stocks = new ArrayList<>();
-    for (List<String> value : values) {
-      stocks.add(transform(value));
-    }
-    return stocks;
+    return googleSheetRepresentation.getValues().stream()
+            .skip(1)
+            .map(this::transform)
+            .collect(Collectors.toList());
   }
 
   private Stock transform(List<String> values) {
-    return new Stock(
-        values.get(0),
-        values.get(1),
-        values.get(2),
-        values.get(3),
-        values.get(4),
-        values.get(5),
-        values.get(6),
-        values.get(7),
-        values.get(8),
-        values.get(9),
-        values.get(10),
-        values.get(11),
-        values.get(12),
-        values.get(13),
-        values.get(14),
-        values.get(15),
-        values.get(16),
-        values.get(17));
+    List<Price> historicalPrices = Lists.newArrayList();
+    return Stock.builder()
+            .id(values.get(2))
+            .admissionDate(values.get(0))
+            .companyName(values.get(1))
+            .symbol(values.get(2))
+            .icbIndustry(values.get(3))
+            .icbSuperSector(values.get(4))
+            .countryOfIncorporation(values.get(5))
+            .worldRegion(values.get(6))
+            .market(values.get(7))
+            .internationalIssuer(values.get(8))
+            .companyMarketCap(values.get(9))
+            .price(values.get(10))
+            .percentageChange(values.get(11))
+            .avgVolume(values.get(12))
+            .volume(values.get(13))
+            .pe(values.get(14))
+            .high52(values.get(15))
+            .low52(values.get(16))
+            .delay(values.get(17))
+            .historicalPrices(historicalPrices)
+            .dateTimeCreated(new Date())
+            .dateTimeUpdated(new Date())
+            .build();
   }
 
 }

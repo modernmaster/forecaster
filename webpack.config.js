@@ -3,7 +3,13 @@ var path = require('path');
 var node_dir = __dirname + '/node_modules';
 
 module.exports = {
-    entry: './src/main/js/app.js',
+    entry: [
+    './src/main/js/app.js',
+    './src/main/js/stock.js',
+    './src/main/js/stock-details.js',
+    './src/main/js/stock-list.js',
+
+    './src/main/js/push-notification.js'],
     devtool: 'sourcemaps',
     cache: true,
     debug: true,
