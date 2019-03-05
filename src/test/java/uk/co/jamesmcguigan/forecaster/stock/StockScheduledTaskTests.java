@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class StockScheduledTaskTests {
 
     @Autowired
-    private StockService stockService;
+    private StockLookupService stockLookupService;
     @Autowired
     private StockRepository stockRepository;
 

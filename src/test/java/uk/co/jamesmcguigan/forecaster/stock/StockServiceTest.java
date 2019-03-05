@@ -11,11 +11,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
+import uk.co.jamesmcguigan.forecaster.stock.liveprice.GoogleSheetRepresentation;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 
 import static org.junit.Assert.assertNotNull;
@@ -25,7 +24,7 @@ import static org.junit.Assert.assertNotNull;
 public class StockServiceTest {
 
     @Autowired
-    private StockService stockService;
+    private StockLookupService stockLookupService;
     @MockBean
     private RestTemplate restTemplate;
 
@@ -41,14 +40,14 @@ public class StockServiceTest {
 
     @Test
     public void testRetrievalOfStocks() {
-        List<Stock> stocks = stockService.getStocks();
+        List<Stock> stocks = stockLookupService.getStocks();
         assertNotNull(stocks);
     }
 
     @Test
     public void testReturnOfTop20HighestGrowthStocks() {
 
-        List<Stock> top20HighestGrowthStocks = stockService.getUpdatedStocks();
+        List<Stock> top20HighestGrowthStocks = stockLookupService.getUpdatedStocks();
         assertNotNull(top20HighestGrowthStocks);
     }
 
