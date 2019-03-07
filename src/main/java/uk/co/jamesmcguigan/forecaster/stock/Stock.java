@@ -2,13 +2,10 @@ package uk.co.jamesmcguigan.forecaster.stock;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.Price;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import java.util.Date;
@@ -82,6 +79,7 @@ public class Stock {
         }
         return false;
     }
+
     @PrePersist
     void createdAt() {
         this.dateTimeCreated = new Date();

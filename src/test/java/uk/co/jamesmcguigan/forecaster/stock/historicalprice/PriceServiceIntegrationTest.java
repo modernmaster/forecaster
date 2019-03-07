@@ -12,6 +12,8 @@ import uk.co.jamesmcguigan.forecaster.dataacquisition.DataAcquisitionExecutor;
 import uk.co.jamesmcguigan.forecaster.stock.Stock;
 import uk.co.jamesmcguigan.forecaster.stock.StockRepository;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 import static org.hamcrest.number.OrderingComparison.greaterThan;
@@ -20,7 +22,7 @@ import static org.junit.Assert.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @AutoConfigureDataMongo
-public class PricePriceServiceIntegrationTest {
+public class PriceServiceIntegrationTest {
 
     @Autowired
     private DataAcquisitionExecutor dataAcquisitionExecutor;
@@ -30,10 +32,35 @@ public class PricePriceServiceIntegrationTest {
     private StockRepository stockRepository;
 
     private Stock stock;
+    private final static String SYMBOL = "lon:sxx";
 
     @Before
     public void setUp() {
-        stock = Stock.builder().symbol("lon:sxx").build();
+
+        stock = Stock.builder()
+                .id(SYMBOL)
+                .admissionDate("")
+                .companyName("")
+                .symbol(SYMBOL)
+                .icbIndustry("")
+                .icbSuperSector("")
+                .countryOfIncorporation("")
+                .worldRegion("")
+                .market("")
+                .internationalIssuer("")
+                .companyMarketCap("")
+                .price("")
+                .percentageChange("")
+                .volume("")
+                .avgVolume("")
+                .pe("")
+                .high52("")
+                .low52("")
+                .delay("")
+                .historicalPrices(Lists.newArrayList())
+                .dateTimeUpdated(new Date())
+                .dateTimeCreated(new Date())
+                .build();
         stockRepository.save(stock);
     }
 
@@ -42,7 +69,7 @@ public class PricePriceServiceIntegrationTest {
 
         List<Stock> stockList = Lists.newArrayList(stock);
         dataAcquisitionExecutor.execute(stockList, historicalPriceRequest);
-        Stock stock = stockRepository.findBySymbol("lon:sxx");
+        Stock stock = stockRepository.findBySymbol(SYMBOL);
         assertThat(stock.getHistoricalPrices().size(), greaterThan(0));
     }
 }
