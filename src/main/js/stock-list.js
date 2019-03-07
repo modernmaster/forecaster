@@ -68,9 +68,6 @@ var divStyleLeft = {
     return (
     <main>
     <article style={divStyleLeft}>
-// Adjust page size
-//          <input ref="pageSize" defaultValue={this.props.pageSize}
-//                 onInput={this.handleInput}/>
           <table>
               <thead>
             <tr>
