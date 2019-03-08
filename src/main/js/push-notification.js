@@ -113,4 +113,4 @@ class PushNotification extends React.Component {
   }
 };
 
-module.exports = PushNotification;
+export default PushNotification;

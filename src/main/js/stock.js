@@ -24,4 +24,4 @@ class Stock extends React.Component {
   }
 }
 
-module.exports = Stock;
+export default Stock;

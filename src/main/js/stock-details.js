@@ -133,4 +133,4 @@ class StockDetails extends React.Component {
     )
   }
 }
-module.exports = StockDetails;
+export default StockDetails;

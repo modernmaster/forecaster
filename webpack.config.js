@@ -12,7 +12,7 @@ module.exports = {
     './src/main/js/push-notification.js'],
     devtool: 'sourcemaps',
     cache: true,
-    debug: true,
+    mode: 'development',
     resolve: {
         alias: {
             'stompjs': node_dir + '/stompjs/lib/stomp.js',
@@ -23,14 +23,15 @@ module.exports = {
         filename: './src/main/resources/static/built/bundle.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
-                test: path.join(__dirname, '.'),
+                test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
-                loader: 'babel-loader',
-                query: {
-                    cacheDirectory: true,
-                    presets: ['es2015', 'react']
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                      presets: ['@babel/react','@babel/preset-env']
+                    }
                 }
             }
         ]
