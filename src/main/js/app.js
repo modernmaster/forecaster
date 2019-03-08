@@ -6,9 +6,10 @@ const ReactDOM = require('react-dom');
 const client = require('./client');
 const follow = require('./follow');
 const root = '/api';
-const PushNotification = require('./push-notification');
+import PushNotification from './push-notification';
 import registerServiceWorker from './register-service-worker';
-const StockList = require('./stock-list.js');
+
+import StockList from './stock-list.js';
 
 const stompClient = require('./websocket-listener');
 
@@ -41,14 +42,13 @@ class App extends React.Component {
         headers: {'Accept': 'application/schema+json'}
       }).then(schema => {
         this.schema = schema.entity;
-        return stockCollection;
-      });
-    }).done(stockCollection => {
       this.setState({
         stocks: stockCollection.entity._embedded.stocks,
         attributes: Object.keys(this.schema.properties),
         pageSize: pageSize,
         links: stockCollection.entity._links
+      });
+        return stockCollection;
       });
     });
   }

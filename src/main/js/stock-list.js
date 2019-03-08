@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-const Stock = require('./stock.js');
-const StockDetails = require('./stock-details.js');
-
+import Stock from './stock.js';
+import StockDetails from './stock-details.js';
 
 class StockList extends React.Component {
   constructor(props) {
@@ -95,4 +94,4 @@ var divStyleLeft = {
   }
 }
 
-module.exports = StockList;
+export default StockList;

@@ -242,8 +242,8 @@
               <goal>install-node-and-npm</goal>
             </goals>
             <configuration>
-              <nodeVersion>v10.15.1</nodeVersion>
-              <npmVersion>4.0.0</npmVersion>
+              <nodeVersion>v11.11.0</nodeVersion>
+              <npmVersion>6.1.0</npmVersion>
             </configuration>
           </execution>
           <execution>
@@ -269,7 +269,15 @@
         <version>4.2.0</version>
         <executions>
           <execution>
+            <id>1</id>
             <phase>generate-sources</phase>
+            <goals>
+              <goal>instrument</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>2</id>
+            <phase>site</phase>
             <goals>
               <goal>clover</goal>
             </goals>
