@@ -1,5 +1,6 @@
 package uk.co.jamesmcguigan.forecaster.stock.historicalprice;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.*;
 //import org.springframework.data.annotation.Id;
 import javax.persistence.*;
@@ -17,16 +18,23 @@ import java.util.Date;
 public class Price {
 
     @NonNull
+    @JsonDeserialize(using = MongoDateConverter.class)
     private Date date;
     @NonNull
-    private double closing;
+    @JsonDeserialize(using = PriceConverter.class)
+    private Double closing;
     @NonNull
-    private double opening;
+    @JsonDeserialize(using = PriceConverter.class)
+    private Double opening;
     @NonNull
-    private double daysHigh;
+    @JsonDeserialize(using = PriceConverter.class)
+    private Double daysHigh;
     @NonNull
-    private double daysLow;
+    @JsonDeserialize(using = PriceConverter.class)
+    private Double daysLow;
+    @JsonDeserialize(using = MongoDateConverter.class)
     private Date dateTimeCreated;
+    @JsonDeserialize(using = MongoDateConverter.class)
     private Date dateTimeUpdated;
 
     @PrePersist
@@ -38,5 +46,5 @@ public class Price {
     void updatedAt() {
         this.dateTimeUpdated = new Date();
     }
-
 }
+
