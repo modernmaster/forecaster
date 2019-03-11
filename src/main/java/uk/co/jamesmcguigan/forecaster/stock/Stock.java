@@ -1,9 +1,11 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import uk.co.jamesmcguigan.forecaster.stock.historicalprice.MongoDateConverter;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.Price;
 
 import javax.persistence.PrePersist;
@@ -61,8 +63,10 @@ public class Stock {
     @NonNull
     private List<Price> historicalPrices;
     @NonNull
+    @JsonDeserialize(using = MongoDateConverter.class)
     private Date dateTimeCreated;
     @NonNull
+    @JsonDeserialize(using = MongoDateConverter.class)
     private Date dateTimeUpdated;
 
     @Override
