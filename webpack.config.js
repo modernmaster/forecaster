@@ -8,7 +8,7 @@ module.exports = {
     './src/main/js/stock.js',
     './src/main/js/stock-details.js',
     './src/main/js/stock-list.js',
-
+    './src/main/js/chart.js',
     './src/main/js/push-notification.js'],
     devtool: 'sourcemaps',
     cache: true,
