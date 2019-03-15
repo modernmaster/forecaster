@@ -27,7 +27,6 @@
     "rest": "^2.0.0",
     "sockjs-client": "^1.3.0",
     "stompjs": "^2.3.3",
-    "svg-inline-react": "^3.1.0",
     "webpack": "^4.29.6"
   },
   "scripts": {
@@ -40,6 +39,8 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "babel-polyfill": "^6.26.0",
+    "highcharts": "^7.0.3",
+    "highcharts-react-official": "^2.1.1",
     "webpack-cli": "^3.2.3"
   }
 }
