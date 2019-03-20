@@ -19,7 +19,7 @@ class StockDetails extends React.Component {
           <h2>{symbol}</h2>
 
           <figure>
-            <Chart/>
+            <Chart stock={stock}/>
           </figure>
 
           <h3>Current Trends</h3>
