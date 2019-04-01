@@ -1,13 +1,16 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.springframework.stereotype.Component;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.HistoricalPrice;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.Price;
 import uk.co.jamesmcguigan.forecaster.stock.liveprice.GoogleSheetRepresentation;
+import uk.co.jamesmcguigan.forecaster.stock.trend.Trend;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
@@ -22,6 +25,7 @@ public class StockTransformer {
 
   private Stock transform(List<String> values) {
     List<Price> historicalPrices = Lists.newArrayList();
+    Map<String,Trend> trends = Maps.newHashMap();
     return Stock.builder()
             .id(values.get(2))
             .admissionDate(values.get(0))
@@ -43,6 +47,7 @@ public class StockTransformer {
             .low52(values.get(16))
             .delay(values.get(17))
             .historicalPrices(historicalPrices)
+            .trends(trends)
             .dateTimeCreated(new Date())
             .dateTimeUpdated(new Date())
             .build();
