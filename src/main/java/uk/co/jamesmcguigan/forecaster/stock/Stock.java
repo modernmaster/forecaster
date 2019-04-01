@@ -7,11 +7,13 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.MongoDateConverter;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.Price;
+import uk.co.jamesmcguigan.forecaster.stock.trend.Trend;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @NoArgsConstructor
 @Getter
@@ -62,6 +64,8 @@ public class Stock {
     private String delay;
     @NonNull
     private List<Price> historicalPrices;
+    @NonNull
+    private Map<String, Trend> trends;
     @NonNull
     @JsonDeserialize(using = MongoDateConverter.class)
     private Date dateTimeCreated;

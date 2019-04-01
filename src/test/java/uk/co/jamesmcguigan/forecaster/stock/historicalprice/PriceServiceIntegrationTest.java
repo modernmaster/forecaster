@@ -1,6 +1,7 @@
 package uk.co.jamesmcguigan.forecaster.stock.historicalprice;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -57,6 +58,7 @@ public class PriceServiceIntegrationTest {
                 .high52("")
                 .low52("")
                 .delay("")
+                .trends(Maps.newHashMap())
                 .historicalPrices(Lists.newArrayList())
                 .dateTimeUpdated(new Date())
                 .dateTimeCreated(new Date())

@@ -1,27 +1,30 @@
 package uk.co.jamesmcguigan.forecaster;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import uk.co.jamesmcguigan.forecaster.stock.StockLookup;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.HistoricalPrice;
+import uk.co.jamesmcguigan.forecaster.stock.trend.TrendEngine;
 
 @SpringBootApplication
 @EnableScheduling
-@AllArgsConstructor
+@RequiredArgsConstructor
+@EnableConfigurationProperties
 public class Application {
-    private StockLookup stockLookup;
-    private HistoricalPrice historicalPrice;
-    private TrendsScheduledTask trendsScheduledTask;
+    private final StockLookup stockLookup;
+    private final HistoricalPrice historicalPrice;
+    private final TrendEngine trendEngine;
     @Value("${jobs.processHistoricalPricing.enable}")
-    private static boolean processHistoricalPricingEnable;
+    private boolean processHistoricalPricingEnable;
     @Value("${jobs.processCurrentPrices.enable}")
-    private static boolean processCurrentPricesEnable;
+    private boolean processCurrentPricesEnable;
 
     public static final Logger logger = LoggerFactory.getLogger("uk.co.jamesmcguigan.forecaster");
 
@@ -37,15 +40,12 @@ public class Application {
     }
 
     @Scheduled(fixedRate = 30000)
-    public void processHistoricalPricing() {
+    public void processHistoricalPricingAndUpdateTrendsAndPatterns() {
         if (processHistoricalPricingEnable) {
             historicalPrice.update();
+            trendEngine.processTrendsForAllStocks();
+//        process patterns -> and notify
         }
     }
 
-    //TODO: refactor out trends scheduled task and place into package.
-    @Scheduled(fixedRate = 30000)
-    public void processTrends() {
-
-    }
 }
