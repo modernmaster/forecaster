@@ -1,37 +1,36 @@
 package uk.co.jamesmcguigan.forecaster.stock.pattern;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import uk.co.jamesmcguigan.forecaster.notification.PushNotificationService;
+import uk.co.jamesmcguigan.forecaster.stock.Stock;
 
 @Service
+@RequiredArgsConstructor
 public class PatternCalculator {
 
-    private PushNotificationService pushNotificationService;
+    public boolean isBullish(Stock stock) {
+        return false;
+    }
 
+    public boolean isBearish(Stock stock) {
+        return false;
+    }
 
-//    String message = "My alert has fired";
-//    StockAlert stockAlert = new StockAlert(new Stock(), message);
-//    try {
-//
-//      pushNotificationService.sendPushMessage(stockAlert);
-//    } catch (InterruptedException e) {
-//      e.printStackTrace();
-//    } catch (ExecutionException e) {
-//      Application.logger.error("Error in sending notification", e);
-//    }
+    public boolean isApproachGoldenCross(Stock stock) {
+        //MA50 on a downward trend crosses MA20... share is usually lower than both
+        return false;
+    }
 
+    public boolean isApproachingMA20Support(Stock stock) {
+        return false;
+    }
 
+    public boolean hasBrokenMA20Resistance(Stock stock) {
+        return false;
+    }
+}
 
-
-//  @Autowired
-//  private TrendContext trendContext;
-//  @Autowired
-//  private MAFiftyStrategy maFiftyStrategy;
-//  @Autowired
-//  private MATwentyStrategy maTwentyStrategy;
-//  @Autowired
-//  private PriceStrategy priceStrategy;
-//
 //  public boolean isBullish(Document html) {
 //
 //    List<Point> fifty = getTrend(html, maFiftyStrategy);
@@ -89,5 +88,3 @@ public class PatternCalculator {
 //    trendContext.setTrendStrategy(trendStrategy);
 //    return trendContext.process(html);
 //  }
-
-}
