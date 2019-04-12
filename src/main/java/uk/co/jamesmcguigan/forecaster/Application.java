@@ -37,15 +37,11 @@ public class Application {
         if (processCurrentPricesEnable) {
             stockLookup.updateStocksAndNotifyAllClients();
         }
-    }
-
-    @Scheduled(fixedRate = 30000)
-    public void processHistoricalPricingAndUpdateTrendsAndPatterns() {
         if (processHistoricalPricingEnable) {
             historicalPrice.update();
-            trendEngine.processTrendsForAllStocks();
 //        process patterns -> and notify
         }
+        trendEngine.processTrendsForAllStocks();
     }
 
 }
