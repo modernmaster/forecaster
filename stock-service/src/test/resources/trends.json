@@ -1,0 +1,9938 @@
+{"trends": {
+"MOVING_AVERAGE_DURATION_9": {
+"series": [
+{
+"date": {
+"$date": {
+"$numberLong": "1532563200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.411"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532649600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.66111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532908800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.88333333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532995200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.583333333333336"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533081600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.291111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533168000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.864444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533254400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.89333333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533513600000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.101111111111116"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533600000000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.21222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533686400000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.08111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533772800000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.672444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533859200000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.328"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534118400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.55577777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534204800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534291200000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.007555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534377600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.91422222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534464000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.703111111111106"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534723200000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.59544444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534809600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.409888888888894"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534896000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.48522222222223"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534982400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.507444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535068800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.57855555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535414400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.64522222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535500800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.65011111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535587200000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.79900000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535673600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.90788888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535932800000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.01555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536019200000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.221111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536105600000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.33222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536192000000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.36555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536278400000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.327777777777776"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536537600000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.43666666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536624000000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.836666666666666"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536710400000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.614444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536796800000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.169999999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536883200000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.70111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537142400000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.96333333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537228800000"
+}
+},
+"pointValue": {
+"$numberDouble": "56.23"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537315200000"
+}
+},
+"pointValue": {
+"$numberDouble": "56.40222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537401600000"
+}
+},
+"pointValue": {
+"$numberDouble": "56.53"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537488000000"
+}
+},
+"pointValue": {
+"$numberDouble": "56.443333333333335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537747200000"
+}
+},
+"pointValue": {
+"$numberDouble": "56.25555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537833600000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.611111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537920000000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.05555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538006400000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.52444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538092800000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.22888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538352000000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.87777777777777"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538438400000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.64722222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538524800000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.14722222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538611200000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.59166666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538697600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.20166666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538956800000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.73388888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539043200000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.19222222222223"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539129600000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.47"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539216000000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.53111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539302400000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.89333333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539561600000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.185"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539648000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.818333333333335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539734400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.596111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539820800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.14277777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539907200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.83833333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540166400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.76888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540252800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.82555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540339200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.79777777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540425600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.72555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540512000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.54222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540771200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.23111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540857600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.94222222222223"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540944000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.77333333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541030400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.413333333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541116800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.135555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541376000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.967777777777776"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541462400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.30111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541548800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.42888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541635200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.89"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541721600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.31333333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541980800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.602222222222224"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542067200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.91888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542153600000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.08444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542240000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.19555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542326400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.14"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542585600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.906666666666666"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542672000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.57333333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542758400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.87888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542844800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.43333333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542931200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.099999999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543190400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.68333333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543276800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.48888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543363200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.12222222222223"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543449600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.955555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543536000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.577777777777776"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543795200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.3"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543881600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.105555555555554"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543968000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.77222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544054400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.40555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544140800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.17444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544400000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.882222222222225"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544486400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.654444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544572800000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.33777777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544659200000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.282222222222224"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544745600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.19888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545004800000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.19888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545091200000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.11555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545177600000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.98222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545264000000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.63"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545350400000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.33888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545609600000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.24111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545868800000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.05777777777777"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545955200000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.83555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546214400000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.75222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546387200000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.75222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546473600000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.041111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546560000000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.23"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546819200000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.67666666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546905600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.42111111111112"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546992000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.946666666666665"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547078400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.71333333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547164800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.20777777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547424000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.596666666666664"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547510400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.24611111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547596800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.596111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547683200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.075"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547769600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548028800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.63388888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548115200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.96055555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548201600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.93833333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548288000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.154444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548374400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.404444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548633600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.416111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548720000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.27722222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548806400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.15277777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548892800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.13055555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548979200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.169444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549238400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.37611111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549324800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.81611111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549411200000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.30555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549497600000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.611111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549584000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.83888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549843200000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.2"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549929600000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.519666666666666"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550016000000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.641888888888886"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550102400000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.61411111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550188800000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.34744444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550448000000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.029666666666664"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550534400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.571333333333335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550620800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.238"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550707200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.96022222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550793600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.70466666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551052800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.486111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551139200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.34444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551225600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.144444444444446"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551312000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.98888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551398400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.56666666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551657600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.269444444444446"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551744000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.047222222222224"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551830400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.88055555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551916800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.80277777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552003200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.65833333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552262400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.41111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552348800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.19444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552435200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.916666666666664"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552521600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.861111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552608000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.803333333333335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552867200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.66444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552953600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.492222222222225"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553040000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.28722222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553126400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.242777777777775"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553212800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.050555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553472000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.895"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553558400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.78388888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553644800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.739444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553731200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.63055555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553817600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.547222222222224"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554076800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.25277777777777"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554163200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.19844444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554249600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.07622222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554336000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.129555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554422400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.174"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554681600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.312888888888885"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554768000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.410666666666664"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554854400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.602000000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554940800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.76866666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555027200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.12422222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555286400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.272444444444446"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555372800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.550222222222224"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555459200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.90022222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555545600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.25022222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555977600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.44466666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556064000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.75244444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556150400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.73"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556236800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.785555555555554"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556496000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.934444444444445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556582400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.82333333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556668800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.66777777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556755200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.30111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556841600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.01111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557187200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.766666666666666"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557273600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.31666666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557360000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.19222222222223"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557446400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.13666666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557705600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.07111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557792000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.193333333333335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557878400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.23777777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557964800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.373333333333335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558051200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.507777777777775"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558310400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.64111111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558396800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.89666666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558483200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.01888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558569600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.041111111111114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558656000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.06888888888889"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559001600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.08555555555555"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559088000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.11333333333333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559174400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.27222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559260800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.27222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559520000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.27222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559606400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.27222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559692800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.24444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559779200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.19444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559865600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.05555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560124800000"
+}
+},
+"pointValue": {
+"$numberInt": "44"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560211200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.94444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560297600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.80555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560384000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.69444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560470400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.47222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560729600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.19444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560816000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.05555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560902400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.916666666666664"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560988800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.72222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561075200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.52777777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561334400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.333333333333336"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561420800000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.083333333333336"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561507200000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.733333333333334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561593600000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.455555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561680000000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.27222222222222"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561939200000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.05"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562025600000"
+}
+},
+"pointValue": {
+"$numberDouble": "34.74444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562112000000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.24444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562198400000"
+}
+},
+"pointValue": {
+"$numberDouble": "31.716666666666665"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562284800000"
+}
+},
+"pointValue": {
+"$numberDouble": "30.188888888888886"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562544000000"
+}
+},
+"pointValue": {
+"$numberDouble": "29.744444444444444"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562630400000"
+}
+},
+"pointValue": {
+"$numberDouble": "29.45555555555556"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562716800000"
+}
+},
+"pointValue": {
+"$numberDouble": "29.19166666666667"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562803200000"
+}
+},
+"pointValue": {
+"$numberDouble": "28.90277777777778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562889600000"
+}
+},
+"pointValue": {
+"$numberDouble": "28.48611111111111"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1563148800000"
+}
+},
+"pointValue": {
+"$numberDouble": "28.15277777777778"
+}
+}
+],
+"dateTimeCreated": {
+"$date": {
+"$numberLong": "1563305662874"
+}
+}
+},
+"MOVING_AVERAGE_DURATION_20": {
+"series": [
+{
+"date": {
+"$date": {
+"$numberLong": "1533859200000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.232549999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534118400000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.6626"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534204800000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.0726"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534291200000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.4254"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534377600000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.7669"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534464000000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.126400000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534723200000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.56595"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534809600000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.02095"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534896000000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.520950000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534982400000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.87595"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535068800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.22545"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535414400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.56545"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535500800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.60545"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535587200000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.69545000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535673600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.84595"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535932800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.87095000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536019200000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.87495"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536105600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.92495"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536192000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.903949999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536278400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.970349999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536537600000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.064350000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536624000000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.18185"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536710400000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.52184999999999"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536796800000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.819050000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536883200000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.12505"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537142400000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.34204999999999"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537228800000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.560500000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537315200000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.7005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537401600000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.790499999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537488000000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.8355"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537747200000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.8365"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537833600000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.856500000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537920000000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.9015"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538006400000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.9015"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538092800000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.9365"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538352000000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.9485"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538438400000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.892250000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538524800000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.70725"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538611200000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.487249999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538697600000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.329750000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538956800000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.090250000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539043200000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.7115"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539129600000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.036500000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539216000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.399"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539302400000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.885000000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539561600000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.391999999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539648000000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.922000000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539734400000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.5245"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539820800000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.1055"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539907200000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.768"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540166400000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.4425"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540252800000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.083"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540339200000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.683"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540425600000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.3755"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540512000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.933"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540771200000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.481"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540857600000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.057249999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540944000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.78725"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541030400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.53775"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541116800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.26275"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541376000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.03825"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541462400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.032"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541548800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.107"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541635200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.2945"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541721600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.32"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541980800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.345"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542067200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.3825"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542153600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.3075"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542240000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.286500000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542326400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.174"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542585600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.094"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542672000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.9935"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542758400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.881"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542844800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.7385"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542931200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.696"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543190400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.686"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543276800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.653499999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543363200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.5435"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543449600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.518"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543536000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.393"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543795200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.243"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543881600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.893"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543968000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.543"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544054400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.128"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544140800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.8235"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544400000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.5295"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544486400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.1745"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544572800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.932"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544659200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.732"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544745600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.5695"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545004800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.3245"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545091200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.087"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545177600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.9245"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545264000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.662"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545350400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.387"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545609600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.1755"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545868800000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.938"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545955200000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.803"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546214400000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.678"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546387200000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.602999999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546473600000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.6205"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546560000000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.6305"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546819200000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.719"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546905600000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.944"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546992000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.073"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547078400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.312"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547164800000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.501999999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547424000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.6945"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547510400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.93675"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547596800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.14925"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547683200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.37475"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547769600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.66725"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548028800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.03725"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548115200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.47175"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548201600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.83175"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548288000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.163"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548374400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.5505"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548633600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.898"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548720000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.0855"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548806400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.255"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548892800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.4075"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548979200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.71"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549238400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.036500000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549324800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.2595"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549411200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.5745"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549497600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.7545"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549584000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.982"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549843200000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.157"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549929600000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.1781"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550016000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.2281"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550102400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.3026"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550188800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.3426"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550448000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.337599999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550534400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.29935"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550620800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.33935"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550707200000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.3446"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550793600000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.2921"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551052800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.2096"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551139200000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.25835"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551225600000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.29885"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551312000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.27885"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551398400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.06635"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551657600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.80135"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551744000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.54335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551830400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.25335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551916800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.02835"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552003200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.77835"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552262400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.55335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552348800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.3525"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552435200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.152499999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552521600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.927499999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552608000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.7565"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552867200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.579"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552953600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.41775"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553040000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.2505"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553126400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.1055"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553212800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.909000000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553472000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.7365"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553558400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.55025"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553644800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.39525"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553731200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.24525"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553817600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.22025"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554076800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.06025"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554163200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.96855"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554249600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.84355"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554336000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.70605"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554422400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.61855"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554681600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.606049999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554768000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.59255"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554854400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.65365"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554940800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.72865"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555027200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.75465"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555286400000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.79215"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555372800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.86965"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555459200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.9819"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555545600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.0719"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555977600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556064000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.428399999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556150400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.529399999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556236800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.6494"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556496000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.791399999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556582400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.8164"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556668800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9564"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556755200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9281"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556841600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9426"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557187200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9701"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557273600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9426"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557360000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9251"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557446400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9761"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557705600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.0025"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557792000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.0075"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557878400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.0075"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557964800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9735"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558051200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.923500000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558310400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.853500000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558396800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.7835"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558483200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.7335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558569600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.656"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558656000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.705"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559001600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.6925"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559088000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.638"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559174400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.7255"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559260800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.7455"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559520000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.8405"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559606400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.900999999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559692800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.9485"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559779200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.051"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559865600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.0935"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560124800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.081"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560211200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.031"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560297600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560384000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.951"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560470400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.885000000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560729600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.760000000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560816000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.685"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560902400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.61"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560988800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.510000000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561075200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.4"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561334400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.25"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561420800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.65"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561507200000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.980000000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561593600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.2675"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561680000000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.61"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561939200000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.985"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562025600000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.322500000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562112000000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.56"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562198400000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.785000000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562284800000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.010000000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562544000000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.235"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562630400000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.46"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562716800000"
+}
+},
+"pointValue": {
+"$numberDouble": "34.691250000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562803200000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.95375"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562889600000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.24125"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1563148800000"
+}
+},
+"pointValue": {
+"$numberDouble": "32.55375"
+}
+}
+],
+"dateTimeCreated": {
+"$date": {
+"$numberLong": "1563305662876"
+}
+}
+},
+"MOVING_AVERAGE_DURATION_50": {
+"series": [
+{
+"date": {
+"$date": {
+"$numberLong": "1537747200000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.75876"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537833600000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.94778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537920000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.107780000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538006400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.26778"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538092800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.44518"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538352000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.61338"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538438400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.80608"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538524800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.951080000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538611200000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.07108"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538697600000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.16108"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538956800000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.220879999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539043200000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.243379999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539129600000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.147380000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539216000000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.02838"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539302400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.97858"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539561600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.85858"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539648000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.72018"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539734400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.60018"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539820800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.45218"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539907200000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.350739999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540166400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.242740000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540252800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.11594"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540339200000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.95194000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540425600000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.84782"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540512000000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.71162"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540771200000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.55522"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540857600000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.4026"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540944000000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.257600000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541030400000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.077799999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541116800000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.9158"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541376000000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.746"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541462400000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.63"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541548800000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.548"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541635200000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.468"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541721600000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.368199999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541980800000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.2482"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542067200000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.1232"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542153600000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.953199999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542240000000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.805200000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542326400000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.632200000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542585600000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.4546"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542672000000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.2406"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542758400000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.8956"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542844800000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.6156"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542931200000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.34"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543190400000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.0928"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543276800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.8398"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543363200000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.59479999999999"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543449600000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.3688"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543536000000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.1388"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543795200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.9086"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543881600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.6446"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543968000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.4046"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544054400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.1586"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544140800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.923"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544400000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.680600000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544486400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.436099999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544572800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.243100000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544659200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.103100000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544745600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.9281"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545004800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.7483"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545091200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.5908"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545177600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.4508"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545264000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.3208"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545350400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.1408"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545609600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.0062"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545868800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.846199999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545955200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.706199999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546214400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.5978"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546387200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.4728"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546473600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.379799999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546560000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2636"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546819200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.218999999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546905600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.18600000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546992000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.178999999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547078400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.213"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547164800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.214"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547424000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.206"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547510400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2627"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547596800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.282700000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547683200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2829"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547769600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2449"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548028800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2229"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548115200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.1917"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548201600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.1455"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548288000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.1334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548374400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.1134"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548633600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.142399999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548720000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.117399999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548806400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.1052"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548892800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.1052"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548979200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.150200000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549238400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2812"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549324800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.3944"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549411200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.5304"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549497600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.6404"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549584000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.7454"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549843200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.851400000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549929600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.92674"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550016000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.01674"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550102400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.10674"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550188800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.224740000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550448000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.34074"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550534400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.460240000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550620800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.55184"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550707200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.659440000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550793600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.760439999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551052800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.85344"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551139200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.92794"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551225600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.99694"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551312000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.086940000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551398400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.141940000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551657600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.23194"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551744000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.346940000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551830400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.476940000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551916800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.581540000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552003200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.681540000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552262400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.751540000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552348800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.79654000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552435200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.83654000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552521600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.829539999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552608000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.87514"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552867200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.88474"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552953600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.849740000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553040000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.82284"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553126400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.77684"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553212800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.72324"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553472000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.67024000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553558400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.57334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553644800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.49534"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553731200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.435140000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553817600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.36314"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554076800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.241139999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554163200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.14566"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554249600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.08166"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554336000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.998760000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554422400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.90876"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554681600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.834759999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554768000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.79936"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554854400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.79600000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554940800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.758"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555027200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.693000000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555286400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.586999999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555372800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.4938"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555459200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.385799999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555545600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.3038"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555977600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.223800000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556064000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.1788"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556150400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.11386"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556236800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.063860000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556496000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.03066"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556582400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.952659999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556668800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.88866"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556755200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.797160000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556841600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.72296"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557187200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.648959999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557273600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.56896"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557360000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.52096"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557446400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.486459999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557705600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.47746"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557792000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.44946"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557878400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.46946"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557964800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.45586"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558051200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.44586"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558310400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.42586"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558396800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.405860000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558483200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.405860000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558569600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.41986"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558656000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.45486"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559001600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.47986"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559088000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.51486"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559174400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.540259999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559260800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.55526"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559520000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.56626"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559606400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.58316"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559692800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.58616"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559779200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.62576"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559865600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.66376"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560124800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.69876"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560211200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.73176"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560297600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.751760000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560384000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.76176"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560470400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.78576"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560729600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.76244"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560816000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.76244"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560902400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.76743999999999"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560988800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.76244"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561075200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.73744"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561334400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.717839999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561420800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.4784"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561507200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.2154"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561593600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.9454"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561680000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.6824"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561939200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.4124"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562025600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.1194"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562112000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.781400000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562198400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.446400000000004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562284800000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.0964"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562544000000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.781"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562630400000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.455999999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562716800000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.1117"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562803200000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.8167"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562889600000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.4997"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1563148800000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.2127"
+}
+}
+],
+"dateTimeCreated": {
+"$date": {
+"$numberLong": "1563305662877"
+}
+}
+},
+"MOVING_AVERAGE_DURATION_200": {
+"series": [
+{
+"date": {
+"$date": {
+"$numberLong": "1556496000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.70119"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556582400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.692445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556668800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.685445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556755200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.670945"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556841600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.660745"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557187200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.650595"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557273600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.642894999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557360000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.642145"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557446400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.647145"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557705600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.640895"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557792000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.626395"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557878400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.611395"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557964800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.571495000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558051200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.535495"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558310400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.505545000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558396800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.463045"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558483200000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.413445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558569600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.369445"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558656000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.325345"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559001600000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.284985"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559088000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.241735"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559174400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.198735"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559260800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.152735"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559520000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.112455"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559606400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.074155"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559692800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.032804999999996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559779200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.991400000000006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559865600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.9494"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560124800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.90315"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560211200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.8564"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560297600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.80395000000001"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560384000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.74995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560470400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.69945"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560729600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.641949999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560816000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.58945"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560902400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.53695"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560988800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.476949999999995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561075200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.41695"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561334400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.35995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561420800000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.25295"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561507200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.1333"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561593600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.007299999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561680000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.861549999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561939200000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.72905"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562025600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.593900000000005"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562112000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.4546"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562198400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.31385"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562284800000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.18035"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562544000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.0476"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562630400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.91885"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562716800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.789425"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562803200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.659675"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562889600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.533424999999994"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1563148800000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.407174999999995"
+}
+}
+],
+"dateTimeCreated": {
+"$date": {
+"$numberLong": "1563305662878"
+}
+}
+},
+"RSI_14": {
+"series": [
+{
+"date": {
+"$date": {
+"$numberLong": "1531785600000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1531872000000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1531958400000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532044800000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532304000000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532390400000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532476800000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532563200000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532649600000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532908800000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1532995200000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533081600000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533168000000"
+}
+},
+"pointValue": {
+"$numberInt": "0"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533254400000"
+}
+},
+"pointValue": {
+"$numberDouble": "76.96750400111337"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533513600000"
+}
+},
+"pointValue": {
+"$numberDouble": "79.18269207510295"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533600000000"
+}
+},
+"pointValue": {
+"$numberDouble": "74.20329288056081"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533686400000"
+}
+},
+"pointValue": {
+"$numberDouble": "75.67177229303267"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533772800000"
+}
+},
+"pointValue": {
+"$numberDouble": "68.05065661507129"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1533859200000"
+}
+},
+"pointValue": {
+"$numberDouble": "69.33399889802108"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534118400000"
+}
+},
+"pointValue": {
+"$numberDouble": "70.33312816447426"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534204800000"
+}
+},
+"pointValue": {
+"$numberDouble": "69.52003937799465"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534291200000"
+}
+},
+"pointValue": {
+"$numberDouble": "63.49148767535452"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534377600000"
+}
+},
+"pointValue": {
+"$numberDouble": "61.503309460101384"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534464000000"
+}
+},
+"pointValue": {
+"$numberDouble": "62.648403042183034"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534723200000"
+}
+},
+"pointValue": {
+"$numberDouble": "62.68492690887859"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534809600000"
+}
+},
+"pointValue": {
+"$numberDouble": "63.10523837971689"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534896000000"
+}
+},
+"pointValue": {
+"$numberDouble": "66.04708895108934"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1534982400000"
+}
+},
+"pointValue": {
+"$numberDouble": "66.38666206724602"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535068800000"
+}
+},
+"pointValue": {
+"$numberDouble": "69.32693810983088"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535414400000"
+}
+},
+"pointValue": {
+"$numberDouble": "67.96021824703078"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535500800000"
+}
+},
+"pointValue": {
+"$numberDouble": "57.11144485463257"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535587200000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.689240861437995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535673600000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.689240861437995"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1535932800000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.689240861438"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536019200000"
+}
+},
+"pointValue": {
+"$numberDouble": "64.76795738720017"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536105600000"
+}
+},
+"pointValue": {
+"$numberDouble": "64.76795738720017"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536192000000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.40664284923102"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536278400000"
+}
+},
+"pointValue": {
+"$numberDouble": "61.567890564154226"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536537600000"
+}
+},
+"pointValue": {
+"$numberDouble": "66.36923061967876"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536624000000"
+}
+},
+"pointValue": {
+"$numberDouble": "69.68937660195346"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536710400000"
+}
+},
+"pointValue": {
+"$numberDouble": "79.75132828484493"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536796800000"
+}
+},
+"pointValue": {
+"$numberDouble": "68.38108920627978"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1536883200000"
+}
+},
+"pointValue": {
+"$numberDouble": "67.24536882410419"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537142400000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.285534975261996"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537228800000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.409837544745564"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537315200000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.832250286338684"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537401600000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.18708193598952"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537488000000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.76169899150938"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537747200000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.80521572172813"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537833600000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.679370245843195"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1537920000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.312070461983616"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538006400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.312070461983616"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538092800000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.96843659504843"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538352000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.756149870445114"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538438400000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.0182162921975"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538524800000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.10468174120868"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538611200000"
+}
+},
+"pointValue": {
+"$numberDouble": "31.351115832380614"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538697600000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.40243051860986"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1538956800000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.780025912101365"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539043200000"
+}
+},
+"pointValue": {
+"$numberDouble": "32.50860353004714"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539129600000"
+}
+},
+"pointValue": {
+"$numberDouble": "28.74512855504439"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539216000000"
+}
+},
+"pointValue": {
+"$numberDouble": "26.22962925005004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539302400000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.92876019872074"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539561600000"
+}
+},
+"pointValue": {
+"$numberDouble": "34.531660152859544"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539648000000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.7426518030126"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539734400000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.7426518030126"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539820800000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.14582831029908"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1539907200000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.21685865562826"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540166400000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.42980624305833"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540252800000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.79568934255122"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540339200000"
+}
+},
+"pointValue": {
+"$numberDouble": "32.918081130373295"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540425600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.676419023174155"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540512000000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.17727580496901"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540771200000"
+}
+},
+"pointValue": {
+"$numberDouble": "34.580289106650824"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540857600000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.52341311416433"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1540944000000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.93248217035672"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541030400000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.39722994648686"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541116800000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.18619034402488"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541376000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.50435637961184"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541462400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.43136598758803"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541548800000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.43136598758803"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541635200000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.95889855697149"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541721600000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.85881402767578"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1541980800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.99521163479017"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542067200000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.91939324659288"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542153600000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.09129157064423"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542240000000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.11074007282291"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542326400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.90769872022417"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542585600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.648150926751185"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542672000000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.68811367491499"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542758400000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.343248200214575"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542844800000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.54169771949453"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1542931200000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.54169771949453"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543190400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.541697719494536"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543276800000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.711220872743596"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543363200000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.33526686411558"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543449600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.32738350791338"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543536000000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.06316223922058"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543795200000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.06316223922059"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543881600000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.46491767089077"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1543968000000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.46491767089077"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544054400000"
+}
+},
+"pointValue": {
+"$numberDouble": "32.552750878837315"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544140800000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.745534477263746"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544400000000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.961961552287384"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544486400000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.39365059893335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544572800000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.39365059893335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544659200000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.39458033648339"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1544745600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.34866647769591"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545004800000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.28924019568145"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545091200000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.45315023418564"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545177600000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.823771829052106"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545264000000"
+}
+},
+"pointValue": {
+"$numberDouble": "31.385762340277907"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545350400000"
+}
+},
+"pointValue": {
+"$numberDouble": "30.59414534442233"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545609600000"
+}
+},
+"pointValue": {
+"$numberDouble": "39.00985067029053"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545868800000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.14797920016334"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1545955200000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.08986589729574"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546214400000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.364729810956035"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546387200000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.364729810956035"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546473600000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.969700972650735"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546560000000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.373794373151654"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546819200000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.67679861455986"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546905600000"
+}
+},
+"pointValue": {
+"$numberDouble": "62.34056851102792"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1546992000000"
+}
+},
+"pointValue": {
+"$numberDouble": "59.233398757046835"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547078400000"
+}
+},
+"pointValue": {
+"$numberDouble": "63.185497913523534"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547164800000"
+}
+},
+"pointValue": {
+"$numberDouble": "57.01990987500299"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547424000000"
+}
+},
+"pointValue": {
+"$numberDouble": "57.17509147335398"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547510400000"
+}
+},
+"pointValue": {
+"$numberDouble": "63.7801551734612"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547596800000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.17835649509769"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547683200000"
+}
+},
+"pointValue": {
+"$numberDouble": "58.1283925136507"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1547769600000"
+}
+},
+"pointValue": {
+"$numberDouble": "59.899700727322724"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548028800000"
+}
+},
+"pointValue": {
+"$numberDouble": "62.23269238920639"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548115200000"
+}
+},
+"pointValue": {
+"$numberDouble": "63.765123006361335"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548201600000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.895057076229115"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548288000000"
+}
+},
+"pointValue": {
+"$numberDouble": "58.11855664122949"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548374400000"
+}
+},
+"pointValue": {
+"$numberDouble": "59.24866441701433"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548633600000"
+}
+},
+"pointValue": {
+"$numberDouble": "59.905072590687354"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548720000000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.30599976779532"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548806400000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.924482147360074"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548892800000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.56115763253053"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1548979200000"
+}
+},
+"pointValue": {
+"$numberDouble": "58.92554752440861"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549238400000"
+}
+},
+"pointValue": {
+"$numberDouble": "64.50141120208522"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549324800000"
+}
+},
+"pointValue": {
+"$numberDouble": "65.38994903885512"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549411200000"
+}
+},
+"pointValue": {
+"$numberDouble": "68.11190125994314"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549497600000"
+}
+},
+"pointValue": {
+"$numberDouble": "62.11284587619871"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549584000000"
+}
+},
+"pointValue": {
+"$numberDouble": "59.926639638769146"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549843200000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.703758303574794"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1549929600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.76846136672021"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550016000000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.6997800687028"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550102400000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.6997800687028"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550188800000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.24894590317956"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550448000000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.772143639583796"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550534400000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.14413129630766"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550620800000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.226113817391685"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550707200000"
+}
+},
+"pointValue": {
+"$numberDouble": "49.226113817391685"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1550793600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.87083196823378"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551052800000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.830375725866425"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551139200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.65794246107676"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551225600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.83926980632206"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551312000000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.931354838032036"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551398400000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.822087647024006"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551657600000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.19208477734416"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551744000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.13917878458029"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551830400000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.00452669170633"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1551916800000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.00452669170633"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552003200000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.189982244000504"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552262400000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.992667510419004"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552348800000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.90389001903304"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552435200000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.797374019496495"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552521600000"
+}
+},
+"pointValue": {
+"$numberDouble": "34.620553603511695"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552608000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.87804817600675"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552867200000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.735166114305194"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1552953600000"
+}
+},
+"pointValue": {
+"$numberDouble": "42.21202600462643"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553040000000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.60473110414448"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553126400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.06466867780561"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553212800000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.028013995359785"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553472000000"
+}
+},
+"pointValue": {
+"$numberDouble": "35.64930349034813"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553558400000"
+}
+},
+"pointValue": {
+"$numberDouble": "36.86829682167716"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553644800000"
+}
+},
+"pointValue": {
+"$numberDouble": "37.715372810522084"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553731200000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.11864982234312"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1553817600000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.11864982234312"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554076800000"
+}
+},
+"pointValue": {
+"$numberDouble": "32.39413768037764"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554163200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.95045558442109"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554249600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.08436273024126"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554336000000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.74702899017136"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554422400000"
+}
+},
+"pointValue": {
+"$numberDouble": "43.74702899017137"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554681600000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.551527247474475"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554768000000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.83393217436165"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554854400000"
+}
+},
+"pointValue": {
+"$numberDouble": "56.20533621560439"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1554940800000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.68869859375225"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555027200000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.68869859375225"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555286400000"
+}
+},
+"pointValue": {
+"$numberDouble": "54.688698593752264"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555372800000"
+}
+},
+"pointValue": {
+"$numberDouble": "60.66084418545853"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555459200000"
+}
+},
+"pointValue": {
+"$numberDouble": "62.77438393114793"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555545600000"
+}
+},
+"pointValue": {
+"$numberDouble": "62.77438393114792"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1555977600000"
+}
+},
+"pointValue": {
+"$numberDouble": "59.092364165834105"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556064000000"
+}
+},
+"pointValue": {
+"$numberDouble": "63.42430216859506"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556150400000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.21497672459757"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556236800000"
+}
+},
+"pointValue": {
+"$numberDouble": "53.13162877175612"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556496000000"
+}
+},
+"pointValue": {
+"$numberDouble": "57.79183475494441"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556582400000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.51362630431133"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556668800000"
+}
+},
+"pointValue": {
+"$numberDouble": "47.823905639754116"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556755200000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.20543698063396"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1556841600000"
+}
+},
+"pointValue": {
+"$numberDouble": "44.9776330632448"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557187200000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.032675453387746"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557273600000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.26150051367278"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557360000000"
+}
+},
+"pointValue": {
+"$numberDouble": "46.87416657418057"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557446400000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.10758154636042"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557705600000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.33808367458916"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557792000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.06053843339324"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557878400000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.55463961909781"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1557964800000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.129634935628694"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558051200000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.592910650958274"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558310400000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.592910650958274"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558396800000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.592910650958274"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558483200000"
+}
+},
+"pointValue": {
+"$numberDouble": "51.59291065095826"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558569600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.838612623097575"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1558656000000"
+}
+},
+"pointValue": {
+"$numberDouble": "57.54491250898586"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559001600000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.27786950146771"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559088000000"
+}
+},
+"pointValue": {
+"$numberDouble": "52.27786950146771"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559174400000"
+}
+},
+"pointValue": {
+"$numberDouble": "55.431874698477465"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559260800000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.084708604395146"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559520000000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.084708604395146"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559606400000"
+}
+},
+"pointValue": {
+"$numberDouble": "50.084708604395146"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559692800000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.15095212304055"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559779200000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.15095212304055"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1559865600000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.15095212304055"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560124800000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.15095212304055"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560211200000"
+}
+},
+"pointValue": {
+"$numberDouble": "48.15095212304056"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560297600000"
+}
+},
+"pointValue": {
+"$numberDouble": "45.60065306643203"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560384000000"
+}
+},
+"pointValue": {
+"$numberDouble": "40.93130256046605"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560470400000"
+}
+},
+"pointValue": {
+"$numberDouble": "33.53522695499045"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560729600000"
+}
+},
+"pointValue": {
+"$numberDouble": "30.561661982290758"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560816000000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.696534109772806"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560902400000"
+}
+},
+"pointValue": {
+"$numberDouble": "41.6965341097728"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1560988800000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.14913552401768"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561075200000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.14913552401768"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561334400000"
+}
+},
+"pointValue": {
+"$numberDouble": "38.14913552401768"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561420800000"
+}
+},
+"pointValue": {
+"$numberDouble": "12.418165933417924"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561507200000"
+}
+},
+"pointValue": {
+"$numberDouble": "11.245294552234597"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561593600000"
+}
+},
+"pointValue": {
+"$numberDouble": "10.96643652418308"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561680000000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.282257395703567"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1561939200000"
+}
+},
+"pointValue": {
+"$numberDouble": "17.57035472672264"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562025600000"
+}
+},
+"pointValue": {
+"$numberDouble": "16.553234859384148"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562112000000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.945154967371067"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562198400000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.687112010834724"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562284800000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.687112010834724"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562544000000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.687112010834724"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562630400000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.687112010834724"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562716800000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.518876373104135"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562803200000"
+}
+},
+"pointValue": {
+"$numberDouble": "14.648675220021715"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1562889600000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.868224744963285"
+}
+},
+{
+"date": {
+"$date": {
+"$numberLong": "1563148800000"
+}
+},
+"pointValue": {
+"$numberDouble": "13.868224744963285"
+}
+}
+],
+"dateTimeCreated": {
+"$date": {
+"$numberLong": "1563305662878"
+}
+}
+}
+}
+}

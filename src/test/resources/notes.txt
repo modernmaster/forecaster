@@ -1,1 +1,0 @@
-highcharts-series-group is the class within svg that contains lines to be tracked

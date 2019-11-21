@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forecaster-data-acquisition
+  labels:
+    app: data-acquisition-service
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-acquisition-service
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: data-acquisition-service
+        tier: backend
+    spec:
+      containers:
+      - name: data-acquisition-service
+        image: forecaster-data-acquisition
+        ports:
+        - name: http-server
+          containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: spring.rabbitmq.host
+          value: rabbitmq-service
+        - name: spring.rabbitmq.port
+          value: "5672"
+        - name: JOB_DB_ADDR
+          value: data-acquisition-mongodb:27018
+        - name: STOCK_API_ADDR
+          value: forecaster-stock:8088
