@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: forecaster-stock
+  labels:
+    app: stock-service
+    tier: backend
+spec:
+  type: ClusterIP
+  selector:
+    app: stock-service
+    tier: backend
+  ports:
+  - port: 8088
+    targetPort: 8080

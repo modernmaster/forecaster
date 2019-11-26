@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: forecaster-data-acquisition
+  labels:
+    app: data-acquisition-service
+    tier: backend
+spec:
+  type: ClusterIP
+  selector:
+    app: data-acquisition-service
+    tier: backend
+  ports:
+#  - port: 8081
+  - port: 8080
+    targetPort: 8080

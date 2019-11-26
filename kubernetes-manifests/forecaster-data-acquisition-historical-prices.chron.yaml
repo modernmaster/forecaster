@@ -1,0 +1,24 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: historical-prices-update
+spec:
+  schedule: "*/30 * * * *"
+  failedJobsHistoryLimit: 3
+  successfulJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: historical-prices-update
+              image: buildpack-deps:curl
+              args:
+                - /bin/sh
+                - -ec
+                - sleep 300
+                - curl -X POST --header "ContentType:Application/json" "http://${FORECASTER_DATA_ACQUISITION_SERVICE}/api/data-acquisition/historical-prices/"
+              env:
+                - name: FORECASTER_DATA_ACQUISITION_SERVICE
+                  value: forecaster-data-acquisition:8080
+          restartPolicy: Never

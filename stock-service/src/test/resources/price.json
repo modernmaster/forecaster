@@ -1,0 +1,19 @@
+{
+  "date": {
+    "$date": {
+      "$numberLong": "1531699200000"
+    }
+  },
+  "closing": {
+    "$numberDouble": "44.749"
+  },
+  "opening": {
+    "$numberDouble": "45.2"
+  },
+  "daysHigh": {
+    "$numberInt": "46"
+  },
+  "daysLow": {
+    "$numberDouble": "43.21"
+  }
+}

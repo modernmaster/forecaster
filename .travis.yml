@@ -1,6 +1,5 @@
 language: java
 jdk:
-  - oraclejdk9
-install:
-- mvn -N io.takari:maven:wrapper
-- ./mvnw clean
+  - oraclejdk11
+before_install:
+  - chmod +x mvnw

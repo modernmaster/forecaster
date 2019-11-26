@@ -1,0 +1,49 @@
+{
+  "name": "forecaster",
+  "version": "0.1.0",
+  "description": "FTSE Stock Market Watcher",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:modernmaster/forecaster.git"
+  },
+  "keywords": [
+    "rest",
+    "hateoas",
+    "spring",
+    "data",
+    "react"
+  ],
+  "author": "James McGuigan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/modernmaster/forecaster/issues"
+  },
+  "homepage": "https://github.com/modernmaster/forecaster",
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.1.2",
+    "react-web-notification": "^0.7.0",
+    "rest": "^2.0.0",
+    "sockjs-client": "^1.3.0",
+    "stompjs": "^2.3.3",
+    "when": "^3.7.8"
+  },
+  "scripts": {
+    "watch": "webpack --watch -d"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.3.1",
+    "highcharts": "^7.0.3",
+    "highcharts-react-official": "^2.1.1",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
