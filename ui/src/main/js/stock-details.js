@@ -10,21 +10,21 @@ class StockDetails extends React.Component {
     var stock = this.props.stocks.find(x=>x.key===symbol).props.stock;
 
     return (
-        <aside class="col-6">
+        <aside className="col-6">
           <h2>{symbol}</h2>
           <figure>
             <Chart stock={stock}/>
           </figure>
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#details" data-toggle="tab">Stock Details</a>
+          <ul className="nav nav-tabs">
+            <li className="nav-item">
+              <a className="nav-link active" href="#details" data-toggle="tab">Stock Details</a>
             </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#trends" data-toggle="tab">Current Trends</a>
+            <li className="nav-item">
+               <a className="nav-link" href="#trends" data-toggle="tab">Current Trends</a>
             </li>
            </ul>
-          <div class="tab-content">
-          <section role="tabpanel" class="tab-pane container active" id="details">
+          <div className="tab-content">
+          <section role="tabpanel" className="tab-pane container active" id="details">
           <h3>Stock details</h3>
           <table>
           <tbody>
@@ -123,7 +123,7 @@ class StockDetails extends React.Component {
 
           </table>
         </section>
-      <section role="tabpanel" class="tab-pane container" id="trends">
+      <section role="tabpanel" className="tab-pane container" id="trends">
           <h3>Current Trends</h3>
           List of trends here...
       </section>

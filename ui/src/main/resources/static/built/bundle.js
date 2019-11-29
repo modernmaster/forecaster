@@ -50153,6 +50153,7 @@ function (_React$Component) {
     _this.updatePageSize = _this.updatePageSize.bind(_assertThisInitialized(_this));
     _this.onNavigate = _this.onNavigate.bind(_assertThisInitialized(_this));
     _this.refreshCurrentPage = _this.refreshCurrentPage.bind(_assertThisInitialized(_this));
+    _this.onSearch = _this.onSearch.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -50211,6 +50212,33 @@ function (_React$Component) {
   }, {
     key: "onNavigate",
     value: function onNavigate(navUri) {
+      this.searchForStockCollection(navUri);
+    }
+  }, {
+    key: "updatePageSize",
+    value: function updatePageSize(pageSize) {
+      if (pageSize !== this.state.pageSize) {
+        this.loadFromServer(pageSize);
+      }
+    }
+  }, {
+    key: "onSearch",
+    value: function onSearch(searchCriteria) {
+      if (searchCriteria.toUpperCase().indexOf('LON:') > -1) {
+        this.searchBySymbol(searchCriteria);
+      } else {
+        this.searchByCompanyName(searchCriteria);
+      }
+    }
+  }, {
+    key: "searchByCompanyName",
+    value: function searchByCompanyName(companyName) {
+      var navUri = root + '/stocks/search/findByCompanyNameStartsWith?companyName=' + companyName.toUpperCase();
+      this.searchForStockCollection(navUri);
+    }
+  }, {
+    key: "searchForStockCollection",
+    value: function searchForStockCollection(navUri) {
       var _this3 = this;
 
       client({
@@ -50238,16 +50266,27 @@ function (_React$Component) {
       });
     }
   }, {
-    key: "updatePageSize",
-    value: function updatePageSize(pageSize) {
-      if (pageSize !== this.state.pageSize) {
-        this.loadFromServer(pageSize);
-      }
+    key: "searchBySymbol",
+    value: function searchBySymbol(symbol) {
+      var _this4 = this;
+
+      var navUri = root + '/stocks/search/findBySymbol?symbol=' + symbol.toUpperCase();
+      client({
+        method: 'GET',
+        path: navUri
+      }).then(function (stock) {
+        _this4.setState({
+          page: _this4.page,
+          stocks: [stock],
+          pageSize: _this4.state.pageSize,
+          links: _this4.links
+        });
+      });
     }
   }, {
     key: "refreshCurrentPage",
     value: function refreshCurrentPage(message) {
-      var _this4 = this;
+      var _this5 = this;
 
       var updatedStock = message.body; //JSON.parse(message.body);
 
@@ -50259,8 +50298,8 @@ function (_React$Component) {
           page: this.state.page.number
         }
       }]).then(function (stockCollection) {
-        _this4.links = stockCollection.entity._links;
-        _this4.page = stockCollection.entity.page;
+        _this5.links = stockCollection.entity._links;
+        _this5.page = stockCollection.entity.page;
         return stockCollection.entity._embedded.stocks.map(function (stock) {
           return client({
             method: 'GET',
@@ -50270,7 +50309,7 @@ function (_React$Component) {
       }).then(function (stockPromises) {
         return when.all(stockPromises);
       }).then(function (stocks) {
-        var stock = _this4.state.stocks.find(function (x) {
+        var stock = _this5.state.stocks.find(function (x) {
           return x.url.includes(updatedStock);
         });
 
@@ -50282,14 +50321,14 @@ function (_React$Component) {
           //                updatedStock._changeEvent = 'decrease';
           //              }
 
-          _this4.setState({
-            page: _this4.page,
-            stocks: _this4.state.stocks.map(function (x) {
+          _this5.setState({
+            page: _this5.page,
+            stocks: _this5.state.stocks.map(function (x) {
               return x.url.includes(updatedStock) ? stock : x;
             }),
-            attributes: Object.keys(_this4.schema.properties),
-            pageSize: _this4.state.pageSize,
-            links: _this4.links
+            attributes: Object.keys(_this5.schema.properties),
+            pageSize: _this5.state.pageSize,
+            links: _this5.links
           });
         }
       });
@@ -50302,7 +50341,8 @@ function (_React$Component) {
         links: this.state.links,
         pageSize: this.state.pageSize,
         onNavigate: this.onNavigate,
-        updatePageSize: this.updatePageSize
+        updatePageSize: this.updatePageSize,
+        onSearch: this.onSearch
       }), React.createElement("footer", null)));
     }
   }]);
@@ -50666,32 +50706,32 @@ function (_React$Component) {
         return x.key === symbol;
       }).props.stock;
       return React.createElement("aside", {
-        "class": "col-6"
+        className: "col-6"
       }, React.createElement("h2", null, symbol), React.createElement("figure", null, React.createElement(_chart_js__WEBPACK_IMPORTED_MODULE_0__["default"], {
         stock: stock
       })), React.createElement("ul", {
-        "class": "nav nav-tabs"
+        className: "nav nav-tabs"
       }, React.createElement("li", {
-        "class": "nav-item"
+        className: "nav-item"
       }, React.createElement("a", {
-        "class": "nav-link active",
+        className: "nav-link active",
         href: "#details",
         "data-toggle": "tab"
       }, "Stock Details")), React.createElement("li", {
-        "class": "nav-item"
+        className: "nav-item"
       }, React.createElement("a", {
-        "class": "nav-link",
+        className: "nav-link",
         href: "#trends",
         "data-toggle": "tab"
       }, "Current Trends"))), React.createElement("div", {
-        "class": "tab-content"
+        className: "tab-content"
       }, React.createElement("section", {
         role: "tabpanel",
-        "class": "tab-pane container active",
+        className: "tab-pane container active",
         id: "details"
       }, React.createElement("h3", null, "Stock details"), React.createElement("table", null, React.createElement("tbody", null, React.createElement("tr", null, React.createElement("td", null, "Admission Date"), React.createElement("td", null, stock.admissionDate)), React.createElement("tr", null, React.createElement("td", null, "Company Name"), React.createElement("td", null, stock.companyName)), React.createElement("tr", null, React.createElement("td", null, "Symbol"), React.createElement("td", null, stock.symbol)), React.createElement("tr", null, React.createElement("td", null, "ICB Industry"), React.createElement("td", null, stock.icbIndustry)), React.createElement("tr", null, React.createElement("td", null, "ICB Super Sector"), React.createElement("td", null, stock.icbSuperSector)), React.createElement("tr", null, React.createElement("td", null, "Country Of Incorporation"), React.createElement("td", null, stock.countryOfIncorporation)), React.createElement("tr", null, React.createElement("td", null, "World Region"), React.createElement("td", null, stock.worldRegion)), React.createElement("tr", null, React.createElement("td", null, "Market"), React.createElement("td", null, stock.market)), React.createElement("tr", null, React.createElement("td", null, "International Issuer"), React.createElement("td", null, stock.internationalIssuer)), React.createElement("tr", null, React.createElement("td", null, "Company Market Cap"), React.createElement("td", null, stock.companyMarketCap)), React.createElement("tr", null, React.createElement("td", null, "Price"), React.createElement("td", null, stock.price)), React.createElement("tr", null, React.createElement("td", null, "Percentage Change"), React.createElement("td", null, stock.percentageChange)), React.createElement("tr", null, React.createElement("td", null, "Volume"), React.createElement("td", null, stock.volume)), React.createElement("tr", null, React.createElement("td", null, "Avg Volume"), React.createElement("td", null, stock.avgVolume)), React.createElement("tr", null, React.createElement("td", null, "PE"), React.createElement("td", null, stock.pe)), React.createElement("tr", null, React.createElement("td", null, "High 52"), React.createElement("td", null, stock.high52)), React.createElement("tr", null, React.createElement("td", null, "Low 52"), React.createElement("td", null, stock.low52)), React.createElement("tr", null, React.createElement("td", null, "Delay"), React.createElement("td", null, stock.delay))))), React.createElement("section", {
         role: "tabpanel",
-        "class": "tab-pane container",
+        className: "tab-pane container",
         id: "trends"
       }, React.createElement("h3", null, "Current Trends"), "List of trends here...")));
     }
@@ -50740,6 +50780,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
 var StockList =
 /*#__PURE__*/
 function (_React$Component) {
@@ -50756,6 +50798,7 @@ function (_React$Component) {
     _this.handleNavNext = _this.handleNavNext.bind(_assertThisInitialized(_this));
     _this.handleNavLast = _this.handleNavLast.bind(_assertThisInitialized(_this));
     _this.handleInput = _this.handleInput.bind(_assertThisInitialized(_this));
+    _this.handleInputSearch = _this.handleInputSearch.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -50769,6 +50812,16 @@ function (_React$Component) {
         this.props.updatePageSize(pageSize);
       } else {
         ReactDOM.findDOMNode(this.refs.pageSize).value = pageSize.substring(0, pageSize.length - 1);
+      }
+    }
+  }, {
+    key: "handleInputSearch",
+    value: function handleInputSearch(e) {
+      e.preventDefault();
+      var searchCriteria = ReactDOM.findDOMNode(this.refs.search).value;
+
+      if (searchCriteria.length > 3) {
+        this.props.onSearch(searchCriteria);
       }
     }
   }, {
@@ -50849,6 +50902,10 @@ function (_React$Component) {
         ref: "pageSize",
         defaultValue: this.props.pageSize,
         onInput: this.handleInput
+      }), React.createElement("input", {
+        ref: "search",
+        defaultValue: "",
+        onInput: this.handleInputSearch
       })), React.createElement("table", null, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "Company Name"), React.createElement("th", null, "Symbol"), React.createElement("th", null, "Percentage Change"), React.createElement("th", null, "Volume"), React.createElement("th", null, "Avg Volume"))), React.createElement("tbody", null, stocks)), React.createElement("div", null, navLinks)), React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["Route"], {
         path: "/stock/:topicId",
         render: function render(props) {

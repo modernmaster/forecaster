@@ -21,6 +21,7 @@ class App extends React.Component {
     this.updatePageSize = this.updatePageSize.bind(this);
     this.onNavigate = this.onNavigate.bind(this);
     this.refreshCurrentPage = this.refreshCurrentPage.bind(this);
+    this.onSearch = this.onSearch.bind(this);
   }
 
   componentDidMount() {
@@ -65,36 +66,67 @@ class App extends React.Component {
 	}
 
     onNavigate(navUri) {
-        client({
-            method: 'GET',
-            path: navUri
-        }).then(stockCollection => {
-            this.links = stockCollection.entity._links;
-            this.page = stockCollection.entity.page;
-
-            return stockCollection.entity._embedded.stocks.map(stock =>
-                    client({
-                        method: 'GET',
-                        path: stock._links.self.href
-                    })
-            );
-        }).then(stockPromises => {
-            return when.all(stockPromises);
-        }).then(stocks => {
-            this.setState({
-                page: this.page,
-                stocks: stocks,
-                attributes: Object.keys(this.schema.properties),
-                pageSize: this.state.pageSize,
-                links: this.links
-            });
-        });
+        this.searchForStockCollection(navUri);
     }
 
   updatePageSize(pageSize) {
     if (pageSize !== this.state.pageSize) {
       this.loadFromServer(pageSize);
     }
+  }
+
+  onSearch(searchCriteria) {
+    if(searchCriteria.toUpperCase().indexOf('LON:')>-1) {
+        this.searchBySymbol(searchCriteria);
+    } else {
+        this.searchByCompanyName(searchCriteria);
+    }
+  }
+
+  searchByCompanyName(companyName) {
+      const navUri = root+'/stocks/search/findByCompanyNameStartsWith?companyName='+companyName.toUpperCase();
+      this.searchForStockCollection(navUri);
+  }
+
+  searchForStockCollection(navUri) {
+      client({
+          method: 'GET',
+          path: navUri
+      }).then(stockCollection => {
+          this.links = stockCollection.entity._links;
+          this.page = stockCollection.entity.page;
+          return stockCollection.entity._embedded.stocks.map(stock =>
+                  client({
+                      method: 'GET',
+                      path: stock._links.self.href
+                  })
+          );
+      }).then(stockPromises => {
+          return when.all(stockPromises);
+      }).then(stocks => {
+          this.setState({
+              page: this.page,
+              stocks: stocks,
+              attributes: Object.keys(this.schema.properties),
+              pageSize: this.state.pageSize,
+              links: this.links
+          });
+      });
+  }
+
+  searchBySymbol(symbol) {
+      const navUri = root+'/stocks/search/findBySymbol?symbol='+symbol.toUpperCase();
+      client({
+          method: 'GET',
+          path: navUri
+      }).then(stock => {
+          this.setState({
+              page: this.page,
+              stocks: [stock],
+              pageSize: this.state.pageSize,
+              links: this.links
+          });
+      });
   }
 
   refreshCurrentPage(message) {
@@ -147,7 +179,8 @@ class App extends React.Component {
                  links={this.state.links}
                  pageSize={this.state.pageSize}
                  onNavigate={this.onNavigate}
-                 updatePageSize={this.updatePageSize}/>
+                 updatePageSize={this.updatePageSize}
+                 onSearch={this.onSearch}/>
         <footer>
         </footer>
         </div>
