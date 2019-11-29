@@ -2,16 +2,33 @@ import { BrowserRouter as Route, Link } from "react-router-dom";
 
 class Stock extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
+    constructor(props) {
+        super(props);
+        this.state = {changeEvent: ''}
+    }
+
+      componentDidUpdate(prevProps, prevState) {
+         if(typeof this.props.changeEvent !== 'undefined') {
+            if( prevProps.changeEvent!==this.state.changeEvent) {
+                setTimeout(this.setState({changeEvent: this.props.changeEvent}),1000);
+                this.setTimer();
+            }
+         }
+      }
+
+    setTimer(){
+        this._timer != null ? clearTimeout(this._timer) : null;
+        this._timer = setTimeout(function(){
+            this.setState({changeEvent: ''})
+            this._timer = null;
+        }.bind(this), 5000);
+    }
 
   render() {
     let className = 'stock';
-    if (this.props.stock._changeEvent) {
-      className += ' ' + this.props.stock._changeEvent;
+    if (this.state.changeEvent !== '') {
+        className += ' ' + this.props.changeEvent;
     }
-
     return (
         <tr className={className}>
           <td>{this.props.stock.companyName}</td>

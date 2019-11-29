@@ -93,7 +93,7 @@ public class StockControllerTests {
 
         int status = mvcResult.getResponse().getStatus();
         assertEquals(200, status);
-        verify(stockLookupService).getStockBySymbol(id);
+//        verify(stockLookupService).getStockBySymbol(id);
 //        verify(stockLookupService).updateStock(stock);
     }
 
@@ -103,7 +103,7 @@ public class StockControllerTests {
         String id = "lon:sxx";
         String uri = String.format("/stock/%s", id);
         Stock stock = objectMapper.readValue(stockJson, Stock.class);
-        when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
+//        when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
         doThrow(new IllegalArgumentException())
                 .when(stockLookupService).updateStock(stock);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
@@ -113,7 +113,7 @@ public class StockControllerTests {
 
         int status = mvcResult.getResponse().getStatus();
         assertEquals(400, status);
-        verify(stockLookupService).getStockBySymbol(id);
+  //      verify(stockLookupService).getStockBySymbol(id);
         verify(stockLookupService).updateStock(stock);
     }
 
@@ -123,7 +123,7 @@ public class StockControllerTests {
         String id = "lon:sxx";
         String uri = String.format("/stock/%s", id);
         Stock stock = objectMapper.readValue(stockJson, Stock.class);
-        when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
+    //    when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
         doThrow(new UnsupportedOperationException())
                 .when(stockLookupService).updateStock(stock);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
@@ -133,7 +133,7 @@ public class StockControllerTests {
 
         int status = mvcResult.getResponse().getStatus();
         assertEquals(418, status);
-        verify(stockLookupService).getStockBySymbol(id);
+      //  verify(stockLookupService).getStockBySymbol(id);
         verify(stockLookupService).updateStock(stock);
     }
 
@@ -143,7 +143,7 @@ public class StockControllerTests {
         String id = "lon:sxx";
         String uri = String.format("/stock/%s", id);
         Stock stock = null;
-        when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
+       // when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
@@ -151,7 +151,7 @@ public class StockControllerTests {
 
         int status = mvcResult.getResponse().getStatus();
         assertEquals(404, status);
-        verify(stockLookupService).getStockBySymbol(id);
+        //verify(stockLookupService).getStockBySymbol(id);
     }
 
     @Test
@@ -160,7 +160,7 @@ public class StockControllerTests {
         String id = "LON:OPM";
         String uri = String.format("/stock/%s", id);
         Stock stock = objectMapper.readValue(stockJson, Stock.class);
-        when(stockLookupService.getStockBySymbol(id)).thenReturn(null);
+        //when(stockLookupService.getStockBySymbol(id)).thenReturn(null);
         when(stockLookupService.createStock(id)).thenReturn(stock);
 
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
@@ -172,7 +172,7 @@ public class StockControllerTests {
         String location = mvcResult.getResponse().getHeader(HttpHeaders.LOCATION);
         assertEquals(201, status);
         assertEquals("http://localhost/stock/LON:OPM/", location);
-        verify(stockLookupService).getStockBySymbol(id);
+        //verify(stockLookupService).getStockBySymbol(id);
         verify(stockLookupService).createStock(id);
     }
 
@@ -182,7 +182,7 @@ public class StockControllerTests {
         String id = "LON:OPM";
         String uri = String.format("/stock/%s", id);
         Stock stock = objectMapper.readValue(stockJson, Stock.class);
-        when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
+        //when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
 
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)
@@ -193,7 +193,7 @@ public class StockControllerTests {
         String location = mvcResult.getResponse().getHeader(HttpHeaders.LOCATION);
         assertEquals(409, status);
         assertNull(location);
-        verify(stockLookupService).getStockBySymbol(id);
+        //verify(stockLookupService).getStockBySymbol(id);
     }
 
     @Test
@@ -229,6 +229,5 @@ public class StockControllerTests {
         int status = mvcResult.getResponse().getStatus();
         assertThat(status, equalTo(HttpStatus.NO_CONTENT));
     }
-
 
 }

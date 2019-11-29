@@ -3,8 +3,6 @@ package uk.co.jamesmcguigan.forecaster.stock;
 import java.util.List;
 
 public interface StockLookup {
-    Stock getStockBySymbol(String symbol);
-
     List<Stock> getUpdatedStocks();
 
     List<Stock> getStocks();
@@ -13,11 +11,10 @@ public interface StockLookup {
 
     void createStocks();
 
-    abstract void updateStocks();
+    void updateStocks();
 
     void updateStock(Stock stock);
 
     void updateStock(String id);
 
-    void updateStocksAndNotifyAllClients();
 }

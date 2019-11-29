@@ -13,7 +13,7 @@ public class StockServiceApplication {
     public static final Logger logger = LoggerFactory.getLogger("uk.co.jamesmcguigan.forecaster");
 
     public static void main(String[] args) {
-        final String[] expectedVars = {"PORT", "GUESTBOOK_DB_ADDR"};
+        final String[] expectedVars = {"PORT", "GUESTBOOK_DB_ADDR","UI_API_ADDR"};
         for (String v : expectedVars) {
             String value = System.getenv(v);
             if (value == null) {

@@ -48,8 +48,9 @@ class StockList extends React.Component {
 		const stocks = this.props.stocks.map(stock =>
 			<Stock key={stock.entity.symbol}
 			//{stocks.entity._links.self.href}
-					  stock={stock.entity}/>
-//					  attributes={this.props.attributes}
+					  stock={stock.entity}
+					  attributes={this.props.attributes}
+					  changeEvent={stock._changeEvent}/>
 //					  onUpdate={this.props.onUpdate}
 //					  onDelete={this.props.onDelete}/>
 		);
@@ -68,8 +69,8 @@ class StockList extends React.Component {
      		navLinks.push(<button key="last" onClick={this.handleNavLast}>&gt;&gt;</button>);
      	}
     return (
-    <div class="row">
-        <article class="col-6">
+    <div className="row">
+        <article className="col-6">
               <div>
                 {navLinks}
               </div>

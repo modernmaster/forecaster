@@ -26,9 +26,7 @@ class App extends React.Component {
   componentDidMount() {
     this.loadFromServer(this.state.pageSize);
     stompClient.register([
-      {route: '/topic/newstock', callback: this.refreshAndGoToLastPage},
-      {route: '/topic/updatestock', callback: this.refreshCurrentPage},
-      {route: '/topic/deletestock', callback: this.refreshCurrentPage}
+      {route: '/topic/updateStock', callback: this.refreshCurrentPage}
     ]);
   }
 
@@ -99,40 +97,44 @@ class App extends React.Component {
     }
   }
 
-  refreshAndGoToLastPage(message) {
-    follow(client, root, [{
-      rel: 'stocks',
-      params: {size: this.state.pageSize}
-    }]).done(response => {
-      if (response.entity._links.last !== undefined) {
-        this.onNavigate(response.entity._links.last.href);
-      } else {
-        this.onNavigate(response.entity._links.self.href);
-      }
-    })
-  }
-
   refreshCurrentPage(message) {
-    //Add new property to deal with _changeEvent
-    let updatedStock = JSON.parse(message.body);
-    let stock = this.state.stocks.find(
-        x => x.companyName === updatedStock.companyName);
-    if (parseInt(updatedStock.price) > parseInt(stock.price)) {
-      updatedStock._changeEvent = 'increase';
-
-    } else if (parseInt(updatedStock.price) < parseInt(stock.price)) {
-      updatedStock._changeEvent = 'decrease';
-    }
-
-    this.setState({
-      page: this.page,
-      stocks: this.state.stocks.map(
-          x => x.companyName === updatedStock.companyName
-              ? updatedStock : x),
-      attributes: Object.keys(this.schema.properties),
-      pageSize: this.state.pageSize,
-      links: this.links
-    });
+    let updatedStock = message.body;//JSON.parse(message.body);
+  	follow(client, root, [{
+  		rel: 'stocks',
+  		params: {size: this.state.pageSize, sort:'percentageChange,desc', page: this.state.page.number}
+  	}]).then(stockCollection => {
+              this.links = stockCollection.entity._links;
+              this.page = stockCollection.entity.page;
+              return stockCollection.entity._embedded.stocks.map(stock =>
+                      client({
+                          method: 'GET',
+                          path: stock._links.self.href
+                      })
+              );
+          }).then(stockPromises => {
+              return when.all(stockPromises);
+          }).then(stocks => {
+              let stock = this.state.stocks.find(
+                  x => x.url.includes(updatedStock));
+                  if(typeof stock !== 'undefined') {
+                    stock._changeEvent = 'increase';
+      //              if (parseInt(updatedStock.price) > parseInt(stock.price)) {
+      //                updatedStock._changeEvent = 'increase';
+      //
+      //              } else if (parseInt(updatedStock.price) < parseInt(stock.price)) {
+      //                updatedStock._changeEvent = 'decrease';
+      //              }
+                    this.setState({
+                        page: this.page,
+                        stocks: this.state.stocks.map(
+                                          x => x.url.includes(updatedStock)
+                                              ? stock : x),
+                        attributes: Object.keys(this.schema.properties),
+                        pageSize: this.state.pageSize,
+                        links: this.links
+                    });
+                  }
+          });
   }
 
   render() {

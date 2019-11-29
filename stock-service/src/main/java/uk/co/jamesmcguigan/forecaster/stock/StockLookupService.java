@@ -14,7 +14,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import uk.co.jamesmcguigan.forecaster.controller.EntityException;
 import uk.co.jamesmcguigan.forecaster.repository.StockRepository;
 import uk.co.jamesmcguigan.forecaster.stock.liveprice.GoogleSheetRepresentation;
 
@@ -26,7 +25,6 @@ public class StockLookupService extends HttpServlet implements StockLookup {
     @Autowired
     private final WebClient webClient;
     private final StockRepository stockRepository;
-    //    private final SimpMessagingTemplate simpMessagingTemplate;
     private static final String STOCK_LISTING_UPDATED = "Stock listing updated";
     private static final Logger log = LoggerFactory.getLogger(StockLookupService.class);
     private static final String apiUrl = "https://sheets.googleapis.com/v4/spreadsheets/1mrRNCwJuvkeUoyGMs30Dubd9RGojdDwEfLVsK00gVvA/values/A1:R6500?key=AIzaSyCt9MonR8WBE0vsPoV_HBnB5k0-S3yhnZQ";
@@ -82,10 +80,8 @@ public class StockLookupService extends HttpServlet implements StockLookup {
         List<Stock> stocks = getStocksFromResource();
         Stock stock = StreamSupport.stream(stocks.spliterator(), false)
                 .filter(s -> !s.getPercentageChange().equals("#N/A"))
-                .findFirst().orElseThrow(EntityException.StockNotFoundException::new);
+                .findFirst().orElseThrow(() -> new StockNotFoundException(String.format("Stock not in returned collection for: %s", symbol)));
         return stockRepository.save(stock);
-//        this.simpMessagingTemplate.convertAndSend(
-//                "/topic/updateStock", stock);
     }
 
     @Override
@@ -96,8 +92,6 @@ public class StockLookupService extends HttpServlet implements StockLookup {
                 .filter(stock -> !stock.getPercentageChange().equals("#N/A"))
                 .collect(Collectors.toList());
         stockRepository.saveAll(filteredStocks);
-//        this.simpMessagingTemplate.convertAndSend(
-//                "/topic/updateStock", stock);
     }
 
     @Override
@@ -132,8 +126,6 @@ public class StockLookupService extends HttpServlet implements StockLookup {
                 .findFirst().get();
         log.info("Update:" + stock.getCompanyName());
         this.stockRepository.save(stock);
-//        this.simpMessagingTemplate.convertAndSend(
-//                "/topic/updateStock", stock);
     }
 
     private List<Stock> getStocksFromResource() {
@@ -145,14 +137,6 @@ public class StockLookupService extends HttpServlet implements StockLookup {
         return stockTransformer.transform(googleSheetRepresentation);
     }
 
-
-    @Override
-    public void updateStocksAndNotifyAllClients() {
-//        List<Stock> stockList = getUpdatedStocks();
-//        stockList.forEach(this::updateStock.);
-//        log.info(STOCK_LISTING_UPDATED);
-    }
-
     private Double getPercentageChange(Stock stock) {
         return stock.getPercentageChange();
 //        try {
@@ -160,10 +144,5 @@ public class StockLookupService extends HttpServlet implements StockLookup {
 //        } catch (NumberFormatException ex) {
 //            return Double.MIN_VALUE;
 //        }
-    }
-
-    @Override
-    public Stock getStockBySymbol(String id) {
-        return stockRepository.findBySymbol(id);
     }
 }
