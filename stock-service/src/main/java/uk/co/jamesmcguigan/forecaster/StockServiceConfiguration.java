@@ -18,14 +18,6 @@ public class StockServiceConfiguration {
 
     @Bean
     public FilterRegistrationBean<CorsFilter> corsConfigurer() {
-        //This should work, but...
-//    https://stackoverflow.com/questions/38664507/cant-enable-cors-in-spring-boot-data-rest        return new WebMvcConfigurer() {
-//            @Override
-//            public void addCorsMappings(CorsRegistry registry) {
-//                registry.addMapping("/**").allowedOrigins("*")
-//                        .allowedMethods("PUT", "DELETE", "GET", "POST");;
-//            }
-//        };
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);

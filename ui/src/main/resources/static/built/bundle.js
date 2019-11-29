@@ -50161,13 +50161,7 @@ function (_React$Component) {
     value: function componentDidMount() {
       this.loadFromServer(this.state.pageSize);
       stompClient.register([{
-        route: '/topic/newstock',
-        callback: this.refreshAndGoToLastPage
-      }, {
-        route: '/topic/updatestock',
-        callback: this.refreshCurrentPage
-      }, {
-        route: '/topic/deletestock',
+        route: '/topic/updateStock',
         callback: this.refreshCurrentPage
       }]);
     }
@@ -50251,46 +50245,53 @@ function (_React$Component) {
       }
     }
   }, {
-    key: "refreshAndGoToLastPage",
-    value: function refreshAndGoToLastPage(message) {
+    key: "refreshCurrentPage",
+    value: function refreshCurrentPage(message) {
       var _this4 = this;
+
+      var updatedStock = message.body; //JSON.parse(message.body);
 
       follow(client, root, [{
         rel: 'stocks',
         params: {
-          size: this.state.pageSize
+          size: this.state.pageSize,
+          sort: 'percentageChange,desc',
+          page: this.state.page.number
         }
-      }]).done(function (response) {
-        if (response.entity._links.last !== undefined) {
-          _this4.onNavigate(response.entity._links.last.href);
-        } else {
-          _this4.onNavigate(response.entity._links.self.href);
+      }]).then(function (stockCollection) {
+        _this4.links = stockCollection.entity._links;
+        _this4.page = stockCollection.entity.page;
+        return stockCollection.entity._embedded.stocks.map(function (stock) {
+          return client({
+            method: 'GET',
+            path: stock._links.self.href
+          });
+        });
+      }).then(function (stockPromises) {
+        return when.all(stockPromises);
+      }).then(function (stocks) {
+        var stock = _this4.state.stocks.find(function (x) {
+          return x.url.includes(updatedStock);
+        });
+
+        if (typeof stock !== 'undefined') {
+          stock._changeEvent = 'increase'; //              if (parseInt(updatedStock.price) > parseInt(stock.price)) {
+          //                updatedStock._changeEvent = 'increase';
+          //
+          //              } else if (parseInt(updatedStock.price) < parseInt(stock.price)) {
+          //                updatedStock._changeEvent = 'decrease';
+          //              }
+
+          _this4.setState({
+            page: _this4.page,
+            stocks: _this4.state.stocks.map(function (x) {
+              return x.url.includes(updatedStock) ? stock : x;
+            }),
+            attributes: Object.keys(_this4.schema.properties),
+            pageSize: _this4.state.pageSize,
+            links: _this4.links
+          });
         }
-      });
-    }
-  }, {
-    key: "refreshCurrentPage",
-    value: function refreshCurrentPage(message) {
-      //Add new property to deal with _changeEvent
-      var updatedStock = JSON.parse(message.body);
-      var stock = this.state.stocks.find(function (x) {
-        return x.companyName === updatedStock.companyName;
-      });
-
-      if (parseInt(updatedStock.price) > parseInt(stock.price)) {
-        updatedStock._changeEvent = 'increase';
-      } else if (parseInt(updatedStock.price) < parseInt(stock.price)) {
-        updatedStock._changeEvent = 'decrease';
-      }
-
-      this.setState({
-        page: this.page,
-        stocks: this.state.stocks.map(function (x) {
-          return x.companyName === updatedStock.companyName ? updatedStock : x;
-        }),
-        attributes: Object.keys(this.schema.properties),
-        pageSize: this.state.pageSize,
-        links: this.links
       });
     }
   }, {
@@ -50797,14 +50798,17 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var stocks = this.props.stocks.map(function (stock) {
         return React.createElement(_stock_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: stock.entity.symbol //{stocks.entity._links.self.href}
           ,
-          stock: stock.entity
+          stock: stock.entity,
+          attributes: _this2.props.attributes,
+          changeEvent: stock._changeEvent
         });
-      } //					  attributes={this.props.attributes}
-      //					  onUpdate={this.props.onUpdate}
+      } //					  onUpdate={this.props.onUpdate}
       //					  onDelete={this.props.onDelete}/>
       );
       var navLinks = [];
@@ -50838,9 +50842,9 @@ function (_React$Component) {
       }
 
       return React.createElement("div", {
-        "class": "row"
+        className: "row"
       }, React.createElement("article", {
-        "class": "col-6"
+        className: "col-6"
       }, React.createElement("div", null, navLinks), React.createElement("div", null, React.createElement("input", {
         ref: "pageSize",
         defaultValue: this.props.pageSize,
@@ -50905,18 +50909,47 @@ function (_React$Component) {
   _inherits(Stock, _React$Component);
 
   function Stock(props) {
+    var _this;
+
     _classCallCheck(this, Stock);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Stock).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Stock).call(this, props));
+    _this.state = {
+      changeEvent: ''
+    };
+    return _this;
   }
 
   _createClass(Stock, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (typeof this.props.changeEvent !== 'undefined') {
+        if (prevProps.changeEvent !== this.state.changeEvent) {
+          setTimeout(this.setState({
+            changeEvent: this.props.changeEvent
+          }), 1000);
+          this.setTimer();
+        }
+      }
+    }
+  }, {
+    key: "setTimer",
+    value: function setTimer() {
+      this._timer != null ? clearTimeout(this._timer) : null;
+      this._timer = setTimeout(function () {
+        this.setState({
+          changeEvent: ''
+        });
+        this._timer = null;
+      }.bind(this), 5000);
+    }
+  }, {
     key: "render",
     value: function render() {
       var className = 'stock';
 
-      if (this.props.stock._changeEvent) {
-        className += ' ' + this.props.stock._changeEvent;
+      if (this.state.changeEvent !== '') {
+        className += ' ' + this.props.changeEvent;
       }
 
       return React.createElement("tr", {
