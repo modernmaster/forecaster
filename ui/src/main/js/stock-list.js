@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Stock from './stock.js';
 import StockDetails from './stock-details.js';
+const ReactDOM = require('react-dom');
 
 class StockList extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class StockList extends React.Component {
     this.handleNavNext = this.handleNavNext.bind(this);
     this.handleNavLast = this.handleNavLast.bind(this);
     this.handleInput = this.handleInput.bind(this);
+    this.handleInputSearch = this.handleInputSearch.bind(this);
   }
 
   handleInput(e) {
@@ -21,6 +23,14 @@ class StockList extends React.Component {
       ReactDOM.findDOMNode(this.refs.pageSize).value =
           pageSize.substring(0, pageSize.length - 1);
     }
+  }
+
+  handleInputSearch(e) {
+       e.preventDefault();
+       var searchCriteria = ReactDOM.findDOMNode(this.refs.search).value;
+       if (searchCriteria.length > 3) {
+         this.props.onSearch(searchCriteria);
+       }
   }
 
   handleNavFirst(e) {
@@ -76,6 +86,7 @@ class StockList extends React.Component {
               </div>
               <div>
               	    <input ref="pageSize" defaultValue={this.props.pageSize} onInput={this.handleInput}/>
+              	    <input ref="search" defaultValue="" onInput={this.handleInputSearch}/>
               </div>
               <table>
                   <thead>
