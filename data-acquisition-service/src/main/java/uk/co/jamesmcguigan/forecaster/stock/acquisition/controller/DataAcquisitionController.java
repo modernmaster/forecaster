@@ -1,6 +1,5 @@
 package uk.co.jamesmcguigan.forecaster.stock.acquisition.controller;
 
-
 import javax.validation.constraints.NotNull;
 import java.net.URI;
 
@@ -12,7 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.Application;
+import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
 import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
 
 @RestController
@@ -30,14 +29,14 @@ public class DataAcquisitionController {
     @PostMapping("/historical-prices/{id}")
     @ResponseBody
     public ResponseEntity postHistoricalPriceRequest(@PathVariable String id) {
-        Application.logger.debug(DATA_RECEIVED_FOR_WITH_ID, HISTORICAL_PRICES, id);
+        DataAcquisitionServiceApplication.logger.debug(DATA_RECEIVED_FOR_WITH_ID, HISTORICAL_PRICES, id);
         return createRequest(id, HISTORICAL_PRICES);
     }
 
     @PostMapping("/historical-prices/")
     @ResponseBody
     public ResponseEntity postHistoricalPriceRequest() {
-        Application.logger.debug("Refresh all historical price data");
+        DataAcquisitionServiceApplication.logger.debug("Refresh all historical price data");
         return ResponseEntity.status(HttpStatus.I_AM_A_TEAPOT)
                 .body(null);
     }
@@ -65,14 +64,14 @@ public class DataAcquisitionController {
     @PostMapping("/trends/{id}")
     @ResponseBody
     public ResponseEntity postTrendRequest(@PathVariable String id) {
-        Application.logger.debug(DATA_RECEIVED_FOR_WITH_ID, TRENDS, id);
+        DataAcquisitionServiceApplication.logger.debug(DATA_RECEIVED_FOR_WITH_ID, TRENDS, id);
         return createRequest(id, TRENDS);
     }
 
     @PostMapping("/trends/")
     @ResponseBody
     public ResponseEntity postTrendRequest() {
-        Application.logger.debug("Refresh all historical price data");
+        DataAcquisitionServiceApplication.logger.debug("Refresh all historical price data");
         return ResponseEntity.status(HttpStatus.I_AM_A_TEAPOT)
                 .body(null);
     }

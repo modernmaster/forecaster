@@ -1,14 +1,12 @@
 package uk.co.jamesmcguigan.forecaster.stock.acquisition.backend;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * defines the REST endpoints managed by the server.
@@ -24,8 +22,8 @@ public class BackendController {
      */
     @GetMapping("/messages")
     public final List<GuestBookEntry> getMessages() {
-        Sort byCreation = new Sort(Sort.Direction.DESC, "_id");
-        List<GuestBookEntry> msgList = repository.findAll(byCreation);
+        //Sort byCreation = new Sort(Sort.Direction.DESC, "_id");
+        List<GuestBookEntry> msgList = repository.findAll();
         return msgList;
     }
 

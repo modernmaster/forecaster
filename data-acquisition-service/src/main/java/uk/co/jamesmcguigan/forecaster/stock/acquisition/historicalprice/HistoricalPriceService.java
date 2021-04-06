@@ -14,7 +14,7 @@ import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.Application;
+import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
 import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.RequestService;
 import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.Response;
 import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Job;
@@ -42,16 +42,16 @@ public class HistoricalPriceService {
             String stockAPIAddress = System.getenv("STOCK_API_ADDR");
             String symbol = job.getEntityId();
             updateJobStatus(job, Status.PROCESSING);
-            Application.logger.debug(CREATING_REQUEST_FOR, job.getId());
+            DataAcquisitionServiceApplication.logger.debug(CREATING_REQUEST_FOR, job.getId());
             Response response = requestService.makeRequest(symbol);
-            Application.logger.debug(TRANSFORMING_TO_PRICE_FOR, job.getId());
+            DataAcquisitionServiceApplication.logger.debug(TRANSFORMING_TO_PRICE_FOR, job.getId());
             HistoricalPriceRepresentation historicalPriceRepresentation = historicalPriceRepresentationTransformer.transformFrom(response);
             URI requestUri = createUri(stockAPIAddress, job.getEntityClassifer(), job.getEntityId());
-            Application.logger.debug(SENDING_OUT_PATCH_REQUEST_FOR_STOCK_SERVICE, job.getId(), requestUri.toString());
+            DataAcquisitionServiceApplication.logger.debug(SENDING_OUT_PATCH_REQUEST_FOR_STOCK_SERVICE, job.getId(), requestUri.toString());
             makeRequest(requestUri, historicalPriceRepresentation);
             updateJobStatus(job, Status.COMPLETED);
         } catch (Exception e) {
-            Application.logger.error(UNABLE_TO_PROCESS_JOB_ID, job.getId(), e);
+            DataAcquisitionServiceApplication.logger.error(UNABLE_TO_PROCESS_JOB_ID, job.getId(), e);
             updateJobStatus(job, Status.FAIL);
         }
     }
@@ -73,14 +73,14 @@ public class HistoricalPriceService {
         httpPatch.setEntity(new StringEntity(json));
         HttpResponse response = client.execute(httpPatch);
         int statusCode = response.getStatusLine().getStatusCode();
-        Application.logger.debug(PATCH_REQUEST_TO_STOCK_SERVICE_RETURNED, statusCode);
+        DataAcquisitionServiceApplication.logger.debug(PATCH_REQUEST_TO_STOCK_SERVICE_RETURNED, statusCode);
         if (HttpStatus.SC_NO_CONTENT!=statusCode) {
             throw new RequestException.BadRequestException();
         }
     }
 
     private void updateJobStatus(Job job, Status status) {
-        Application.logger.debug(UPDATING_JOB_S_TO_STATUS_S, job.getId(), status);
+        DataAcquisitionServiceApplication.logger.debug(UPDATING_JOB_S_TO_STATUS_S, job.getId(), status);
         job.setStatus(status);
         job.setUpdated(LocalDateTime.now());
         jobService.save(job);

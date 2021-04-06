@@ -2,6 +2,7 @@ package uk.co.jamesmcguigan.forecaster.stock.acquisition;
 
 import java.util.concurrent.CountDownLatch;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.amqp.core.AmqpAdmin;
@@ -13,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ApplicationIntegrationTests {
+public class DataAcquisitionServiceApplicationIntegrationTests {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
@@ -29,6 +30,7 @@ public class ApplicationIntegrationTests {
     private static Message jsonMessage;
 
     @Test
+    @Ignore
     public void contextLoads() {
     }
 

@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.rest.core.annotation.HandleAfterCreate;
 import org.springframework.data.rest.core.annotation.HandleAfterSave;
 import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
-import org.springframework.hateoas.EntityLinks;
+import org.springframework.hateoas.server.EntityLinks;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -52,7 +52,7 @@ public class StockEventHandler {
     }
 
     private String getPath(Stock stock) {
-        return this.entityLinks.linkForSingleResource(stock.getClass(),
+        return this.entityLinks.linkForItemResource(stock.getClass(),
                 stock.getId()).toUri().getPath();
     }
 

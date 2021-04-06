@@ -11,7 +11,7 @@ import com.google.api.client.http.json.JsonHttpContent;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.Application;
+import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
 
 @Service
 @AllArgsConstructor
@@ -55,7 +55,7 @@ public class RequestService {
             String rawResponse = sendRequest(content);
             return new Response(symbol, rawResponse);
         } catch (IOException e) {
-            Application.logger.error(String.format(UNABLE_TO_CONNECT_S, symbol), e);
+            DataAcquisitionServiceApplication.logger.error(String.format(UNABLE_TO_CONNECT_S, symbol), e);
             throw e;
         }
     }

@@ -98,7 +98,7 @@ public class StockControllerTests {
     }
 
     @Test
-@Ignore
+    @Ignore
     public void testUpdateStockWithInorrectStockWillReturn400() throws Exception {
         String id = "lon:sxx";
         String uri = String.format("/stock/%s", id);
@@ -113,7 +113,7 @@ public class StockControllerTests {
 
         int status = mvcResult.getResponse().getStatus();
         assertEquals(400, status);
-  //      verify(stockLookupService).getStockBySymbol(id);
+        //      verify(stockLookupService).getStockBySymbol(id);
         verify(stockLookupService).updateStock(stock);
     }
 
@@ -123,7 +123,7 @@ public class StockControllerTests {
         String id = "lon:sxx";
         String uri = String.format("/stock/%s", id);
         Stock stock = objectMapper.readValue(stockJson, Stock.class);
-    //    when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
+        //    when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
         doThrow(new UnsupportedOperationException())
                 .when(stockLookupService).updateStock(stock);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
@@ -133,7 +133,7 @@ public class StockControllerTests {
 
         int status = mvcResult.getResponse().getStatus();
         assertEquals(418, status);
-      //  verify(stockLookupService).getStockBySymbol(id);
+        //  verify(stockLookupService).getStockBySymbol(id);
         verify(stockLookupService).updateStock(stock);
     }
 
@@ -143,7 +143,7 @@ public class StockControllerTests {
         String id = "lon:sxx";
         String uri = String.format("/stock/%s", id);
         Stock stock = null;
-       // when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
+        // when(stockLookupService.getStockBySymbol(id)).thenReturn(stock);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)

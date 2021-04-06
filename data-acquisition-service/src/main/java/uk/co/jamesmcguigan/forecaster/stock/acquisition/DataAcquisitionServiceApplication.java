@@ -6,20 +6,21 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class DataAcquisitionServiceApplication {
 
     public static final Logger logger = LoggerFactory.getLogger("uk.co.jamesmcguigan.forecaster");
 
     public static void main(String[] args) {
-        final String[] expectedVars = {"spring.rabbitmq.host", "spring.rabbitmq.port", "PORT", "JOB_DB_ADDR", "STOCK_API_ADDR"};
+//        final String[] expectedVars = {"spring.rabbitmq.host", "spring.rabbitmq.port", "PORT", "JOB_DB_ADDR", "STOCK_API_ADDR"};
+        final String[] expectedVars = {};
         for (String v : expectedVars) {
             String value = System.getenv(v);
             if (value == null) {
-                Application.logger.error("error: {} environment variable not set", v);
+                DataAcquisitionServiceApplication.logger.error("error: {} environment variable not set", v);
                 System.exit(1);
             }
         }
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(DataAcquisitionServiceApplication.class, args);
     }
 
 }
