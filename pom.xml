@@ -75,11 +75,6 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-rest</artifactId>
-                <version>${spring.boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-websocket</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
@@ -93,6 +88,17 @@
                 <artifactId>spring-boot-starter-amqp</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
+            <!-- rest -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-rest</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-hateoas</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
             <!-- data -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -103,7 +109,7 @@
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-mongodb</artifactId>
-                <version>2.1.6.RELEASE</version>
+                <version>3.1.7</version>
             </dependency>
             <!-- data transport -->
             <dependency>
@@ -135,7 +141,7 @@
             <dependency>
                 <groupId>com.rabbitmq</groupId>
                 <artifactId>amqp-client</artifactId>
-                <version>5.7.3</version>
+                <version>5.11.0</version>
             </dependency>
             <!-- dev tools -->
             <dependency>
@@ -222,12 +228,19 @@
                     <configuration>
                         <addResources>true</addResources>
                     </configuration>
-                    <version>2.2.0.RELEASE</version>
+                    <version>${spring.boot.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M3</version>
+                    <version>3.0.0-M5</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.surefire</groupId>
+                            <artifactId>surefire-junit47</artifactId>
+                            <version>3.0.0-M5</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -255,7 +268,7 @@
                 <plugin>
                     <groupId>org.openclover</groupId>
                     <artifactId>clover-maven-plugin</artifactId>
-                    <version>4.2.0</version>
+                    <version>4.4.1</version>
                     <executions>
                         <execution>
                             <id>1</id>

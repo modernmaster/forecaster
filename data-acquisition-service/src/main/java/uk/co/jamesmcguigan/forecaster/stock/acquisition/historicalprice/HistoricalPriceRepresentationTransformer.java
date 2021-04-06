@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.Application;
+import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
 import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.Response;
 
 import static java.util.stream.Collectors.toList;
@@ -28,7 +28,7 @@ public class HistoricalPriceRepresentationTransformer {
                     .map(x -> transformFrom(x))
                     .collect(toList());
         } catch (IOException e) {
-            Application.logger.error("Unable to parse json response",e);
+            DataAcquisitionServiceApplication.logger.error("Unable to parse json response",e);
              priceRepresentations = Lists.newArrayList();
         }
         return new HistoricalPriceRepresentation(priceRepresentations);

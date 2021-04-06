@@ -18,14 +18,14 @@ public class EventListener {
 
     @RabbitListener(queues = {EventConfiguration.QUEUE_PRICE_HISTORICAL})
     public void receiveMessageFromHistoricalPriceTopic(JobQueueItem jobQueueItem) {
-        Application.logger.info(RECEIVED_TOPIC_1_MESSAGE + jobQueueItem.getId());
+        DataAcquisitionServiceApplication.logger.info(RECEIVED_TOPIC_1_MESSAGE + jobQueueItem.getId());
         Job job = Preconditions.checkNotNull(jobService.getJob(jobQueueItem.getId()));
         historicalPriceService.processRequest(job);
     }
 
     @RabbitListener(queues = {EventConfiguration.PRICE_CURRENT})
     public void receiveMessageFromTopic2(JobQueueItem jobQueueItem) {
-        Application.logger.info(RECEIVED_TOPIC_1_MESSAGE + jobQueueItem.getId());
+        DataAcquisitionServiceApplication.logger.info(RECEIVED_TOPIC_1_MESSAGE + jobQueueItem.getId());
         Job job = Preconditions.checkNotNull(jobService.getJob(jobQueueItem.getId()));
         historicalPriceService.processRequest(job);
     }

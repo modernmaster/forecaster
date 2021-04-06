@@ -1,0 +1,19 @@
+logging:
+  level:
+    root: DEBUG
+    uk:
+      co:
+        jamesmcguigan:
+          forecaster:
+            stock.acquisition: DEBUG
+
+server:
+  port: 8080
+spring:
+  data:
+    mongodb:
+#      username: root
+#      password: root
+      database: test
+      port: 27017
+      host: localhost
