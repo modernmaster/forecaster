@@ -8,3 +8,4 @@ target
 /.idea/
 /.vscode/
 /ui/node_modules/
+/ui/src/main/resources/static/built/
