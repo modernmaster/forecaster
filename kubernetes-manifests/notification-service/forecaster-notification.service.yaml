@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: forecaster-data-acquisition
+  name: notification-service
+  namespace: forecaster
   labels:
     app: notification-service
     tier: backend
@@ -11,5 +12,7 @@ spec:
     app: notification-service
     tier: backend
   ports:
-  - port: 8080
-    targetPort: http-server
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      name: http

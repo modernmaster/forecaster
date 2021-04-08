@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: forecaster-notification
+  name: notification-service
+  namespace: forecaster
   labels:
     app: notification-service
     tier: backend
@@ -19,13 +20,8 @@ spec:
     spec:
       containers:
       - name: notification-service
-        image: forecaster-notification
+        image: notification-service
         ports:
         - name: http-server
           containerPort: 8080
-        env:
-        - name: PORT
-          value: "8080"
-        - name: GUESTBOOK_DB_ADDR
-          value: "java-guestbook-mongodb:27017"
-          
+

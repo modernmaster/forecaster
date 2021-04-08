@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: forecaster-stock
+  name: stock-service
+  namespace: forecaster
   labels:
     app: stock-service
     tier: backend
@@ -11,5 +12,7 @@ spec:
     app: stock-service
     tier: backend
   ports:
-  - port: 8088
-    targetPort: 8080
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      name: http

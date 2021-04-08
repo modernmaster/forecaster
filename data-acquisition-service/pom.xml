@@ -31,6 +31,10 @@
             <artifactId>spring-boot-actuator-autoconfigure</artifactId>
         </dependency>
         <!-- discovery -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
         <!-- vault -->
         <!-- web -->
         <dependency>

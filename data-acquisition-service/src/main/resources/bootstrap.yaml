@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: data-acquisition-service
+  profiles:
+    active: prod

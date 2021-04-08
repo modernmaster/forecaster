@@ -5,7 +5,7 @@ logging:
       co:
         jamesmcguigan:
           forecaster:
-            stock.acquisition: DEBUG
+            stock.acquisition: INFO
 server:
   port: 8080
 spring:
@@ -15,8 +15,8 @@ spring:
       #      password: root
       database: test
       port: 27017
-      host: localhost
+      host: host.docker.internal
     rest:
       mongodb:
-        uri: mongodb://host:docker:internal:27017/test
+        uri: mongodb://host.docker.internal:27017/test
       base-path: /api

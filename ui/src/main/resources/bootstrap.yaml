@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ui
+  profiles:
+    active: prod
