@@ -1,4 +1,4 @@
-package forecaster;
+package uk.co.jamesmcguigan.forecaster.ui;
 
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -19,7 +19,7 @@ public class UIApplication {
 //    @Value("${jobs.processCurrentPrices.enable}")
 //    private boolean processCurrentPricesEnable;
 
-    public static final Logger logger = LoggerFactory.getLogger("uk.co.jamesmcguigan.forecaster");
+    public static final Logger logger = LoggerFactory.getLogger("uk.co.jamesmcguigan.uk.co.jamesmcguigan.forecaster.ui.forecaster");
 
     public static void main(String[] args) {
         SpringApplication.run(UIApplication.class, args);

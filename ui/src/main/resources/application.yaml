@@ -1,0 +1,10 @@
+logging:
+  level:
+    root: ERROR
+    uk:
+      co:
+        jamesmcguigan:
+          forecaster:
+            ui: INFO
+server:
+  port: 8080

@@ -1,6 +1,12 @@
 logging:
   level:
-    root: DEBUG
+    root: ERROR
+    uk:
+      co:
+        jamesmcguigan:
+          forecaster:
+            stock:
+              acquisition: INFO
 server:
   port: 8080
 spring:
@@ -10,4 +16,4 @@ spring:
       #      password: root
       database: test
       port: 27017
-      host: localhost
+      host: host.docker.internal

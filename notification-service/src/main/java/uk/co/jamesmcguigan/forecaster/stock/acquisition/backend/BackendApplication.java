@@ -11,14 +11,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BackendApplication {
 
     public static void main(String[] args) {
-        final String[] expectedVars = {"PORT", "GUESTBOOK_DB_ADDR"};
-        for (String v : expectedVars) {
-            String value = System.getenv(v);
-            if (value == null) {
-                System.out.format("error: %s environment variable not set", v);
-                System.exit(1);
-            }
-        }
+//        final String[] expectedVars = {"PORT", "GUESTBOOK_DB_ADDR"};
+//        for (String v : expectedVars) {
+//            String value = System.getenv(v);
+//            if (value == null) {
+//                System.out.format("error: %s environment variable not set", v);
+//                System.exit(1);
+//            }
+//        }
         SpringApplication.run(BackendApplication.class, args);
     }
 }

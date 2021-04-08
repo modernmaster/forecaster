@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: stock-service
+  profiles:
+    active: prod

@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: forecaster-stock
+  name: stock-service
+  namespace: forecaster
   labels:
     app: stock-service
     tier: backend
@@ -19,15 +20,12 @@ spec:
     spec:
       containers:
       - name: stock-service
-        image: forecaster-stock
+        image: stock-service
         ports:
         - name: http-server
           containerPort: 8080
         env:
-        - name: PORT
-          value: "8080"
         - name: GUESTBOOK_DB_ADDR
           value: java-guestbook-mongodb:27017
         - name: UI_API_ADDR
           value: forecaster-ui:80
-          

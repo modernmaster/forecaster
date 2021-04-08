@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: forecaster-data-acquisition
+  name: data-acquisition-service
+  namespace: forecaster
   labels:
     app: data-acquisition-service
     tier: backend
@@ -19,13 +20,11 @@ spec:
     spec:
       containers:
       - name: data-acquisition-service
-        image: forecaster-data-acquisition
+        image: data-acquisition-service
         ports:
         - name: http-server
           containerPort: 8080
         env:
-        - name: PORT
-          value: "8080"
         - name: spring.rabbitmq.host
           value: rabbitmq-service
         - name: spring.rabbitmq.port
@@ -33,4 +32,4 @@ spec:
         - name: JOB_DB_ADDR
           value: data-acquisition-mongodb:27018
         - name: STOCK_API_ADDR
-          value: forecaster-stock:8088
+          value: uk.co.jamesmcguigan.forecaster.ui.forecaster-stock:8088

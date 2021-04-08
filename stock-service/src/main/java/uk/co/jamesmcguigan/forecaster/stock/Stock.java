@@ -13,7 +13,7 @@ import uk.co.jamesmcguigan.forecaster.stock.historicalprice.DateConverter;
 import uk.co.jamesmcguigan.forecaster.stock.historicalprice.Price;
 import uk.co.jamesmcguigan.forecaster.stock.trend.Trend;
 
-//import uk.co.jamesmcguigan.forecaster.stock.historicalprice.Price;
+//import uk.co.jamesmcguigan.uk.co.jamesmcguigan.forecaster.ui.forecaster.stock.historicalprice.Price;
 //import javax.persistence.PrePersist;
 //import javax.persistence.PreUpdate;
 

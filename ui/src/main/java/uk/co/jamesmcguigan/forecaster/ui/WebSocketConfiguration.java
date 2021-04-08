@@ -1,4 +1,4 @@
-package forecaster;
+package uk.co.jamesmcguigan.forecaster.ui;
 
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.stereotype.Component;
