@@ -11,8 +11,7 @@ public class DataAcquisitionServiceApplication {
     public static final Logger logger = LoggerFactory.getLogger("uk.co.jamesmcguigan.uk.co.jamesmcguigan.forecaster.ui.forecaster");
 
     public static void main(String[] args) {
-//        final String[] expectedVars = {"spring.rabbitmq.host", "spring.rabbitmq.port", "PORT", "JOB_DB_ADDR", "STOCK_API_ADDR"};
-        final String[] expectedVars = {};
+        final String[] expectedVars = {"spring.rabbitmq.host", "spring.rabbitmq.port","HOST_NAME"};
         for (String v : expectedVars) {
             String value = System.getenv(v);
             if (value == null) {

@@ -1,3 +1,7 @@
+eureka:
+  instance:
+    hostname: ${HOST_NAME}
+    preferIpAddress: true
 logging:
   level:
     root: ERROR

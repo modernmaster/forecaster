@@ -20,5 +20,5 @@ spec:
                 - curl -X PUT --header "ContentType:Application/json" "http://${FORECASTER_STOCK_SERVICE}/api/stocks/"
               env:
                 - name: FORECASTER_STOCK_SERVICE
-                  value: forecaster-stock:8088
+                  value: stock-service
           restartPolicy: Never

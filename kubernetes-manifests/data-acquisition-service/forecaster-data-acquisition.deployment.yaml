@@ -29,7 +29,7 @@ spec:
           value: rabbitmq-service
         - name: spring.rabbitmq.port
           value: "5672"
-        - name: JOB_DB_ADDR
-          value: data-acquisition-mongodb:27018
-        - name: STOCK_API_ADDR
-          value: uk.co.jamesmcguigan.forecaster.ui.forecaster-stock:8088
+        - name: HOST_NAME
+          value: data-acquisition
+        - name: eureka.client.service-url.defaultZone
+          value: http://discovery-service:8761/eureka

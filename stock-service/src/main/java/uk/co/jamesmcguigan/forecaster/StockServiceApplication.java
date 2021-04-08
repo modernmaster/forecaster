@@ -9,16 +9,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StockServiceApplication {
 
     public static final Logger logger = LoggerFactory.getLogger("uk.co.jamesmcguigan.uk.co.jamesmcguigan.forecaster.ui.forecaster");
+    private static final String HOST_NAME = "HOST_NAME";
+    private static final String ERROR_ENVIRONMENT_VARIABLE_NOT_SET = "error: {} environment variable not set";
 
     public static void main(String[] args) {
-//        final String[] expectedVars = {"PORT", "GUESTBOOK_DB_ADDR", "UI_API_ADDR"};
-//        for (String v : expectedVars) {
-//            String value = System.getenv(v);
-//            if (value == null) {
-//                logger.error("error: {} environment variable not set", v);
-//                System.exit(1);
-//            }
-//        }
+        final String[] expectedVars = {HOST_NAME};
+        for (String v : expectedVars) {
+            String value = System.getenv(v);
+            if (value == null) {
+                logger.error(ERROR_ENVIRONMENT_VARIABLE_NOT_SET, v);
+                System.exit(1);
+            }
+        }
         SpringApplication.run(StockServiceApplication.class, args);
     }
 

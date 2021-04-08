@@ -13,6 +13,7 @@ import org.apache.http.client.methods.HttpPatch;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
 import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
 import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.RequestService;
@@ -33,20 +34,23 @@ public class HistoricalPriceService {
     private static final String SENDING_OUT_PATCH_REQUEST_FOR_STOCK_SERVICE = "Sending out patch request for stock service {} to {}";
     private static final String CONTENT_TYPE = "Content-Type";
     private static final String PATCH_REQUEST_TO_STOCK_SERVICE_RETURNED = "Patch request to stock service returned {}";
+    private static final String INVENTORY_SERVICE = "stock-service";
+
     private RequestService requestService;
     private HistoricalPriceRepresentationTransformer historicalPriceRepresentationTransformer;
     private JobService jobService;
+    private DiscoveryClient discoveryClient;
 
     public void processRequest(Job job) {
         try {
-            String stockAPIAddress = System.getenv("STOCK_API_ADDR");
+            String inventoryServiceUri = discoveryClient.getInstances(INVENTORY_SERVICE).get(0).getUri().toString();
             String symbol = job.getEntityId();
             updateJobStatus(job, Status.PROCESSING);
             DataAcquisitionServiceApplication.logger.debug(CREATING_REQUEST_FOR, job.getId());
             Response response = requestService.makeRequest(symbol);
             DataAcquisitionServiceApplication.logger.debug(TRANSFORMING_TO_PRICE_FOR, job.getId());
             HistoricalPriceRepresentation historicalPriceRepresentation = historicalPriceRepresentationTransformer.transformFrom(response);
-            URI requestUri = createUri(stockAPIAddress, job.getEntityClassifer(), job.getEntityId());
+            URI requestUri = createUri(inventoryServiceUri, job.getEntityClassifer(), job.getEntityId());
             DataAcquisitionServiceApplication.logger.debug(SENDING_OUT_PATCH_REQUEST_FOR_STOCK_SERVICE, job.getId(), requestUri.toString());
             makeRequest(requestUri, historicalPriceRepresentation);
             updateJobStatus(job, Status.COMPLETED);

@@ -2,6 +2,9 @@ apiVersion: skaffold/v2beta13
 kind: Config
 build:
   artifacts:
+  - image: discovery-service
+    jib:
+      project: discovery-service
   - image: stock-service
     jib:
       project: stock-service
