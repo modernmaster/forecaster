@@ -20,5 +20,5 @@ spec:
                 - curl -X POST --header "ContentType:Application/json" "http://${FORECASTER_DATA_ACQUISITION_SERVICE}/api/data-acquisition/trends/"
               env:
                 - name: FORECASTER_DATA_ACQUISITION_SERVICE
-                  value: data-acquisition-service:8080
+                  value: data-acquisition-service
           restartPolicy: Never

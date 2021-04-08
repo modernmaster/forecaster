@@ -25,7 +25,7 @@ spec:
         - name: http-server
           containerPort: 8080
         env:
-        - name: GUESTBOOK_DB_ADDR
-          value: java-guestbook-mongodb:27017
-        - name: UI_API_ADDR
-          value: forecaster-ui:80
+        - name: HOST_NAME
+          value: stock-service
+        - name: eureka.client.service-url.defaultZone
+          value: http://discovery-service:8761/eureka

@@ -24,4 +24,8 @@ spec:
         ports:
         - name: http-server
           containerPort: 8080
-
+        env:
+        - name: HOST_NAME
+          value: notification-service
+        - name: eureka.client.service-url.defaultZone
+          value: http://discovery-service:8761/eureka
