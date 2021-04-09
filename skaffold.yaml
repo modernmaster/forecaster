@@ -2,6 +2,9 @@ apiVersion: skaffold/v2beta13
 kind: Config
 build:
   artifacts:
+  - image: gateway-service
+    jib:
+      project: gateway-service
   - image: discovery-service
     jib:
       project: discovery-service
@@ -31,6 +34,10 @@ profiles:
 - name: dockerfile
   build:
     artifacts:
+    - image: gateway-service
+      context: gateway-service
+    - image: discovery-service
+      context: discovery-service
     - image: stock-service
       context: stock-service
     - image: data-acquisition-service
