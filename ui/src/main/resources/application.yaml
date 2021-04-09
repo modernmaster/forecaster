@@ -1,3 +1,7 @@
+eureka:
+  instance:
+    hostname: ${HOST_NAME:localhost}
+    preferIpAddress: true
 logging:
   level:
     root: ERROR
@@ -6,5 +10,8 @@ logging:
         jamesmcguigan:
           forecaster:
             ui: INFO
+management:
+  server:
+    port: 9000
 server:
   port: 8080

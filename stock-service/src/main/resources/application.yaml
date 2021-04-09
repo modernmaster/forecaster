@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: ${HOST_NAME}
+    hostname: ${HOST_NAME:localhost}
     preferIpAddress: true
 logging:
   level:
@@ -10,6 +10,9 @@ logging:
         jamesmcguigan:
           forecaster:
             stock.acquisition: INFO
+management:
+  server:
+    port: 9000
 server:
   port: 8080
 spring:

@@ -32,6 +32,7 @@
         <module>stock-service</module>
         <module>data-acquisition-service</module>
         <module>discovery-service</module>
+        <module>gateway-service</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -56,6 +57,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-bootstrap</artifactId>
                 <version>3.0.2</version>
+            </dependency>
+            <!-- security -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+                <version>${spring.boot.version}</version>
             </dependency>
             <!-- vault -->
             <dependency>
