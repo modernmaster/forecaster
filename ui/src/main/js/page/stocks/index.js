@@ -116,7 +116,7 @@ class Stocks extends React.Component {
       client({
           method: 'GET',
           path: navUri
-      }).then(stock => {
+      }).then((stock) => {
           this.setState({
               page: this.page,
               stocks: [stock],
