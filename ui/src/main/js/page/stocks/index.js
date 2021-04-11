@@ -144,7 +144,7 @@ class Stocks extends React.Component {
               return when.all(stockPromises);
           }).then(stocks => {
               let stock = this.state.stocks.find(
-                  x => x.url.includes(updatedStock));
+                  (x) => x.url.includes(updatedStock));
                   if(typeof stock !== "undefined") {
                     stock._changeEvent = 'increase';
       //              if (parseInt(updatedStock.price) > parseInt(stock.price)) {
