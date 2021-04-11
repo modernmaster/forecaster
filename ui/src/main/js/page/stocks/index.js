@@ -8,7 +8,7 @@ const client = require('../../api/client');
 const follow = require('../../api/follow');
 const stompClient = require('../../websocket-listener');
 const when = require('when');
-const root = 'https://localhost/stock-service/api';
+const root = "https://localhost/stock-service/api";
 
 //allow react dev tools work
 window.React = React;
