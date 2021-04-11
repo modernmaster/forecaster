@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.ui;
+package uk.co.jamesmcguigan.forecaster.ui.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

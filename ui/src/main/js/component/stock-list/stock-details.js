@@ -1,4 +1,4 @@
-import Chart from './chart.js';
+import Chart from '../chart/index.js';
 class StockDetails extends React.Component {
 
   constructor(props) {

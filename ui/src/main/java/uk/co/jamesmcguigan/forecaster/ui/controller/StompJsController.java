@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.ui;
+package uk.co.jamesmcguigan.forecaster.ui.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import static uk.co.jamesmcguigan.forecaster.ui.WebSocketConfiguration.MESSAGE_PREFIX;
+import static uk.co.jamesmcguigan.forecaster.ui.configuration.WebSocketConfiguration.MESSAGE_PREFIX;
 
 @Controller
 @RequiredArgsConstructor
