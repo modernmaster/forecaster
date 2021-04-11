@@ -30,7 +30,7 @@ class Stocks extends React.Component {
   }
 	loadFromServer(pageSize) {
 		follow(client, root, [
-				{rel: 'stocks', params: {size: pageSize, sort:'percentageChange,desc'}}]
+				{rel: "stocks", params: {size: pageSize, sort:'percentageChange,desc'}}]
 		).then(stockCollection => {
 				return client({
 					method: 'GET',
