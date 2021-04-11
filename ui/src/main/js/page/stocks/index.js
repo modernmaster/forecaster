@@ -36,7 +36,7 @@ class Stocks extends React.Component {
 					method: 'GET',
 					path: stockCollection.entity._links.profile.href,
 					headers: {'Accept': 'application/schema+json'}
-				}).then(schema => {
+				}).then((schema) => {
 					this.schema = schema.entity;
 					this.links = stockCollection.entity._links;
 					return stockCollection;
