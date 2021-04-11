@@ -54,7 +54,7 @@ class Stocks extends React.Component {
 		}).then(stocks => {
 			this.setState({
 				page: this.page,
-				stocks: stocks,
+				stocks,
 				attributes: Object.keys(this.schema.properties),
 				pageSize: pageSize,
 				links: this.links
