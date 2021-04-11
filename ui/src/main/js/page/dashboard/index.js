@@ -21,6 +21,6 @@ class Dashboard extends React.Component {
         <div></div>
     )
   }
-};
+}
 
 export default Dashboard;
