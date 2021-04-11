@@ -23,5 +23,4 @@ public class StockServiceApplication {
         }
         SpringApplication.run(StockServiceApplication.class, args);
     }
-
 }

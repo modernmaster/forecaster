@@ -6,7 +6,7 @@ const ReactDOM = require('react-dom');
 const client = require('./api/client');
 const follow = require('./api/follow');
 const when = require('when');
-const root = 'http://localhost:8088/api';
+const root = 'https://localhost/stock-service/api';
 import PushNotification from './push-notification';
 
 import StockList from './stock-list.js';

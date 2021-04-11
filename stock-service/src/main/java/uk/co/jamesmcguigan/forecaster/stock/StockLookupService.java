@@ -56,21 +56,22 @@ public class StockLookupService extends HttpServlet implements StockLookup {
         return stockRepository.findAll(pageable);
     }
 
+    private Double parseDouble(String value) {
+        try {
+            return Double.parseDouble(value);
+        } catch (NumberFormatException e) {
+            return 0d;
+        }
+    }
 
     public List<Stock> getStocks() {
         Iterable<Stock> stocks = stockRepository.findAll();
         return StreamSupport.stream(stocks.spliterator(), false)
                 .filter(stock -> !stock.getPercentageChange().equals("#N/A"))
                 .sorted((o1, o2) -> {
-                    Double percentO1 = getPercentageChange(o1);
-                    Double percentO2 = getPercentageChange(o2);
-                    if (percentO1 > percentO2) {
-                        return -1;
-                    }
-                    if (percentO1 < percentO2) {
-                        return 1;
-                    }
-                    return 0;
+                    Double percentO1 = parseDouble(getPercentageChange(o1));
+                    Double percentO2 = parseDouble(getPercentageChange(o2));
+                    return percentO2.compareTo(percentO1);
                 }).limit(100).collect(Collectors.toList());
     }
 
@@ -106,9 +107,13 @@ public class StockLookupService extends HttpServlet implements StockLookup {
 
     private List<Stock> mergeTrendsAndHistoricalPrices(List<Stock> stocks) {
         stocks.forEach(stock-> {
-            Stock s = stockRepository.findBySymbol(stock.getSymbol());
-            stock.setTrends(s.getTrends());
-            stock.setHistoricalPrices(s.getHistoricalPrices());
+            try {
+                Stock s = stockRepository.findBySymbol(stock.getSymbol());
+                stock.setTrends(s.getTrends());
+                stock.setHistoricalPrices(s.getHistoricalPrices());
+            } catch(NullPointerException ex) {
+                log.error("Missing trend data:{}", stock.getCompanyName());
+            }
         });
         return stocks;
     }
@@ -137,7 +142,7 @@ public class StockLookupService extends HttpServlet implements StockLookup {
         return stockTransformer.transform(googleSheetRepresentation);
     }
 
-    private Double getPercentageChange(Stock stock) {
+    private String getPercentageChange(Stock stock) {
         return stock.getPercentageChange();
 //        try {
 //            return Double.parseDouble(stock.getPercentageChange());
