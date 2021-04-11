@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react';
+import React from "react";
 
 //allow react dev tools work
 window.React = React;
