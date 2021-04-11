@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class StockConfiguration {
 
     @Bean
-    public WebClient webClient() {
-        return WebClient.create();
+    public WebClient webClient(WebClient.Builder webClientBuilder) {
+        return webClientBuilder.build();
     }
 }

@@ -1,9 +1,6 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import com.google.common.collect.Lists;
@@ -41,13 +38,13 @@ public class StockTransformer {
                     .market(values.get(7))
                     .internationalIssuer(values.get(8))
                     .companyMarketCap(values.get(9))
-                    .price(Double.parseDouble(values.get(10)))
-                    .percentageChange(Double.parseDouble(values.get(11)))
-                    .avgVolume(Integer.parseInt(values.get(12)))
-                    .volume(Integer.parseInt(values.get(13)))
-                    .pe(Double.parseDouble(values.get(14)))
-                    .high52(Double.parseDouble(values.get(15)))
-                    .low52(Double.parseDouble(values.get(16)))
+                    .price(values.get(10))
+                    .percentageChange(values.get(11))
+                    .avgVolume(values.get(12))
+                    .volume(values.get(13))
+                    .pe(values.get(14))
+                    .high52(values.get(15))
+                    .low52(values.get(16))
                     .delay(values.get(17))
                     .historicalPrices(historicalPrices)
                     .trends(trends)
@@ -55,9 +52,18 @@ public class StockTransformer {
                     .dateTimeUpdated(new Date())
                     .build();
         } catch (NumberFormatException ex) {
-            StockServiceApplication.logger.info("Stock disabled: {}", values.get(1));
+            StockServiceApplication.logger.info(Arrays.toString(values.toArray()));
+            StockServiceApplication.logger.info("Stock disabled: {}: CAUSE: {}", values.get(1), ex.getMessage());
         }
         return null;
+    }
+
+    private Double parseDouble(String value) {
+        try {
+            return Double.parseDouble(value);
+        } catch (NumberFormatException e) {
+            return null;
+        }
     }
 
 }

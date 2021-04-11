@@ -14,8 +14,11 @@ management:
   server:
     port: 9000
 server:
+  forward-headers-strategy: FRAMEWORK
   port: 8080
 spring:
+  codec:
+    max-in-memory-size: 10MB
   data:
     mongodb:
       #      username: root

@@ -19,7 +19,6 @@ public class RequestServiceIntegrationTests {
     private RequestService requestService;
 
     @Test
-    @Ignore
     public void testCreateRequestObjectAndReturnResponse() throws IOException {
         Response response = requestService.makeRequest("lon:sxx");
         assertNotNull(response);

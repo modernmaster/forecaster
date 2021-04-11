@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster;
+package uk.co.jamesmcguigan.forecaster.configuration;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

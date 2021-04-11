@@ -7,9 +7,10 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
+import org.joda.time.DateTime;
 import uk.co.jamesmcguigan.forecaster.StockServiceApplication;
 
-public class DateConverter extends JsonDeserializer {
+public class DateConverter extends JsonDeserializer<Date> {
 
     private static final String DATE = "$date";
     private static final String NUMBER_LONG = "$numberLong";
@@ -17,7 +18,7 @@ public class DateConverter extends JsonDeserializer {
     private static final String DESERIALIZATION_ERROR_IN_DATE_CONVERTER = "Deserialization error in Date Converter";
 
     @Override
-    public Object deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) {
+    public Date deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) {
         try {
             long dateValue = deserializationContext.getParser().getLongValue();
             return new Date(dateValue);
@@ -28,7 +29,7 @@ public class DateConverter extends JsonDeserializer {
                 StockServiceApplication.logger.error(DESERIALIZATION_ERROR_IN_DATE_CONVERTER, e);
             }
         }
-        return -1;
+        return new Date(Long.MIN_VALUE);
     }
 
     private Date deserializeMongodbDate(JsonParser jsonParser) throws IOException {

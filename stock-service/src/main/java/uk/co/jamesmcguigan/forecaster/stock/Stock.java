@@ -49,19 +49,23 @@ public class Stock {
     @NonNull
     private String companyMarketCap;
     @NonNull
-    private Double price;
+    @JsonDeserialize(using = DoubleConvertor.class)
+    private String price;
     @NonNull
-    private Double percentageChange;
+    @JsonDeserialize(using = DoubleConvertor.class)
+    private String percentageChange;
     @NonNull
-    private Integer volume;
+    private String volume;
     @NonNull
-    private Integer avgVolume;
+    private String avgVolume;
+    @JsonDeserialize(using = DoubleConvertor.class)
+    private String pe;
     @NonNull
-    private Double pe;
+    @JsonDeserialize(using = DoubleConvertor.class)
+    private String high52;
     @NonNull
-    private Double high52;
-    @NonNull
-    private Double low52;
+    @JsonDeserialize(using = DoubleConvertor.class)
+    private String low52;
     @NonNull
     private String delay;
     @NonNull

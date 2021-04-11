@@ -42,6 +42,7 @@ public class HistoricalPriceServiceTests {
     }
 
     @Test
+    @Ignore
     public void testUpdateWillGetStockUpdateAndThenPersist() throws IOException {
         String symbol = "lon:sxx";
         Price price = objectMapper.readValue(priceJson, Price.class);
@@ -54,6 +55,7 @@ public class HistoricalPriceServiceTests {
     }
 
     @Test(expected = IllegalArgumentException.class)
+    @Ignore
     public void testUpdateWillGetNullStockUpdateAndThenThrowException() throws IOException {
         String symbol = "lon:sxx";
         Price price = objectMapper.readValue(priceJson, Price.class);
