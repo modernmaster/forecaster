@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import StockList from '../../component/stock-list/index.js';
+import StockList from "../../component/stock-list/index.js";
 
 const ReactDOM = require('react-dom');
 const client = require('../../api/client');
