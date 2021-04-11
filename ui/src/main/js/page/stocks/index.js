@@ -131,7 +131,7 @@ class Stocks extends React.Component {
   	follow(client, root, [{
   		rel: 'stocks',
   		params: {size: this.state.pageSize, sort:'percentageChange,desc', page: this.state.page.number}
-  	}]).then(stockCollection => {
+  	}]).then((stockCollection) => {
               this.links = stockCollection.entity._links;
               this.page = stockCollection.entity.page;
               return stockCollection.entity._embedded.stocks.map(stock =>
