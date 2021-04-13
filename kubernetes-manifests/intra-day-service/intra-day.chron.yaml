@@ -1,0 +1,24 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: stock-update
+  namespace: forecaster
+spec:
+  schedule: "*/4 * * * *"
+  failedJobsHistoryLimit: 3
+  successfulJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: stock-update
+              image: buildpack-deps:curl
+              args:
+                - /bin/sh
+                - -ec
+                - curl -X PUT --header "ContentType:Application/json" "http://${INTRA_DAY_SERVICE}/api/stocks/"
+              env:
+                - name: INTRA_DAY_SERVICE
+                  value: intra-day-service
+          restartPolicy: Never

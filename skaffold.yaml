@@ -14,9 +14,9 @@ build:
   - image: notification-service
     jib:
       project: notification-service
-  - image: data-acquisition-service
+  - image: intra-day-service
     jib:
-      project: data-acquisition-service
+      project: intra-day-service
   - image: ui
     jib:
       project: ui
@@ -40,8 +40,8 @@ profiles:
       context: discovery-service
     - image: stock-service
       context: stock-service
-    - image: data-acquisition-service
-      context: data-acquisition-service
+    - image: intra-day-service
+      context: intra-day-service
     - image: notification-service
       context: notification-service
     - image: ui

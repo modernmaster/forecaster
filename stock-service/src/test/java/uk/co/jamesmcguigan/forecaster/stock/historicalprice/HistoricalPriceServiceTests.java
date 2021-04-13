@@ -16,7 +16,6 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.springframework.boot.test.context.SpringBootTest;
 import uk.co.jamesmcguigan.forecaster.repository.StockRepository;
-import uk.co.jamesmcguigan.forecaster.stock.Stock;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -41,44 +40,44 @@ public class HistoricalPriceServiceTests {
         stockJson = Resources.toString(Resources.getResource("stock.json"), Charset.defaultCharset());
     }
 
-    @Test
-    @Ignore
-    public void testUpdateWillGetStockUpdateAndThenPersist() throws IOException {
-        String symbol = "lon:sxx";
-        Price price = objectMapper.readValue(priceJson, Price.class);
-        Stock stock = objectMapper.readValue(stockJson, Stock.class);
-        when(stockRepository.findBySymbol(symbol)).thenReturn(stock);
-        when(stockRepository.save(stock)).thenReturn(stock);
-        historicalPriceService.updatePrice(symbol, Lists.newArrayList(price));
-        verify(stockRepository).save(stock);
-        verify(stockRepository).findBySymbol(symbol);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    @Ignore
-    public void testUpdateWillGetNullStockUpdateAndThenThrowException() throws IOException {
-        String symbol = "lon:sxx";
-        Price price = objectMapper.readValue(priceJson, Price.class);
-        Stock stock = objectMapper.readValue(stockJson, Stock.class);
-        when(stockRepository.findBySymbol(symbol)).thenReturn(null);
-        historicalPriceService.updatePrice(symbol, Lists.newArrayList(price));
-        verify(stockRepository).findBySymbol(symbol);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testUpdateWillThrowExceptionIfSymbolIsEmpty() throws IOException {
-        Price price = objectMapper.readValue(priceJson, Price.class);
-        historicalPriceService.updatePrice(Strings.EMPTY, Lists.newArrayList(price));
-    }
-
-    @Test
-    @Ignore
-    public void testCreateHistoricalPriceEventWillCreateNewEvent() {
-        String symbol = "lon:sxx";
-        historicalPriceService.createHistoricalPriceEvent(symbol);
-        //call out to data acquisition service
-        //verify(createHistoricalPriceEvent).send();
-    }
+//    @Test
+//    @Ignore
+//    public void testUpdateWillGetStockUpdateAndThenPersist() throws IOException {
+//        String symbol = "lon:sxx";
+//        Price price = objectMapper.readValue(priceJson, Price.class);
+//        Stock stock = objectMapper.readValue(stockJson, Stock.class);
+//        when(stockRepository.findBySymbol(symbol)).thenReturn(stock);
+//        when(stockRepository.save(stock)).thenReturn(stock);
+//        historicalPriceService.updatePrice(symbol, Lists.newArrayList(price));
+//        verify(stockRepository).save(stock);
+//        verify(stockRepository).findBySymbol(symbol);
+//    }
+//
+//    @Test(expected = IllegalArgumentException.class)
+//    @Ignore
+//    public void testUpdateWillGetNullStockUpdateAndThenThrowException() throws IOException {
+//        String symbol = "lon:sxx";
+//        Price price = objectMapper.readValue(priceJson, Price.class);
+//        Stock stock = objectMapper.readValue(stockJson, Stock.class);
+//        when(stockRepository.findBySymbol(symbol)).thenReturn(null);
+//        historicalPriceService.updatePrice(symbol, Lists.newArrayList(price));
+//        verify(stockRepository).findBySymbol(symbol);
+//    }
+//
+//    @Test(expected = IllegalArgumentException.class)
+//    public void testUpdateWillThrowExceptionIfSymbolIsEmpty() throws IOException {
+//        Price price = objectMapper.readValue(priceJson, Price.class);
+//        historicalPriceService.updatePrice(Strings.EMPTY, Lists.newArrayList(price));
+//    }
+//
+//    @Test
+//    @Ignore
+//    public void testCreateHistoricalPriceEventWillCreateNewEvent() {
+//        String symbol = "lon:sxx";
+//        historicalPriceService.createHistoricalPriceEvent(symbol);
+//        //call out to data acquisition service
+//        //verify(createHistoricalPriceEvent).send();
+//    }
 //
 //    WebTestClient
 //            .bindToServer()

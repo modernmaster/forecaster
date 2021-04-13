@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: intra-day-service
+  namespace: forecaster
+  labels:
+    app: intra-day-service
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: intra-day-service
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: intra-day-service
+        tier: backend
+    spec:
+      containers:
+      - name: intra-day-service
+        image: intra-day-service
+        ports:
+        - name: http-server
+          containerPort: 8080
+        env:
+        - name: HOST_NAME
+          value: intra-day-service
+        - name: eureka.client.service-url.defaultZone
+          value: http://discovery-service:8761/eureka
