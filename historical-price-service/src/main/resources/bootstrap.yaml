@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: historical-price-service
+  profiles:
+    active: prod

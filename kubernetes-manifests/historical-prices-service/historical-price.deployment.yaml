@@ -1,35 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: data-acquisition-service
+  name: historical-price-service
   namespace: forecaster
   labels:
-    app: data-acquisition-service
+    app: historical-price-service
     tier: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: data-acquisition-service
+      app: historical-price-service
       tier: backend
   template:
     metadata:
       labels:
-        app: data-acquisition-service
+        app: historical-price-service
         tier: backend
     spec:
       containers:
-      - name: data-acquisition-service
-        image: data-acquisition-service
+      - name: historical-price-service
+        image: historical-price-service
         ports:
         - name: http-server
           containerPort: 8080
         env:
-        - name: spring.rabbitmq.host
-          value: rabbitmq-service
-        - name: spring.rabbitmq.port
-          value: "5672"
         - name: HOST_NAME
-          value: data-acquisition
+          value: historical-price-service
         - name: eureka.client.service-url.defaultZone
           value: http://discovery-service:8761/eureka

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: intra-day-service
+  profiles:
+    active: prod

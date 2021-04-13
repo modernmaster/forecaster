@@ -17,6 +17,9 @@ build:
   - image: intra-day-service
     jib:
       project: intra-day-service
+  - image: historical-price-service
+    jib:
+      project: historical-price-service
   - image: ui
     jib:
       project: ui
@@ -42,6 +45,8 @@ profiles:
       context: stock-service
     - image: intra-day-service
       context: intra-day-service
+    - image: historical-price-service
+      context: historical-price-service
     - image: notification-service
       context: notification-service
     - image: ui

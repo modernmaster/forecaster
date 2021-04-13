@@ -13,7 +13,7 @@ logging:
         http: ERROR
     uk:
       co:
-        jamesmcguigan: INFO
+        jamesmcguigan: DEBUG
 message:
   topic:
     name: trendrequests
@@ -27,7 +27,7 @@ spring:
     rest:
       base-path: /
   datasource:
-    url: jdbc:mysql://host.docker.internal:3306/livepriceservice
+    url: jdbc:mysql://localhost:3306/livepriceservice
     username: liveprice
     password: liveprice
   jpa:
