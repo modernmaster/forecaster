@@ -29,13 +29,12 @@ import static org.junit.Assert.assertEquals;
 @SpringBootTest
 @WebAppConfiguration
 public class StockControllerTests {
+    @Rule
+    public MockitoRule mockitoRule = MockitoJUnit.rule();
     @Autowired
     WebApplicationContext webApplicationContext;
     @Autowired
     private ObjectMapper objectMapper;
-    @Rule
-    public MockitoRule mockitoRule = MockitoJUnit.rule();
-
     private String pricesJson;
     private MockMvc mvc;
     private String stockJson;

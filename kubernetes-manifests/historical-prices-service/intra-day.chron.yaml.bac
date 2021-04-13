@@ -1,7 +1,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: trends-update
+  name: stock-update
   namespace: forecaster
 spec:
   schedule: "*/4 * * * *"
@@ -12,13 +12,13 @@ spec:
       template:
         spec:
           containers:
-            - name: trends-update
+            - name: stock-update
               image: buildpack-deps:curl
               args:
                 - /bin/sh
                 - -ec
-                - curl -X POST --header "ContentType:Application/json" "http://${FORECASTER_DATA_ACQUISITION_SERVICE}/api/data-acquisition/trends/"
+                - curl -X PUT --header "ContentType:Application/json" "http://${INTRA_DAY_SERVICE}/api/stocks/"
               env:
-                - name: FORECASTER_DATA_ACQUISITION_SERVICE
-                  value: data-acquisition-service
+                - name: INTRA_DAY_SERVICE
+                  value: intra-day-service
           restartPolicy: Never

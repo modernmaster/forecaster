@@ -2,7 +2,6 @@ package uk.co.jamesmcguigan.forecaster.stock;
 
 import org.junit.Before;
 import org.mockito.Mock;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.reactive.function.client.WebClient;
 import uk.co.jamesmcguigan.forecaster.repository.LivePriceRepository;
 

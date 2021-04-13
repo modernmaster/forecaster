@@ -9,9 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.reactive.function.client.WebClient;
 import uk.co.jamesmcguigan.forecaster.repository.LivePriceRepository;
-import uk.co.jamesmcguigan.forecaster.stock.price.LivePrice;
-
-import java.util.Collections;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;

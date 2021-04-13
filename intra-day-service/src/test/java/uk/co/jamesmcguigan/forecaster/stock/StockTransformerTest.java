@@ -8,15 +8,16 @@ import uk.co.jamesmcguigan.forecaster.dao.GoogleSheetRepresentation;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertNotNull;
 
 public class StockTransformerTest {
 
-    private StockTransformer stockTransformer;
     private final List<List<String>> values = new ArrayList<>();
     private final List<List<String>> values_na = new ArrayList<>();
+    private StockTransformer stockTransformer;
 
     @Before
     public void setUp() {
