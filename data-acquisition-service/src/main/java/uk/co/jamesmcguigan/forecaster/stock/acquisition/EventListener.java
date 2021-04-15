@@ -1,12 +1,12 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition;
 
 import com.google.common.base.Preconditions;
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.HistoricalPriceService;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Job;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobQueueItem;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.HistoricalPriceService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.Job;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobQueueItem;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
 
 @AllArgsConstructor
 public class EventListener {

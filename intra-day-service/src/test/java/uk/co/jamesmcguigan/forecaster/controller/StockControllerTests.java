@@ -199,7 +199,7 @@ public class StockControllerTests {
 //    @Ignore
 //    public void testPatchForTrendsWillReturn204() throws Exception {
 //        String id = "LON:OPM";
-//        String uri = String.format("/stock/%s?feature=trends", id);
+//        String uri = String.format("/stock/%s?feature=uk.co.jamesmcguigan.forecaster.service.trends", id);
 //
 //        List<Price> stock = objectMapper.readValue(pricesJson, new TypeReference<List<Price>>() {
 //        });

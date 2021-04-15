@@ -4,8 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
-import uk.co.jamesmcguigan.forecaster.historicalprice.request.HistoricalPriceRepresentationTransformer;
-import uk.co.jamesmcguigan.forecaster.historicalprice.request.RequestFacade;
+import uk.co.jamesmcguigan.forecaster.facade.StockServiceClient;
+import uk.co.jamesmcguigan.forecaster.facade.request.HistoricalPriceRepresentationTransformer;
+import uk.co.jamesmcguigan.forecaster.facade.request.RequestFacade;
 
 import java.io.IOException;
 
@@ -30,6 +31,6 @@ public class RequestFacadeIT {
     public void doSomething() throws IOException {
         String symbol = "lon:boo";
         requestFacade.run();
-        verify(stockServiceClient).post("lon:boo", any());
+        verify(stockServiceClient).patch("lon:boo", any());
     }
 }

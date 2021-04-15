@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

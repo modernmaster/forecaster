@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.job;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job;
 
 public enum Status {
     PENDING,

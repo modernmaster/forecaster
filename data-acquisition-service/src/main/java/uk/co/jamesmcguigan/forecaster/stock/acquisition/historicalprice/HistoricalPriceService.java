@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice;
 
 import java.io.IOException;
 import java.net.URI;
@@ -15,12 +15,12 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.RequestService;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.Response;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Job;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Status;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.DataAcquisitionServiceApplication;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request.RequestService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request.Response;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.Job;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.Status;
 
 @AllArgsConstructor
 @Service

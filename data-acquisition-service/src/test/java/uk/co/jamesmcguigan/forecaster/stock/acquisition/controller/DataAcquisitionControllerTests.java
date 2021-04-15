@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.controller;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.controller;
 
 import org.junit.Before;
 import org.junit.Ignore;
@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -76,8 +76,8 @@ public class DataAcquisitionControllerTests {
     @Ignore
     public void testPostARequestForTrendsShouldReturn202() throws Exception {
         String id = "LON:OPM";
-        String uri = String.format("/data-acquisition/trends/%s", id);
-        when(jobService.createJob(id, "trends")).thenReturn("1");
+        String uri = String.format("/data-acquisition/uk.co.jamesmcguigan.forecaster.service.trends/%s", id);
+        when(jobService.createJob(id, "uk.co.jamesmcguigan.forecaster.service.trends")).thenReturn("1");
 
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)
@@ -87,12 +87,12 @@ public class DataAcquisitionControllerTests {
         String location = mvcResult.getResponse().getHeader("location");
         assertThat(status, equalTo(202));
         assertThat(location, equalTo("http://localhost/data-acquisition/job/1"));
-        verify(jobService).createJob(id, "trends");
+        verify(jobService).createJob(id, "uk.co.jamesmcguigan.forecaster.service.trends");
     }
 
     @Test
     public void testPostARequestForTrendsWithMissingIdShouldReturn404() throws Exception {
-        String uri = "/data-acquisition/trends/";
+        String uri = "/data-acquisition/uk.co.jamesmcguigan.forecaster.service.trends/";
 
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)

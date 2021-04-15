@@ -31,15 +31,17 @@ public abstract class Audit {
     @LastModifiedDate
     private Long modifiedDate;
 
-    @Column(name = "created_by", nullable = false, updatable = false)
+    //TODO: update when security principal has been implemented
+    @Column(name = "created_by", nullable = true, updatable = false)
     @CreatedBy
     private String createdBy;
 
+    //TODO: update when security principal has been implemented
     @Column(name = "modified_by")
     @LastModifiedBy
     private String modifiedBy;
 
-    @Column(name = "version", nullable = false, updatable = false)
+    @Column(name = "version", nullable = true, updatable = false)
     @Version
     private Long version;
 }

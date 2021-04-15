@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.trends;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.trends;
 
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.core.Exchange;

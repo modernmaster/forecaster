@@ -1,0 +1,39 @@
+eureka:
+  instance:
+    hostname: ${HOST_NAME:localhost}
+    preferIpAddress: true
+kafka:
+  bootstrapAddress: kafka-service:9092
+  partitionNumber: 10
+logging:
+  level:
+    root: ERROR
+    org:
+      apache:
+        http: ERROR
+    uk:
+      co:
+        jamesmcguigan: INFO
+message:
+  topic:
+    name: trendrequests
+server:
+  forward-headers-strategy: FRAMEWORK
+  port: 8080
+spring:
+  codec:
+    max-in-memory-size: 10MB
+  #  datasource:
+  #    url: jdbc:mysql://host.docker.internal:3306/trendservice
+  #    username: trendservice
+  #    password: trendservice
+  #  jpa:
+  #    hibernate:
+  #      use-new-id-generator-mappings: false
+  #      ddl-auto: update
+  #    properties:
+  #      hibernate:
+  #        dialect: org.hibernate.dialect.MySQL57Dialect
+  kafka:
+    listener:
+      concurrency: 10

@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.controller;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.controller;
 
 import javax.validation.constraints.NotNull;
 import java.net.URI;
@@ -11,8 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.DataAcquisitionServiceApplication;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
 
 @RestController
 @RequiredArgsConstructor
@@ -20,7 +20,7 @@ import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
 public class DataAcquisitionController {
 
     private static final String HISTORICAL_PRICES = "historicalPrices";
-    private static final String TRENDS = "trends";
+    private static final String TRENDS = "uk.co.jamesmcguigan.forecaster.service.trends";
     private static final String DATA_ACQUISITION_JOB = "/data-acquisition/job/%s";
     private static final String DATA_RECEIVED_FOR_WITH_ID = "Data received for {} with id {}";
     @Autowired
@@ -61,14 +61,14 @@ public class DataAcquisitionController {
         return id;
     }
 
-    @PostMapping("/trends/{id}")
+    @PostMapping("/uk.co.jamesmcguigan.forecaster.service.trends/{id}")
     @ResponseBody
     public ResponseEntity postTrendRequest(@PathVariable String id) {
         DataAcquisitionServiceApplication.logger.debug(DATA_RECEIVED_FOR_WITH_ID, TRENDS, id);
         return createRequest(id, TRENDS);
     }
 
-    @PostMapping("/trends/")
+    @PostMapping("/uk.co.jamesmcguigan.forecaster.service.trends/")
     @ResponseBody
     public ResponseEntity postTrendRequest() {
         DataAcquisitionServiceApplication.logger.debug("Refresh all historical price data");

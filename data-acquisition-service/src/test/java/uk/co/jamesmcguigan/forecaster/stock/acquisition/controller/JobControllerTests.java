@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.controller;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.controller;
 
 import java.io.IOException;
 
@@ -19,9 +19,9 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Job;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Status;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.Job;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.Status;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;

@@ -1,9 +1,9 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice;
 
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.core.Exchange;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobQueueItem;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobQueueItem;
 
 @AllArgsConstructor
 public class CreateHistoricalPriceEvent {

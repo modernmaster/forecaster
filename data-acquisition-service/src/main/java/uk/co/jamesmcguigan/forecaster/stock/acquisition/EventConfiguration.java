@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -13,16 +13,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.HistoricalPriceService;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.HistoricalPriceService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
 
 @Configuration
 public class EventConfiguration {
 
     static final String QUEUE_PRICE_HISTORICAL = "price.historical";
     private static final String PRICE_HISTORICAL_ROUTING = "price.historical.*";
-    static final String TRENDS = "trends.current";
-    private static final String TRENDS_ROUTING = "trends.*";
+    static final String TRENDS = "uk.co.jamesmcguigan.forecaster.service.trends.current";
+    private static final String TRENDS_ROUTING = "uk.co.jamesmcguigan.forecaster.service.trends.*";
     static final String PRICE_CURRENT = "price.current";
     private static final String PRICE_CURRENT_ROUTING = "price.current.*";
     private static final String EVENT_EXCHANGE = "eventExchange";

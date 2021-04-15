@@ -1,12 +1,8 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
-import java.util.Objects;
-
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.rest.core.annotation.HandleAfterCreate;
-import org.springframework.data.rest.core.annotation.HandleAfterSave;
 import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
 import org.springframework.hateoas.server.EntityLinks;
 import org.springframework.http.HttpStatus;
@@ -14,6 +10,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
+import java.util.Objects;
+
+//TODO: to be removed
 @RequiredArgsConstructor
 @Component
 @RepositoryEventHandler(Stock.class)
@@ -27,7 +26,7 @@ public class StockEventHandler {
     private final EntityLinks entityLinks;
     private final WebClient webClient;
 
-    @HandleAfterCreate
+//    @HandleAfterCreate
     public void createStock(Stock stock) {
         sendRequest(stock);
     }
@@ -56,7 +55,7 @@ public class StockEventHandler {
                 stock.getId()).toUri().getPath();
     }
 
-    @HandleAfterSave
+//    @HandleAfterSave
     public void updateStock(Stock stock) {
         sendRequest(stock);
 

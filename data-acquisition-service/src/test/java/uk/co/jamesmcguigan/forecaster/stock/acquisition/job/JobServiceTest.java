@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.job;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.CreateHistoricalPriceEvent;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.CreateHistoricalPriceEvent;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;

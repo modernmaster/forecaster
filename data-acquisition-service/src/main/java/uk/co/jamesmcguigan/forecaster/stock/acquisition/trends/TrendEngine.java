@@ -1,9 +1,9 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.trends;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.trends;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.trends.strategies.MovingAverageStrategy;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.trends.strategies.RelativeStrengthIndicatorStrategy;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.trends.strategies.MovingAverageStrategy;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.trends.strategies.RelativeStrengthIndicatorStrategy;
 
 @Service
 @AllArgsConstructor

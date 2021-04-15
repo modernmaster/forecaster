@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.trends.strategies;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.trends.strategies;
 
 import org.springframework.stereotype.Component;
 

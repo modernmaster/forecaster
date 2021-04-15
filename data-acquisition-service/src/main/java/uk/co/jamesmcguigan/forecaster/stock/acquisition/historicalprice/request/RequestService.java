@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import com.google.api.client.http.json.JsonHttpContent;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.DataAcquisitionServiceApplication;
 
 @Service
 @AllArgsConstructor
