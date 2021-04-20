@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.controller;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -15,9 +15,9 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.RequestService;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.Response;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request.RequestService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request.Response;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;

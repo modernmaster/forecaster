@@ -1,0 +1,4862 @@
+{
+  "_id": "LON:ADM",
+  "admissionDate": "28/09/2004",
+  "companyName": "ADMIRAL GROUP PLC",
+  "symbol": "LON:ADM",
+  "icbIndustry": "Financials",
+  "icbSuperSector": "Insurance",
+  "countryOfIncorporation": "United Kingdom",
+  "worldRegion": "Europe",
+  "market": "MAIN MARKET ",
+  "internationalIssuer": "No",
+  "companyMarketCap": "£5,523.13",
+  "price": "2168",
+  "percentageChange": "-0.09",
+  "volume": "409890",
+  "avgVolume": "626585",
+  "pe": "15.85",
+  "high52": "2227",
+  "low52": "1824",
+  "delay": "0",
+  "historicalPrices": [
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1522713600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1855"
+      },
+      "opening": {
+        "$numberDouble": "1829.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1861"
+      },
+      "daysLow": {
+        "$numberInt": "1824"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1522800000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1855.5"
+      },
+      "opening": {
+        "$numberDouble": "1852.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1859.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1832.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1522886400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1854.74"
+      },
+      "opening": {
+        "$numberInt": "1879"
+      },
+      "daysHigh": {
+        "$numberDouble": "1887.5"
+      },
+      "daysLow": {
+        "$numberInt": "1848"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1522972800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1880.5"
+      },
+      "opening": {
+        "$numberInt": "1850"
+      },
+      "daysHigh": {
+        "$numberDouble": "1883.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1847.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1523232000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1898"
+      },
+      "opening": {
+        "$numberInt": "1888"
+      },
+      "daysHigh": {
+        "$numberInt": "1900"
+      },
+      "daysLow": {
+        "$numberInt": "1885"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1523318400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1898.5"
+      },
+      "opening": {
+        "$numberInt": "1907"
+      },
+      "daysHigh": {
+        "$numberInt": "1907"
+      },
+      "daysLow": {
+        "$numberInt": "1879"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1523404800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1892"
+      },
+      "opening": {
+        "$numberInt": "1892"
+      },
+      "daysHigh": {
+        "$numberInt": "1906"
+      },
+      "daysLow": {
+        "$numberDouble": "1883.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1523491200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1905.5"
+      },
+      "opening": {
+        "$numberDouble": "1891.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1905.5"
+      },
+      "daysLow": {
+        "$numberInt": "1888"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1523577600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1914.5"
+      },
+      "opening": {
+        "$numberDouble": "1907.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1918.5"
+      },
+      "daysLow": {
+        "$numberInt": "1904"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1523836800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1900"
+      },
+      "opening": {
+        "$numberDouble": "1914.65"
+      },
+      "daysHigh": {
+        "$numberDouble": "1920.75"
+      },
+      "daysLow": {
+        "$numberDouble": "1898.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1523923200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1915.5"
+      },
+      "opening": {
+        "$numberDouble": "1907.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1922"
+      },
+      "daysLow": {
+        "$numberInt": "1891"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524009600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1944"
+      },
+      "opening": {
+        "$numberDouble": "1924.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1954.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1914.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524096000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1974.5"
+      },
+      "opening": {
+        "$numberDouble": "1938.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1976.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1938.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524182400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1997"
+      },
+      "opening": {
+        "$numberDouble": "1976.5"
+      },
+      "daysHigh": {
+        "$numberInt": "2012"
+      },
+      "daysLow": {
+        "$numberInt": "1965"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524441600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1998"
+      },
+      "opening": {
+        "$numberDouble": "1998.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "2005.7"
+      },
+      "daysLow": {
+        "$numberDouble": "1990.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524528000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2003"
+      },
+      "opening": {
+        "$numberInt": "1999"
+      },
+      "daysHigh": {
+        "$numberInt": "2012"
+      },
+      "daysLow": {
+        "$numberInt": "1994"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524614400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2002"
+      },
+      "opening": {
+        "$numberInt": "1994"
+      },
+      "daysHigh": {
+        "$numberInt": "2010"
+      },
+      "daysLow": {
+        "$numberDouble": "1986.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524700800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1975.5"
+      },
+      "opening": {
+        "$numberInt": "2006"
+      },
+      "daysHigh": {
+        "$numberInt": "2006"
+      },
+      "daysLow": {
+        "$numberDouble": "1966.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1524787200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1995.5"
+      },
+      "opening": {
+        "$numberInt": "1979"
+      },
+      "daysHigh": {
+        "$numberDouble": "2010.81"
+      },
+      "daysLow": {
+        "$numberDouble": "1969.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525046400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1993"
+      },
+      "opening": {
+        "$numberInt": "2001"
+      },
+      "daysHigh": {
+        "$numberInt": "2014"
+      },
+      "daysLow": {
+        "$numberInt": "1990"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525132800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2005"
+      },
+      "opening": {
+        "$numberDouble": "1999.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "2021.3"
+      },
+      "daysLow": {
+        "$numberInt": "1998"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525219200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1992.5"
+      },
+      "opening": {
+        "$numberInt": "2004"
+      },
+      "daysHigh": {
+        "$numberInt": "2006"
+      },
+      "daysLow": {
+        "$numberDouble": "1953.8"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525305600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1980.5"
+      },
+      "opening": {
+        "$numberDouble": "1993.5"
+      },
+      "daysHigh": {
+        "$numberInt": "2000"
+      },
+      "daysLow": {
+        "$numberInt": "1968"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525392000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1990"
+      },
+      "opening": {
+        "$numberInt": "1990"
+      },
+      "daysHigh": {
+        "$numberInt": "2008"
+      },
+      "daysLow": {
+        "$numberDouble": "1975.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525737600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2000"
+      },
+      "opening": {
+        "$numberInt": "1992"
+      },
+      "daysHigh": {
+        "$numberInt": "2016"
+      },
+      "daysLow": {
+        "$numberDouble": "1986.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525824000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2012"
+      },
+      "opening": {
+        "$numberInt": "1998"
+      },
+      "daysHigh": {
+        "$numberDouble": "2021.152"
+      },
+      "daysLow": {
+        "$numberInt": "1989"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525910400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1972"
+      },
+      "opening": {
+        "$numberInt": "1969"
+      },
+      "daysHigh": {
+        "$numberInt": "1981"
+      },
+      "daysLow": {
+        "$numberInt": "1960"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1525996800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1940.5"
+      },
+      "opening": {
+        "$numberInt": "1973"
+      },
+      "daysHigh": {
+        "$numberDouble": "1973.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1936.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1526256000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1930"
+      },
+      "opening": {
+        "$numberInt": "1937"
+      },
+      "daysHigh": {
+        "$numberDouble": "1938.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1921.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1526342400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1947.5"
+      },
+      "opening": {
+        "$numberInt": "1931"
+      },
+      "daysHigh": {
+        "$numberDouble": "1979.5"
+      },
+      "daysLow": {
+        "$numberInt": "1927"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1526428800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1938.64"
+      },
+      "opening": {
+        "$numberInt": "1944"
+      },
+      "daysHigh": {
+        "$numberInt": "1953"
+      },
+      "daysLow": {
+        "$numberInt": "1930"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1526515200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1945"
+      },
+      "opening": {
+        "$numberDouble": "1928.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1950.5"
+      },
+      "daysLow": {
+        "$numberInt": "1924"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1526601600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1927.005"
+      },
+      "opening": {
+        "$numberDouble": "1945.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1945.5"
+      },
+      "daysLow": {
+        "$numberInt": "1917"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1526860800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1959"
+      },
+      "opening": {
+        "$numberDouble": "1937.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1967.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1933.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1526947200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1959.5"
+      },
+      "opening": {
+        "$numberInt": "1963"
+      },
+      "daysHigh": {
+        "$numberInt": "1975"
+      },
+      "daysLow": {
+        "$numberInt": "1956"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1527033600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1941.5"
+      },
+      "opening": {
+        "$numberInt": "1960"
+      },
+      "daysHigh": {
+        "$numberDouble": "1971.5"
+      },
+      "daysLow": {
+        "$numberInt": "1937"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1527120000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1943.5"
+      },
+      "opening": {
+        "$numberInt": "1937"
+      },
+      "daysHigh": {
+        "$numberDouble": "1964.5"
+      },
+      "daysLow": {
+        "$numberInt": "1937"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1527206400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1980"
+      },
+      "opening": {
+        "$numberDouble": "1951.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1987"
+      },
+      "daysLow": {
+        "$numberInt": "1949"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1527552000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1924"
+      },
+      "opening": {
+        "$numberInt": "1971"
+      },
+      "daysHigh": {
+        "$numberInt": "1977"
+      },
+      "daysLow": {
+        "$numberInt": "1922"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1527638400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1927.94"
+      },
+      "opening": {
+        "$numberInt": "1931"
+      },
+      "daysHigh": {
+        "$numberInt": "1939"
+      },
+      "daysLow": {
+        "$numberDouble": "1916.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1527724800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1940.18"
+      },
+      "opening": {
+        "$numberDouble": "1933.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1953.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1925.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1527811200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1917"
+      },
+      "opening": {
+        "$numberInt": "1939"
+      },
+      "daysHigh": {
+        "$numberDouble": "1952.5"
+      },
+      "daysLow": {
+        "$numberInt": "1917"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528070400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1943"
+      },
+      "opening": {
+        "$numberInt": "1917"
+      },
+      "daysHigh": {
+        "$numberDouble": "1949.5"
+      },
+      "daysLow": {
+        "$numberInt": "1917"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528156800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1925"
+      },
+      "opening": {
+        "$numberDouble": "1943.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1946.5"
+      },
+      "daysLow": {
+        "$numberInt": "1923"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528243200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1925"
+      },
+      "opening": {
+        "$numberDouble": "1937.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1944.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1908.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528329600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1927.5"
+      },
+      "opening": {
+        "$numberInt": "1942"
+      },
+      "daysHigh": {
+        "$numberInt": "1942"
+      },
+      "daysLow": {
+        "$numberDouble": "1923.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528416000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1902.5"
+      },
+      "opening": {
+        "$numberInt": "1917"
+      },
+      "daysHigh": {
+        "$numberInt": "1931"
+      },
+      "daysLow": {
+        "$numberInt": "1901"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528675200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1915"
+      },
+      "opening": {
+        "$numberInt": "1902"
+      },
+      "daysHigh": {
+        "$numberDouble": "1924.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1898.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528761600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1899.5"
+      },
+      "opening": {
+        "$numberInt": "1921"
+      },
+      "daysHigh": {
+        "$numberInt": "1921"
+      },
+      "daysLow": {
+        "$numberDouble": "1881.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528848000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1880"
+      },
+      "opening": {
+        "$numberDouble": "1892.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1898.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1867.3"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1528934400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1908"
+      },
+      "opening": {
+        "$numberInt": "1870"
+      },
+      "daysHigh": {
+        "$numberInt": "1913"
+      },
+      "daysLow": {
+        "$numberInt": "1862"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529020800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1891.5"
+      },
+      "opening": {
+        "$numberDouble": "1907.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1907.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1877.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529280000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1882"
+      },
+      "opening": {
+        "$numberDouble": "1887.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1903.5"
+      },
+      "daysLow": {
+        "$numberInt": "1871"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529366400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1896.5"
+      },
+      "opening": {
+        "$numberInt": "1870"
+      },
+      "daysHigh": {
+        "$numberInt": "1903"
+      },
+      "daysLow": {
+        "$numberDouble": "1862.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529452800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1906.5"
+      },
+      "opening": {
+        "$numberInt": "1905"
+      },
+      "daysHigh": {
+        "$numberDouble": "1920.5"
+      },
+      "daysLow": {
+        "$numberInt": "1903"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529539200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1880.5"
+      },
+      "opening": {
+        "$numberDouble": "1910.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1916"
+      },
+      "daysLow": {
+        "$numberDouble": "1880.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529625600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1912"
+      },
+      "opening": {
+        "$numberDouble": "1889.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1914.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1886.894"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529884800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1889.5"
+      },
+      "opening": {
+        "$numberDouble": "1912.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1917"
+      },
+      "daysLow": {
+        "$numberDouble": "1889.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1529971200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1907"
+      },
+      "opening": {
+        "$numberDouble": "1900.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1914"
+      },
+      "daysLow": {
+        "$numberDouble": "1888.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530057600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1921.5"
+      },
+      "opening": {
+        "$numberInt": "1905"
+      },
+      "daysHigh": {
+        "$numberDouble": "1927.5"
+      },
+      "daysLow": {
+        "$numberInt": "1897"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530144000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1902"
+      },
+      "opening": {
+        "$numberInt": "1913"
+      },
+      "daysHigh": {
+        "$numberInt": "1915"
+      },
+      "daysLow": {
+        "$numberInt": "1899"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530230400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1907.5"
+      },
+      "opening": {
+        "$numberInt": "1920"
+      },
+      "daysHigh": {
+        "$numberInt": "1924"
+      },
+      "daysLow": {
+        "$numberDouble": "1903.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530489600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1894.5"
+      },
+      "opening": {
+        "$numberDouble": "1895.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1912"
+      },
+      "daysLow": {
+        "$numberDouble": "1894.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530576000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1894"
+      },
+      "opening": {
+        "$numberDouble": "1899.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1907.5"
+      },
+      "daysLow": {
+        "$numberInt": "1885"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530662400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1902"
+      },
+      "opening": {
+        "$numberInt": "1890"
+      },
+      "daysHigh": {
+        "$numberInt": "1905"
+      },
+      "daysLow": {
+        "$numberInt": "1883"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530748800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1909"
+      },
+      "opening": {
+        "$numberInt": "1907"
+      },
+      "daysHigh": {
+        "$numberInt": "1916"
+      },
+      "daysLow": {
+        "$numberInt": "1900"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1530835200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1870"
+      },
+      "opening": {
+        "$numberDouble": "1911.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1914.5"
+      },
+      "daysLow": {
+        "$numberInt": "1857"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531094400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1881"
+      },
+      "opening": {
+        "$numberDouble": "1863.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1887"
+      },
+      "daysLow": {
+        "$numberInt": "1861"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531180800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1898.5"
+      },
+      "opening": {
+        "$numberDouble": "1880.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1898.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1879.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531267200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1899"
+      },
+      "opening": {
+        "$numberDouble": "1891.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1904.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1884.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531353600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1934"
+      },
+      "opening": {
+        "$numberDouble": "1906.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1939.5"
+      },
+      "daysLow": {
+        "$numberInt": "1903"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531440000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1948"
+      },
+      "opening": {
+        "$numberDouble": "1947.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1973"
+      },
+      "daysLow": {
+        "$numberInt": "1941"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531699200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1939"
+      },
+      "opening": {
+        "$numberDouble": "1944.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1944.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1882.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531785600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1960.5"
+      },
+      "opening": {
+        "$numberInt": "1938"
+      },
+      "daysHigh": {
+        "$numberInt": "1962"
+      },
+      "daysLow": {
+        "$numberInt": "1936"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531872000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1987"
+      },
+      "opening": {
+        "$numberDouble": "1967.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1995"
+      },
+      "daysLow": {
+        "$numberDouble": "1958.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1531958400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1985.5"
+      },
+      "opening": {
+        "$numberInt": "1983"
+      },
+      "daysHigh": {
+        "$numberInt": "2002"
+      },
+      "daysLow": {
+        "$numberDouble": "1977.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532044800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1958"
+      },
+      "opening": {
+        "$numberDouble": "1979.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1988.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1949.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532304000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1930"
+      },
+      "opening": {
+        "$numberDouble": "1949.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1969.5"
+      },
+      "daysLow": {
+        "$numberInt": "1929"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532390400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1935"
+      },
+      "opening": {
+        "$numberInt": "1943"
+      },
+      "daysHigh": {
+        "$numberDouble": "1945.5"
+      },
+      "daysLow": {
+        "$numberDouble": "19.43"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532476800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1901.5"
+      },
+      "opening": {
+        "$numberInt": "1942"
+      },
+      "daysHigh": {
+        "$numberInt": "1942"
+      },
+      "daysLow": {
+        "$numberInt": "1901"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532563200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1917"
+      },
+      "opening": {
+        "$numberInt": "1916"
+      },
+      "daysHigh": {
+        "$numberDouble": "1919.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1896.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532649600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1897"
+      },
+      "opening": {
+        "$numberDouble": "1920.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1932.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1887.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532908800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1903.5"
+      },
+      "opening": {
+        "$numberDouble": "1887.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1919"
+      },
+      "daysLow": {
+        "$numberDouble": "1885.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1532995200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1981"
+      },
+      "opening": {
+        "$numberInt": "1904"
+      },
+      "daysHigh": {
+        "$numberInt": "1990"
+      },
+      "daysLow": {
+        "$numberInt": "1901"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533081600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1967"
+      },
+      "opening": {
+        "$numberInt": "1977"
+      },
+      "daysHigh": {
+        "$numberInt": "1977"
+      },
+      "daysLow": {
+        "$numberInt": "1946"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533168000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1947"
+      },
+      "opening": {
+        "$numberDouble": "1959.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1966"
+      },
+      "daysLow": {
+        "$numberInt": "1940"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533254400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1966"
+      },
+      "opening": {
+        "$numberInt": "1963"
+      },
+      "daysHigh": {
+        "$numberInt": "1973"
+      },
+      "daysLow": {
+        "$numberDouble": "1946.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533513600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1974"
+      },
+      "opening": {
+        "$numberInt": "1993"
+      },
+      "daysHigh": {
+        "$numberInt": "1993"
+      },
+      "daysLow": {
+        "$numberInt": "1950"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533600000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1960.409"
+      },
+      "opening": {
+        "$numberInt": "1976"
+      },
+      "daysHigh": {
+        "$numberDouble": "1983.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1952.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533686400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1993.5"
+      },
+      "opening": {
+        "$numberInt": "1954"
+      },
+      "daysHigh": {
+        "$numberInt": "1994"
+      },
+      "daysLow": {
+        "$numberDouble": "1951.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533772800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1998"
+      },
+      "opening": {
+        "$numberDouble": "1985.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "2000.3"
+      },
+      "daysLow": {
+        "$numberInt": "1972"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1533859200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1987"
+      },
+      "opening": {
+        "$numberInt": "1996"
+      },
+      "daysHigh": {
+        "$numberInt": "2003"
+      },
+      "daysLow": {
+        "$numberInt": "1984"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534118400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2019"
+      },
+      "opening": {
+        "$numberDouble": "1973.5"
+      },
+      "daysHigh": {
+        "$numberInt": "2024"
+      },
+      "daysLow": {
+        "$numberDouble": "1973.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534204800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1998"
+      },
+      "opening": {
+        "$numberInt": "2025"
+      },
+      "daysHigh": {
+        "$numberInt": "2036"
+      },
+      "daysLow": {
+        "$numberDouble": "1990.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534291200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2062"
+      },
+      "opening": {
+        "$numberInt": "2035"
+      },
+      "daysHigh": {
+        "$numberInt": "2110"
+      },
+      "daysLow": {
+        "$numberInt": "1987"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534377600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2050"
+      },
+      "opening": {
+        "$numberInt": "2046"
+      },
+      "daysHigh": {
+        "$numberInt": "2057"
+      },
+      "daysLow": {
+        "$numberInt": "2012"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534464000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2037"
+      },
+      "opening": {
+        "$numberInt": "2055"
+      },
+      "daysHigh": {
+        "$numberInt": "2058"
+      },
+      "daysLow": {
+        "$numberInt": "2021"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534723200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2034"
+      },
+      "opening": {
+        "$numberInt": "2036"
+      },
+      "daysHigh": {
+        "$numberInt": "2047"
+      },
+      "daysLow": {
+        "$numberInt": "2013"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534809600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2057"
+      },
+      "opening": {
+        "$numberInt": "2020"
+      },
+      "daysHigh": {
+        "$numberInt": "2068"
+      },
+      "daysLow": {
+        "$numberInt": "2020"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534896000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2087"
+      },
+      "opening": {
+        "$numberInt": "2060"
+      },
+      "daysHigh": {
+        "$numberInt": "2097"
+      },
+      "daysLow": {
+        "$numberInt": "2026"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1534982400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2079"
+      },
+      "opening": {
+        "$numberInt": "2092"
+      },
+      "daysHigh": {
+        "$numberInt": "2095"
+      },
+      "daysLow": {
+        "$numberInt": "2074"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1535068800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2078"
+      },
+      "opening": {
+        "$numberInt": "2070"
+      },
+      "daysHigh": {
+        "$numberInt": "2081"
+      },
+      "daysLow": {
+        "$numberInt": "2064"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1535414400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2088"
+      },
+      "opening": {
+        "$numberInt": "2097"
+      },
+      "daysHigh": {
+        "$numberInt": "2104"
+      },
+      "daysLow": {
+        "$numberInt": "2077"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1535500800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2079"
+      },
+      "opening": {
+        "$numberInt": "2090"
+      },
+      "daysHigh": {
+        "$numberInt": "2099"
+      },
+      "daysLow": {
+        "$numberInt": "2068"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1535587200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2089"
+      },
+      "opening": {
+        "$numberInt": "2088"
+      },
+      "daysHigh": {
+        "$numberInt": "2096"
+      },
+      "daysLow": {
+        "$numberInt": "2068"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1535673600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2080"
+      },
+      "opening": {
+        "$numberInt": "2081"
+      },
+      "daysHigh": {
+        "$numberDouble": "2096.601"
+      },
+      "daysLow": {
+        "$numberInt": "2073"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1535932800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2118"
+      },
+      "opening": {
+        "$numberInt": "2088"
+      },
+      "daysHigh": {
+        "$numberInt": "2126"
+      },
+      "daysLow": {
+        "$numberDouble": "2085.96"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536019200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2096"
+      },
+      "opening": {
+        "$numberInt": "2128"
+      },
+      "daysHigh": {
+        "$numberInt": "2138"
+      },
+      "daysLow": {
+        "$numberInt": "2083"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536105600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2095"
+      },
+      "opening": {
+        "$numberInt": "2093"
+      },
+      "daysHigh": {
+        "$numberInt": "2112"
+      },
+      "daysLow": {
+        "$numberInt": "2087"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536192000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2028"
+      },
+      "opening": {
+        "$numberInt": "2043"
+      },
+      "daysHigh": {
+        "$numberInt": "2044"
+      },
+      "daysLow": {
+        "$numberDouble": "2022.915"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536278400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2021"
+      },
+      "opening": {
+        "$numberInt": "2037"
+      },
+      "daysHigh": {
+        "$numberInt": "2043"
+      },
+      "daysLow": {
+        "$numberDouble": "2013.32"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536537600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2015"
+      },
+      "opening": {
+        "$numberInt": "2031"
+      },
+      "daysHigh": {
+        "$numberInt": "2044"
+      },
+      "daysLow": {
+        "$numberDouble": "2012.323"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536624000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2015"
+      },
+      "opening": {
+        "$numberInt": "2011"
+      },
+      "daysHigh": {
+        "$numberInt": "2019"
+      },
+      "daysLow": {
+        "$numberInt": "2004"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536710400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2017"
+      },
+      "opening": {
+        "$numberInt": "2026"
+      },
+      "daysHigh": {
+        "$numberInt": "2026"
+      },
+      "daysLow": {
+        "$numberInt": "2011"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536796800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2014"
+      },
+      "opening": {
+        "$numberInt": "2010"
+      },
+      "daysHigh": {
+        "$numberInt": "2020"
+      },
+      "daysLow": {
+        "$numberInt": "2003"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1536883200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2019"
+      },
+      "opening": {
+        "$numberInt": "2011"
+      },
+      "daysHigh": {
+        "$numberInt": "2022"
+      },
+      "daysLow": {
+        "$numberInt": "2011"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537142400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2035"
+      },
+      "opening": {
+        "$numberInt": "2011"
+      },
+      "daysHigh": {
+        "$numberInt": "2035"
+      },
+      "daysLow": {
+        "$numberInt": "2010"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537228800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2046"
+      },
+      "opening": {
+        "$numberInt": "2032"
+      },
+      "daysHigh": {
+        "$numberInt": "2056"
+      },
+      "daysLow": {
+        "$numberInt": "2031"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537315200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2014"
+      },
+      "opening": {
+        "$numberInt": "2041"
+      },
+      "daysHigh": {
+        "$numberInt": "2050"
+      },
+      "daysLow": {
+        "$numberInt": "2006"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537401600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2024"
+      },
+      "opening": {
+        "$numberInt": "2004"
+      },
+      "daysHigh": {
+        "$numberInt": "2026"
+      },
+      "daysLow": {
+        "$numberDouble": "1995.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537488000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2048"
+      },
+      "opening": {
+        "$numberInt": "2014"
+      },
+      "daysHigh": {
+        "$numberInt": "2048"
+      },
+      "daysLow": {
+        "$numberInt": "2014"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537747200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2043"
+      },
+      "opening": {
+        "$numberInt": "2040"
+      },
+      "daysHigh": {
+        "$numberDouble": "2060.3"
+      },
+      "daysLow": {
+        "$numberInt": "2038"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537833600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2071"
+      },
+      "opening": {
+        "$numberInt": "2040"
+      },
+      "daysHigh": {
+        "$numberInt": "2071"
+      },
+      "daysLow": {
+        "$numberInt": "2040"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1537920000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2090"
+      },
+      "opening": {
+        "$numberInt": "2075"
+      },
+      "daysHigh": {
+        "$numberInt": "2090"
+      },
+      "daysLow": {
+        "$numberInt": "2062"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538006400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2102"
+      },
+      "opening": {
+        "$numberInt": "2073"
+      },
+      "daysHigh": {
+        "$numberInt": "2104"
+      },
+      "daysLow": {
+        "$numberInt": "2073"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538092800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2080"
+      },
+      "opening": {
+        "$numberInt": "2084"
+      },
+      "daysHigh": {
+        "$numberInt": "2093"
+      },
+      "daysLow": {
+        "$numberInt": "2042"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538352000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2057"
+      },
+      "opening": {
+        "$numberInt": "2069"
+      },
+      "daysHigh": {
+        "$numberInt": "2098"
+      },
+      "daysLow": {
+        "$numberInt": "2057"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538438400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2035"
+      },
+      "opening": {
+        "$numberInt": "2055"
+      },
+      "daysHigh": {
+        "$numberInt": "2055"
+      },
+      "daysLow": {
+        "$numberInt": "2024"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538524800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2048"
+      },
+      "opening": {
+        "$numberInt": "2047"
+      },
+      "daysHigh": {
+        "$numberInt": "2057"
+      },
+      "daysLow": {
+        "$numberInt": "2036"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538611200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2041"
+      },
+      "opening": {
+        "$numberInt": "2049"
+      },
+      "daysHigh": {
+        "$numberInt": "2060"
+      },
+      "daysLow": {
+        "$numberInt": "2037"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538697600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2024"
+      },
+      "opening": {
+        "$numberInt": "2040"
+      },
+      "daysHigh": {
+        "$numberInt": "2049"
+      },
+      "daysLow": {
+        "$numberInt": "2023"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1538956800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2016"
+      },
+      "opening": {
+        "$numberInt": "2031"
+      },
+      "daysHigh": {
+        "$numberDouble": "2033.737"
+      },
+      "daysLow": {
+        "$numberInt": "2016"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539043200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2021"
+      },
+      "opening": {
+        "$numberInt": "2025"
+      },
+      "daysHigh": {
+        "$numberInt": "2045"
+      },
+      "daysLow": {
+        "$numberInt": "2016"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539129600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2003"
+      },
+      "opening": {
+        "$numberInt": "2024"
+      },
+      "daysHigh": {
+        "$numberDouble": "2028.7"
+      },
+      "daysLow": {
+        "$numberInt": "2003"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539216000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1932.5"
+      },
+      "opening": {
+        "$numberDouble": "1986.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1986.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1928.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539302400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1948"
+      },
+      "opening": {
+        "$numberInt": "1941"
+      },
+      "daysHigh": {
+        "$numberDouble": "1961.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1935.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539561600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1957.5"
+      },
+      "opening": {
+        "$numberInt": "1950"
+      },
+      "daysHigh": {
+        "$numberDouble": "1960.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1940.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539648000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1979.5"
+      },
+      "opening": {
+        "$numberInt": "2000"
+      },
+      "daysHigh": {
+        "$numberInt": "2001"
+      },
+      "daysLow": {
+        "$numberInt": "1964"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539734400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1994"
+      },
+      "opening": {
+        "$numberDouble": "1983.5"
+      },
+      "daysHigh": {
+        "$numberInt": "2001"
+      },
+      "daysLow": {
+        "$numberInt": "1975"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539820800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2004"
+      },
+      "opening": {
+        "$numberDouble": "1999.5"
+      },
+      "daysHigh": {
+        "$numberInt": "2022"
+      },
+      "daysLow": {
+        "$numberDouble": "1989.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1539907200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2003"
+      },
+      "opening": {
+        "$numberInt": "2013"
+      },
+      "daysHigh": {
+        "$numberInt": "2017"
+      },
+      "daysLow": {
+        "$numberDouble": "1995.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540166400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2002"
+      },
+      "opening": {
+        "$numberInt": "2012"
+      },
+      "daysHigh": {
+        "$numberInt": "2018"
+      },
+      "daysLow": {
+        "$numberDouble": "1999.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540252800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1965.5"
+      },
+      "opening": {
+        "$numberInt": "1989"
+      },
+      "daysHigh": {
+        "$numberDouble": "1993.5"
+      },
+      "daysLow": {
+        "$numberInt": "1952"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540339200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1977.5"
+      },
+      "opening": {
+        "$numberInt": "1978"
+      },
+      "daysHigh": {
+        "$numberInt": "2013"
+      },
+      "daysLow": {
+        "$numberInt": "1967"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540425600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1945"
+      },
+      "opening": {
+        "$numberDouble": "1979.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1980"
+      },
+      "daysLow": {
+        "$numberDouble": "1919.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540512000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1935"
+      },
+      "opening": {
+        "$numberDouble": "1938.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1942.5"
+      },
+      "daysLow": {
+        "$numberInt": "1901"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540771200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1968"
+      },
+      "opening": {
+        "$numberDouble": "1934.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1983.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1934.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540857600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1976"
+      },
+      "opening": {
+        "$numberInt": "1976"
+      },
+      "daysHigh": {
+        "$numberInt": "1982"
+      },
+      "daysLow": {
+        "$numberInt": "1955"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1540944000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2013"
+      },
+      "opening": {
+        "$numberInt": "1985"
+      },
+      "daysHigh": {
+        "$numberInt": "2023"
+      },
+      "daysLow": {
+        "$numberDouble": "1976.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541030400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2003"
+      },
+      "opening": {
+        "$numberInt": "1988"
+      },
+      "daysHigh": {
+        "$numberInt": "2032"
+      },
+      "daysLow": {
+        "$numberDouble": "1979.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541116800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1996.5"
+      },
+      "opening": {
+        "$numberInt": "2022"
+      },
+      "daysHigh": {
+        "$numberInt": "2023"
+      },
+      "daysLow": {
+        "$numberInt": "1986"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541376000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1980"
+      },
+      "opening": {
+        "$numberDouble": "2017.905"
+      },
+      "daysHigh": {
+        "$numberDouble": "2017.905"
+      },
+      "daysLow": {
+        "$numberDouble": "1967.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541462400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1975"
+      },
+      "opening": {
+        "$numberDouble": "1980.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1990"
+      },
+      "daysLow": {
+        "$numberDouble": "1962.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541548800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1986.5"
+      },
+      "opening": {
+        "$numberDouble": "1986.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1997"
+      },
+      "daysLow": {
+        "$numberInt": "1972"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541635200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2029"
+      },
+      "opening": {
+        "$numberInt": "2004"
+      },
+      "daysHigh": {
+        "$numberInt": "2029"
+      },
+      "daysLow": {
+        "$numberInt": "1993"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541721600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2054"
+      },
+      "opening": {
+        "$numberInt": "2029"
+      },
+      "daysHigh": {
+        "$numberInt": "2057"
+      },
+      "daysLow": {
+        "$numberInt": "2027"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1541980800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2040"
+      },
+      "opening": {
+        "$numberInt": "2074"
+      },
+      "daysHigh": {
+        "$numberInt": "2074"
+      },
+      "daysLow": {
+        "$numberInt": "2022"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542067200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2059"
+      },
+      "opening": {
+        "$numberInt": "2046"
+      },
+      "daysHigh": {
+        "$numberInt": "2060"
+      },
+      "daysLow": {
+        "$numberInt": "2010"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542153600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2054"
+      },
+      "opening": {
+        "$numberInt": "2059"
+      },
+      "daysHigh": {
+        "$numberInt": "2080"
+      },
+      "daysLow": {
+        "$numberInt": "2038"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542240000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1989.5"
+      },
+      "opening": {
+        "$numberInt": "2056"
+      },
+      "daysHigh": {
+        "$numberInt": "2073"
+      },
+      "daysLow": {
+        "$numberDouble": "1975.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542326400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1980.5"
+      },
+      "opening": {
+        "$numberDouble": "1998.5"
+      },
+      "daysHigh": {
+        "$numberInt": "2005"
+      },
+      "daysLow": {
+        "$numberDouble": "106.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542585600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1989.5"
+      },
+      "opening": {
+        "$numberDouble": "1985.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "2009.7"
+      },
+      "daysLow": {
+        "$numberDouble": "1972.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542672000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1976.5"
+      },
+      "opening": {
+        "$numberDouble": "1978.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1987"
+      },
+      "daysLow": {
+        "$numberDouble": "1962.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542758400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2003"
+      },
+      "opening": {
+        "$numberDouble": "1988.5"
+      },
+      "daysHigh": {
+        "$numberInt": "2010"
+      },
+      "daysLow": {
+        "$numberDouble": "1963.989"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542844800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1975.5"
+      },
+      "opening": {
+        "$numberInt": "2001"
+      },
+      "daysHigh": {
+        "$numberInt": "2015"
+      },
+      "daysLow": {
+        "$numberDouble": "1974.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1542931200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2012"
+      },
+      "opening": {
+        "$numberInt": "1981"
+      },
+      "daysHigh": {
+        "$numberInt": "2012"
+      },
+      "daysLow": {
+        "$numberDouble": "1977.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543190400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2035"
+      },
+      "opening": {
+        "$numberInt": "2029"
+      },
+      "daysHigh": {
+        "$numberInt": "2045"
+      },
+      "daysLow": {
+        "$numberInt": "2019"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543276800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2055"
+      },
+      "opening": {
+        "$numberInt": "2033"
+      },
+      "daysHigh": {
+        "$numberInt": "2074"
+      },
+      "daysLow": {
+        "$numberInt": "2033"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543363200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2091"
+      },
+      "opening": {
+        "$numberInt": "2067"
+      },
+      "daysHigh": {
+        "$numberInt": "2096"
+      },
+      "daysLow": {
+        "$numberDouble": "2053.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543449600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2106"
+      },
+      "opening": {
+        "$numberInt": "2108"
+      },
+      "daysHigh": {
+        "$numberDouble": "2134.838"
+      },
+      "daysLow": {
+        "$numberInt": "2104"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543536000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2084"
+      },
+      "opening": {
+        "$numberInt": "2107"
+      },
+      "daysHigh": {
+        "$numberInt": "2107"
+      },
+      "daysLow": {
+        "$numberInt": "2075"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543795200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2105"
+      },
+      "opening": {
+        "$numberInt": "2113"
+      },
+      "daysHigh": {
+        "$numberInt": "2124"
+      },
+      "daysLow": {
+        "$numberInt": "2087"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543881600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2107"
+      },
+      "opening": {
+        "$numberInt": "2106"
+      },
+      "daysHigh": {
+        "$numberInt": "2131"
+      },
+      "daysLow": {
+        "$numberInt": "2089"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1543968000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2079"
+      },
+      "opening": {
+        "$numberInt": "2080"
+      },
+      "daysHigh": {
+        "$numberInt": "2107"
+      },
+      "daysLow": {
+        "$numberInt": "2070"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1544054400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1994.5"
+      },
+      "opening": {
+        "$numberInt": "2063"
+      },
+      "daysHigh": {
+        "$numberInt": "2064"
+      },
+      "daysLow": {
+        "$numberInt": "1993"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1544140800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2007"
+      },
+      "opening": {
+        "$numberInt": "2005"
+      },
+      "daysHigh": {
+        "$numberInt": "2035"
+      },
+      "daysLow": {
+        "$numberInt": "2004"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1544400000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1995.5"
+      },
+      "opening": {
+        "$numberInt": "2000"
+      },
+      "daysHigh": {
+        "$numberInt": "2018"
+      },
+      "daysLow": {
+        "$numberDouble": "1995.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1544486400000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1995.5"
+      },
+      "opening": {
+        "$numberInt": "2005"
+      },
+      "daysHigh": {
+        "$numberInt": "2016"
+      },
+      "daysLow": {
+        "$numberDouble": "1970.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1544572800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1997.5"
+      },
+      "opening": {
+        "$numberInt": "1999"
+      },
+      "daysHigh": {
+        "$numberInt": "2031"
+      },
+      "daysLow": {
+        "$numberInt": "1995"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1544659200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1968.5"
+      },
+      "opening": {
+        "$numberDouble": "1987.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1997"
+      },
+      "daysLow": {
+        "$numberDouble": "1967.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1544745600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1980.5"
+      },
+      "opening": {
+        "$numberDouble": "1955.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1990.5"
+      },
+      "daysLow": {
+        "$numberInt": "1954"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545004800000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1959.5"
+      },
+      "opening": {
+        "$numberDouble": "1989.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1990"
+      },
+      "daysLow": {
+        "$numberInt": "1950"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545091200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1958"
+      },
+      "opening": {
+        "$numberInt": "1948"
+      },
+      "daysHigh": {
+        "$numberDouble": "1972.5"
+      },
+      "daysLow": {
+        "$numberDouble": "1917.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545177600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1960"
+      },
+      "opening": {
+        "$numberDouble": "1966.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1967"
+      },
+      "daysLow": {
+        "$numberInt": "1944"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545264000000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1975.5"
+      },
+      "opening": {
+        "$numberDouble": "1939.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1978"
+      },
+      "daysLow": {
+        "$numberDouble": "1912.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545350400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1977"
+      },
+      "opening": {
+        "$numberDouble": "1973.5"
+      },
+      "daysHigh": {
+        "$numberDouble": "1984.5"
+      },
+      "daysLow": {
+        "$numberInt": "1954"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545609600000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1982.5"
+      },
+      "opening": {
+        "$numberDouble": "1952.5"
+      },
+      "daysHigh": {
+        "$numberInt": "1987"
+      },
+      "daysLow": {
+        "$numberDouble": "1952.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545868800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "1985"
+      },
+      "opening": {
+        "$numberInt": "1994"
+      },
+      "daysHigh": {
+        "$numberInt": "2000"
+      },
+      "daysLow": {
+        "$numberDouble": "1965.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1545955200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2023"
+      },
+      "opening": {
+        "$numberInt": "2001"
+      },
+      "daysHigh": {
+        "$numberInt": "2028"
+      },
+      "daysLow": {
+        "$numberDouble": "1987.612"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1546214400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2047"
+      },
+      "opening": {
+        "$numberInt": "2030"
+      },
+      "daysHigh": {
+        "$numberInt": "2047"
+      },
+      "daysLow": {
+        "$numberInt": "2024"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1546387200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2027"
+      },
+      "opening": {
+        "$numberInt": "2025"
+      },
+      "daysHigh": {
+        "$numberInt": "2030"
+      },
+      "daysLow": {
+        "$numberInt": "2000"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1546473600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2006"
+      },
+      "opening": {
+        "$numberInt": "2010"
+      },
+      "daysHigh": {
+        "$numberInt": "2033"
+      },
+      "daysLow": {
+        "$numberInt": "2000"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1546560000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2018"
+      },
+      "opening": {
+        "$numberInt": "2024"
+      },
+      "daysHigh": {
+        "$numberInt": "2025"
+      },
+      "daysLow": {
+        "$numberDouble": "1999.55"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1546819200000"
+        }
+      },
+      "closing": {
+        "$numberDouble": "1979.5"
+      },
+      "opening": {
+        "$numberInt": "2014"
+      },
+      "daysHigh": {
+        "$numberInt": "2028"
+      },
+      "daysLow": {
+        "$numberDouble": "1970.5"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1546905600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2020"
+      },
+      "opening": {
+        "$numberInt": "1981"
+      },
+      "daysHigh": {
+        "$numberInt": "2025"
+      },
+      "daysLow": {
+        "$numberInt": "1981"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1546992000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2038"
+      },
+      "opening": {
+        "$numberInt": "2037"
+      },
+      "daysHigh": {
+        "$numberInt": "2074"
+      },
+      "daysLow": {
+        "$numberInt": "2028"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1547078400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2037"
+      },
+      "opening": {
+        "$numberInt": "2038"
+      },
+      "daysHigh": {
+        "$numberInt": "2045"
+      },
+      "daysLow": {
+        "$numberInt": "2005"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1547164800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2025"
+      },
+      "opening": {
+        "$numberInt": "2044"
+      },
+      "daysHigh": {
+        "$numberInt": "2053"
+      },
+      "daysLow": {
+        "$numberInt": "2018"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1547424000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2023"
+      },
+      "opening": {
+        "$numberInt": "2026"
+      },
+      "daysHigh": {
+        "$numberInt": "2043"
+      },
+      "daysLow": {
+        "$numberInt": "2005"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1547510400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2064"
+      },
+      "opening": {
+        "$numberInt": "2036"
+      },
+      "daysHigh": {
+        "$numberInt": "2072"
+      },
+      "daysLow": {
+        "$numberInt": "2036"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1547596800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2072"
+      },
+      "opening": {
+        "$numberInt": "2069"
+      },
+      "daysHigh": {
+        "$numberInt": "2074"
+      },
+      "daysLow": {
+        "$numberInt": "2051"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1547683200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2062"
+      },
+      "opening": {
+        "$numberInt": "2066"
+      },
+      "daysHigh": {
+        "$numberInt": "2073"
+      },
+      "daysLow": {
+        "$numberInt": "2052"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1547769600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2100"
+      },
+      "opening": {
+        "$numberInt": "2075"
+      },
+      "daysHigh": {
+        "$numberInt": "2109"
+      },
+      "daysLow": {
+        "$numberInt": "2072"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548028800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2110"
+      },
+      "opening": {
+        "$numberInt": "2111"
+      },
+      "daysHigh": {
+        "$numberInt": "2125"
+      },
+      "daysLow": {
+        "$numberDouble": "2099.87"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548115200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2117"
+      },
+      "opening": {
+        "$numberInt": "2115"
+      },
+      "daysHigh": {
+        "$numberInt": "2131"
+      },
+      "daysLow": {
+        "$numberInt": "2103"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548201600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2107"
+      },
+      "opening": {
+        "$numberInt": "2120"
+      },
+      "daysHigh": {
+        "$numberInt": "2133"
+      },
+      "daysLow": {
+        "$numberInt": "2104"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548288000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2125"
+      },
+      "opening": {
+        "$numberInt": "2119"
+      },
+      "daysHigh": {
+        "$numberInt": "2130"
+      },
+      "daysLow": {
+        "$numberInt": "2094"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548374400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2090"
+      },
+      "opening": {
+        "$numberInt": "2132"
+      },
+      "daysHigh": {
+        "$numberInt": "2135"
+      },
+      "daysLow": {
+        "$numberInt": "2088"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548633600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2065"
+      },
+      "opening": {
+        "$numberInt": "2085"
+      },
+      "daysHigh": {
+        "$numberInt": "2094"
+      },
+      "daysLow": {
+        "$numberInt": "2058"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548720000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2092"
+      },
+      "opening": {
+        "$numberInt": "2065"
+      },
+      "daysHigh": {
+        "$numberInt": "2102"
+      },
+      "daysLow": {
+        "$numberInt": "2059"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548806400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2102"
+      },
+      "opening": {
+        "$numberInt": "2103"
+      },
+      "daysHigh": {
+        "$numberInt": "2126"
+      },
+      "daysLow": {
+        "$numberInt": "2080"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548892800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2071"
+      },
+      "opening": {
+        "$numberInt": "2091"
+      },
+      "daysHigh": {
+        "$numberInt": "2115"
+      },
+      "daysLow": {
+        "$numberInt": "2068"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1548979200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2114"
+      },
+      "opening": {
+        "$numberInt": "2068"
+      },
+      "daysHigh": {
+        "$numberInt": "2119"
+      },
+      "daysLow": {
+        "$numberInt": "2068"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1549238400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2133"
+      },
+      "opening": {
+        "$numberInt": "2123"
+      },
+      "daysHigh": {
+        "$numberInt": "2145"
+      },
+      "daysLow": {
+        "$numberInt": "2113"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1549324800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2155"
+      },
+      "opening": {
+        "$numberInt": "2130"
+      },
+      "daysHigh": {
+        "$numberInt": "2162"
+      },
+      "daysLow": {
+        "$numberInt": "2125"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1549411200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2146"
+      },
+      "opening": {
+        "$numberInt": "2165"
+      },
+      "daysHigh": {
+        "$numberInt": "2165"
+      },
+      "daysLow": {
+        "$numberInt": "2128"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1549497600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2139"
+      },
+      "opening": {
+        "$numberInt": "2142"
+      },
+      "daysHigh": {
+        "$numberInt": "2155"
+      },
+      "daysLow": {
+        "$numberInt": "2137"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1549584000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2140"
+      },
+      "opening": {
+        "$numberInt": "2148"
+      },
+      "daysHigh": {
+        "$numberInt": "2158"
+      },
+      "daysLow": {
+        "$numberInt": "2140"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1549843200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2129"
+      },
+      "opening": {
+        "$numberInt": "2150"
+      },
+      "daysHigh": {
+        "$numberInt": "2165"
+      },
+      "daysLow": {
+        "$numberInt": "2098"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1549929600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2130"
+      },
+      "opening": {
+        "$numberInt": "2143"
+      },
+      "daysHigh": {
+        "$numberDouble": "2147.788"
+      },
+      "daysLow": {
+        "$numberInt": "2121"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550016000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2172"
+      },
+      "opening": {
+        "$numberInt": "2144"
+      },
+      "daysHigh": {
+        "$numberInt": "2172"
+      },
+      "daysLow": {
+        "$numberInt": "2138"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550102400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2148"
+      },
+      "opening": {
+        "$numberInt": "2161"
+      },
+      "daysHigh": {
+        "$numberInt": "2189"
+      },
+      "daysLow": {
+        "$numberInt": "2143"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550188800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2144"
+      },
+      "opening": {
+        "$numberInt": "2138"
+      },
+      "daysHigh": {
+        "$numberInt": "2157"
+      },
+      "daysLow": {
+        "$numberInt": "2134"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550448000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2131"
+      },
+      "opening": {
+        "$numberInt": "2135"
+      },
+      "daysHigh": {
+        "$numberInt": "2158"
+      },
+      "daysLow": {
+        "$numberInt": "2131"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550534400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2153"
+      },
+      "opening": {
+        "$numberInt": "2130"
+      },
+      "daysHigh": {
+        "$numberInt": "2153"
+      },
+      "daysLow": {
+        "$numberInt": "2130"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550620800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2184"
+      },
+      "opening": {
+        "$numberInt": "2148"
+      },
+      "daysHigh": {
+        "$numberInt": "2188"
+      },
+      "daysLow": {
+        "$numberInt": "2144"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550707200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2171"
+      },
+      "opening": {
+        "$numberInt": "2190"
+      },
+      "daysHigh": {
+        "$numberInt": "2199"
+      },
+      "daysLow": {
+        "$numberInt": "2171"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1550793600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2185"
+      },
+      "opening": {
+        "$numberInt": "2185"
+      },
+      "daysHigh": {
+        "$numberInt": "2191"
+      },
+      "daysLow": {
+        "$numberInt": "2175"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551052800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2187"
+      },
+      "opening": {
+        "$numberInt": "2177"
+      },
+      "daysHigh": {
+        "$numberInt": "2189"
+      },
+      "daysLow": {
+        "$numberInt": "2175"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551139200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2182"
+      },
+      "opening": {
+        "$numberInt": "2186"
+      },
+      "daysHigh": {
+        "$numberInt": "2201"
+      },
+      "daysLow": {
+        "$numberInt": "2165"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551225600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2169"
+      },
+      "opening": {
+        "$numberInt": "2187"
+      },
+      "daysHigh": {
+        "$numberInt": "2196"
+      },
+      "daysLow": {
+        "$numberInt": "2164"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551312000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2182"
+      },
+      "opening": {
+        "$numberInt": "2169"
+      },
+      "daysHigh": {
+        "$numberInt": "2192"
+      },
+      "daysLow": {
+        "$numberInt": "2160"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551398400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2202"
+      },
+      "opening": {
+        "$numberInt": "2202"
+      },
+      "daysHigh": {
+        "$numberInt": "2205"
+      },
+      "daysLow": {
+        "$numberInt": "2185"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551657600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2193"
+      },
+      "opening": {
+        "$numberInt": "2211"
+      },
+      "daysHigh": {
+        "$numberInt": "2227"
+      },
+      "daysLow": {
+        "$numberInt": "2189"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551744000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2192"
+      },
+      "opening": {
+        "$numberInt": "2202"
+      },
+      "daysHigh": {
+        "$numberInt": "2211"
+      },
+      "daysLow": {
+        "$numberInt": "2181"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551830400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2191"
+      },
+      "opening": {
+        "$numberInt": "2190"
+      },
+      "daysHigh": {
+        "$numberInt": "2206"
+      },
+      "daysLow": {
+        "$numberInt": "2185"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1551916800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2088"
+      },
+      "opening": {
+        "$numberInt": "2098"
+      },
+      "daysHigh": {
+        "$numberInt": "2145"
+      },
+      "daysLow": {
+        "$numberInt": "2052"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552003200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2140"
+      },
+      "opening": {
+        "$numberInt": "2081"
+      },
+      "daysHigh": {
+        "$numberInt": "2143"
+      },
+      "daysLow": {
+        "$numberDouble": "20.81"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552262400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2100"
+      },
+      "opening": {
+        "$numberInt": "2153"
+      },
+      "daysHigh": {
+        "$numberInt": "2153"
+      },
+      "daysLow": {
+        "$numberInt": "2090"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552348800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2133"
+      },
+      "opening": {
+        "$numberInt": "2104"
+      },
+      "daysHigh": {
+        "$numberInt": "2133"
+      },
+      "daysLow": {
+        "$numberInt": "2084"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552435200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2142"
+      },
+      "opening": {
+        "$numberInt": "2127"
+      },
+      "daysHigh": {
+        "$numberInt": "2145"
+      },
+      "daysLow": {
+        "$numberInt": "2127"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552521600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2166"
+      },
+      "opening": {
+        "$numberInt": "2140"
+      },
+      "daysHigh": {
+        "$numberInt": "2174"
+      },
+      "daysLow": {
+        "$numberInt": "2137"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552608000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2187"
+      },
+      "opening": {
+        "$numberInt": "2185"
+      },
+      "daysHigh": {
+        "$numberInt": "2190"
+      },
+      "daysLow": {
+        "$numberInt": "2159"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552867200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2175"
+      },
+      "opening": {
+        "$numberInt": "2190"
+      },
+      "daysHigh": {
+        "$numberInt": "2200"
+      },
+      "daysLow": {
+        "$numberInt": "2161"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1552953600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2181"
+      },
+      "opening": {
+        "$numberInt": "2178"
+      },
+      "daysHigh": {
+        "$numberInt": "2188"
+      },
+      "daysLow": {
+        "$numberInt": "2169"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553040000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2146"
+      },
+      "opening": {
+        "$numberInt": "2183"
+      },
+      "daysHigh": {
+        "$numberInt": "2193"
+      },
+      "daysLow": {
+        "$numberInt": "2146"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553126400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2142"
+      },
+      "opening": {
+        "$numberInt": "2133"
+      },
+      "daysHigh": {
+        "$numberInt": "2160"
+      },
+      "daysLow": {
+        "$numberInt": "2125"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553212800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2142"
+      },
+      "opening": {
+        "$numberInt": "2160"
+      },
+      "daysHigh": {
+        "$numberInt": "2169"
+      },
+      "daysLow": {
+        "$numberInt": "2141"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553472000000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2147"
+      },
+      "opening": {
+        "$numberInt": "2145"
+      },
+      "daysHigh": {
+        "$numberInt": "2151"
+      },
+      "daysLow": {
+        "$numberInt": "2128"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553558400000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2138"
+      },
+      "opening": {
+        "$numberInt": "2156"
+      },
+      "daysHigh": {
+        "$numberDouble": "2157.4"
+      },
+      "daysLow": {
+        "$numberInt": "2136"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553644800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2137"
+      },
+      "opening": {
+        "$numberInt": "2130"
+      },
+      "daysHigh": {
+        "$numberInt": "2141"
+      },
+      "daysLow": {
+        "$numberInt": "2126"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553731200000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2152"
+      },
+      "opening": {
+        "$numberInt": "2138"
+      },
+      "daysHigh": {
+        "$numberInt": "2162"
+      },
+      "daysLow": {
+        "$numberInt": "2130"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1553817600000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2170"
+      },
+      "opening": {
+        "$numberInt": "2155"
+      },
+      "daysHigh": {
+        "$numberInt": "2172"
+      },
+      "daysLow": {
+        "$numberInt": "2155"
+      }
+    },
+    {
+      "date": {
+        "$date": {
+          "$numberLong": "1554076800000"
+        }
+      },
+      "closing": {
+        "$numberInt": "2168"
+      },
+      "opening": {
+        "$numberInt": "2152"
+      },
+      "daysHigh": {
+        "$numberInt": "2175"
+      },
+      "daysLow": {
+        "$numberInt": "2152"
+      }
+    }
+  ],
+  "trends": {
+  },
+  "dateTimeCreated": {
+    "$date": {
+      "$numberLong": "1554143200840"
+    }
+  },
+  "dateTimeUpdated": {
+    "$date": {
+      "$numberLong": "1554143200840"
+    }
+  },
+  "_class": "uk.co.jamesmcguigan.forecaster.stock.Stock"
+}

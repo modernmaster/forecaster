@@ -1,10 +1,10 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.job;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job;
 
 import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.CreateHistoricalPriceEvent;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.CreateHistoricalPriceEvent;
 
 @Service
 @AllArgsConstructor

@@ -17,7 +17,7 @@ spec:
               args:
                 - /bin/sh
                 - -ec
-                - curl -X PUT --header "ContentType:Application/json" "http://${INTRA_DAY_SERVICE}/api/stocks/"
+                - curl -X PUT --header "ContentType:Application/json" "http://${INTRA_DAY_SERVICE}/stocks"
               env:
                 - name: INTRA_DAY_SERVICE
                   value: intra-day-service

@@ -20,6 +20,9 @@ build:
   - image: historical-price-service
     jib:
       project: historical-price-service
+  - image: trend-service
+    jib:
+      project: trend-service
   - image: ui
     jib:
       project: ui
@@ -49,5 +52,7 @@ profiles:
       context: historical-price-service
     - image: notification-service
       context: notification-service
+    - image: trend-service
+      context: trend-service
     - image: ui
       context: ui

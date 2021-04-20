@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition;
 
 import java.util.concurrent.CountDownLatch;
 

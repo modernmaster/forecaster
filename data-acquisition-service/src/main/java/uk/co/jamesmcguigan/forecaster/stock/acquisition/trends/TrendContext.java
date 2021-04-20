@@ -1,7 +1,7 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.trends;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.trends;
 
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.trends.strategies.TrendStrategy;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.trends.strategies.TrendStrategy;
 
 @Service
 public class TrendContext {

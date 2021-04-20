@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.AllArgsConstructor;

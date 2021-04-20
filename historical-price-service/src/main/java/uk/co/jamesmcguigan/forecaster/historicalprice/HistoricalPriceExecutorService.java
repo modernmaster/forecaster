@@ -2,8 +2,9 @@ package uk.co.jamesmcguigan.forecaster.historicalprice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import uk.co.jamesmcguigan.forecaster.historicalprice.request.HistoricalPriceRepresentationTransformer;
-import uk.co.jamesmcguigan.forecaster.historicalprice.request.RequestFacade;
+import uk.co.jamesmcguigan.forecaster.facade.StockServiceClient;
+import uk.co.jamesmcguigan.forecaster.facade.request.HistoricalPriceRepresentationTransformer;
+import uk.co.jamesmcguigan.forecaster.facade.request.RequestFacade;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

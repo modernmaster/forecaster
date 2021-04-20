@@ -1,16 +1,15 @@
 package uk.co.jamesmcguigan.forecaster.stock.price;
 
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.DeserializationContext;
-import com.fasterxml.jackson.databind.JsonDeserializer;
-import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.*;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.util.Date;
 
 @Slf4j
-public class DateConverter extends JsonDeserializer<Date> {
+public class DateConverter extends JsonDeserializer<Date>{
 
     private static final String DATE = "$date";
     private static final String NUMBER_LONG = "$numberLong";
@@ -40,4 +39,5 @@ public class DateConverter extends JsonDeserializer<Date> {
         }
         throw new IOException(String.format(UNABLE_TO_DESERIALIZE, node.asText()));
     }
-}
+
+ }

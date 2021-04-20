@@ -1,16 +1,15 @@
 package uk.co.jamesmcguigan.forecaster.stock;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.*;
 import org.springframework.data.annotation.Id;
-import uk.co.jamesmcguigan.forecaster.stock.price.DateConverter;
 import uk.co.jamesmcguigan.forecaster.stock.price.HistoricalPrice;
 import uk.co.jamesmcguigan.forecaster.stock.trend.Trend;
+
+import java.util.List;
+import java.util.Map;
 
 @NoArgsConstructor
 @Getter
@@ -43,33 +42,34 @@ public class Stock {
     @NonNull
     private String companyMarketCap;
     @NonNull
+
     @JsonDeserialize(using = DoubleConvertor.class)
-    private String price;
+    private Double price;
     @NonNull
+
     @JsonDeserialize(using = DoubleConvertor.class)
-    private String percentageChange;
+    private Double percentageChange;
     @NonNull
-    private String volume;
+    private Integer volume;
     @NonNull
-    private String avgVolume;
+    private Integer avgVolume;
+
     @JsonDeserialize(using = DoubleConvertor.class)
-    private String pe;
+    private Double pe;
     @NonNull
+
     @JsonDeserialize(using = DoubleConvertor.class)
-    private String high52;
+    private Double high52;
     @NonNull
+
     @JsonDeserialize(using = DoubleConvertor.class)
-    private String low52;
+    private Double low52;
     @NonNull
     private String delay;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private List<HistoricalPrice> historicalPrices;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private Map<String, Trend> trends;
-    @NonNull
-    @JsonDeserialize(using = DateConverter.class)
-    private Date dateTimeCreated;
-    @NonNull
-    @JsonDeserialize(using = DateConverter.class)
-    private Date dateTimeUpdated;
 
     @Override
     public int hashCode() {
@@ -86,13 +86,4 @@ public class Stock {
         return false;
     }
 
-   // @PrePersist
-    void createdAt() {
-        this.dateTimeCreated = new Date();
-    }
-
-    //@PreUpdate
-    void updatedAt() {
-        this.dateTimeUpdated = new Date();
-    }
 }

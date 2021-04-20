@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.Dto;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.Dto;
 
 public class Foo {
 

@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request;
 
 import com.google.api.client.util.Key;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.controller;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.controller;
 
 import javax.validation.constraints.NotNull;
 import java.net.URI;
@@ -10,9 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Job;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.JobService;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.job.Status;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.Job;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.JobService;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.job.Status;
 
 @RestController
 @RequiredArgsConstructor

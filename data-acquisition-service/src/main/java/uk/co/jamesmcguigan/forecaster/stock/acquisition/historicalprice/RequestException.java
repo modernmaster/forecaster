@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice;
 
 public class RequestException {
     public static class BadRequestException extends RuntimeException {

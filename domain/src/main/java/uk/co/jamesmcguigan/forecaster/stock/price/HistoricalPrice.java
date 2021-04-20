@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.*;
 //import org.springframework.data.mongodb.core.mapping.Document;
 
-@RequiredArgsConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Builder
@@ -15,7 +15,7 @@ import lombok.*;
 public class HistoricalPrice {
 
     @NonNull
-    @JsonDeserialize(using = DateConverter.class)
+//    @JsonDeserialize(using = DateConverter.class)
     private Date date;
     @NonNull
    @JsonDeserialize(using = PriceConverter.class)
@@ -30,8 +30,7 @@ public class HistoricalPrice {
     @JsonDeserialize(using = PriceConverter.class)
     private Double daysLow;
     @NonNull
-    @JsonDeserialize(using = DateConverter.class)
+//    @JsonDeserialize(using = DateConverter.class)
     private Date dateTimeCreated;
-
 }
 

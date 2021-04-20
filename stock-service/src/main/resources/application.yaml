@@ -28,3 +28,4 @@ spring:
       mongodb:
         uri: mongodb://host.docker.internal:27017/test
       base-path: /api
+      max-page-size: 5000

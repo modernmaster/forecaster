@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice;
+package uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice;
 
 import java.io.IOException;
 import java.util.Date;
@@ -8,8 +8,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.DataAcquisitionServiceApplication;
-import uk.co.jamesmcguigan.forecaster.stock.acquisition.historicalprice.request.Response;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.DataAcquisitionServiceApplication;
+import uk.co.jamesmcguigan.forecaster.service.stock.acquisition.historicalprice.request.Response;
 
 import static java.util.stream.Collectors.toList;
 

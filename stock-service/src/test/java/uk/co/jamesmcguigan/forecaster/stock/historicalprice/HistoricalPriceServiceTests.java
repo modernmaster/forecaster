@@ -1,24 +1,17 @@
 package uk.co.jamesmcguigan.forecaster.stock.historicalprice;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.Resources;
-import org.apache.logging.log4j.util.Strings;
-import org.assertj.core.util.Lists;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Rule;
-import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.springframework.boot.test.context.SpringBootTest;
 import uk.co.jamesmcguigan.forecaster.repository.StockRepository;
 
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import java.io.IOException;
+import java.nio.charset.Charset;
 
 @SpringBootTest
 public class HistoricalPriceServiceTests {
