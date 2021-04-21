@@ -1,4 +1,4 @@
-package uk.co.jamesmcguigan.forecaster.ui.configuration;
+package uk.co.jamesmcguigan.forecaster.configuration;
 
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.stereotype.Component;

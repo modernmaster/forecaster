@@ -1,12 +1,12 @@
 package uk.co.jamesmcguigan.forecaster.stock.historicalprice;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import uk.co.jamesmcguigan.forecaster.repository.StockRepository;
 import uk.co.jamesmcguigan.forecaster.stock.Stock;
 import uk.co.jamesmcguigan.forecaster.stock.price.HistoricalPrice;
+
+import java.util.List;
 
 @Service
 @AllArgsConstructor
