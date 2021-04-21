@@ -16,12 +16,12 @@ import java.nio.charset.Charset;
 @SpringBootTest
 public class HistoricalPriceServiceTests {
 
+    @Rule
+    public MockitoRule mockitoRule = MockitoJUnit.rule();
     private ObjectMapper objectMapper;
     private HistoricalPriceService historicalPriceService;
     @Mock
     private StockRepository stockRepository;
-    @Rule
-    public MockitoRule mockitoRule = MockitoJUnit.rule();
     private String priceJson;
     private String stockJson;
 

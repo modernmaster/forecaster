@@ -4,7 +4,7 @@ var SockJS = require('sockjs-client'); // <1>
 require('stompjs'); // <2>
 
 function register(registrations) {
-	var socket = SockJS('/stock'); // <3>
+	var socket = SockJS('/stock-service/stock'); // <3>
 	var stompClient = Stomp.over(socket);
 	stompClient.connect({}, function(frame) {
 		registrations.forEach(function (registration) { // <4>

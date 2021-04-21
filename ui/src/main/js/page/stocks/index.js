@@ -21,11 +21,12 @@ class Stocks extends React.Component {
     this.onNavigate = this.onNavigate.bind(this);
     this.refreshCurrentPage = this.refreshCurrentPage.bind(this);
     this.onSearch = this.onSearch.bind(this);
+    this.updateStock = this.updateStock.bind(this);
   }
   componentDidMount() {
     this.loadFromServer(this.state.pageSize);
     stompClient.register([
-      {route: '/topic/updateStock', callback: this.refreshCurrentPage}
+      {route: '/topic/updateStock', callback: this.updateStock}
     ]);
   }
 	loadFromServer(pageSize) {
@@ -126,8 +127,39 @@ class Stocks extends React.Component {
       });
   }
 
+  updateStock(message) {
+    let tmpStocks = this.state.stocks;
+    let updatedStock = JSON.parse(message.body);
+//    tmpStocks.push(updatedStock);
+//    tmpStocks.sort(function(a, b) {
+//        return b.entity.percentageChange - a.entity.percentageChange;
+//    });
+//    tmpStocks.slice(0, this.state.pageSize);
+    let stock = tmpStocks.find((x) => x.entity.symbol===updatedStock.symbol);
+    if(typeof stock !== "undefined") {
+        updatedStock._changeEvent = "increase";
+        if (parseInt(updatedStock.price) > parseInt(stock.price)) {
+            updatedStock._changeEvent = 'increase';
+
+        } else if (parseInt(updatedStock.price) < parseInt(stock.price)) {
+            updatedStock._changeEvent = 'decrease';
+        }
+        stock.entity.price = updatedStock.price;
+        stock.entity.percentageChange = updatedStock.percentageChange;
+        stock.entity.symbol = updatedStock.symbol;
+        stock.entity.volume = updatedStock.volume;
+        tmpStocks.map(x => x.entity.symbol===stock.symbol? stock : x)
+        this.setState({
+            page: this.page,
+            attributes: Object.keys(this.schema.properties),
+            stocks: tmpStocks,
+            pageSize: this.state.pageSize,
+            links: this.links
+        });
+    }
+  }
+
   refreshCurrentPage(message) {
-    let updatedStock = message.body;//JSON.parse(message.body);
   	follow(client, root, [{
   		rel: 'stocks',
   		params: {size: this.state.pageSize, sort:'percentageChange,desc', page: this.state.page.number}
@@ -142,27 +174,6 @@ class Stocks extends React.Component {
               );
           }).then(stockPromises => {
               return when.all(stockPromises);
-          }).then(stocks => {
-              let stock = this.state.stocks.find(
-                  (x) => x.url.includes(updatedStock));
-                  if(typeof stock !== "undefined") {
-                    stock._changeEvent = "increase";
-      //              if (parseInt(updatedStock.price) > parseInt(stock.price)) {
-      //                updatedStock._changeEvent = 'increase';
-      //
-      //              } else if (parseInt(updatedStock.price) < parseInt(stock.price)) {
-      //                updatedStock._changeEvent = 'decrease';
-      //              }
-                    this.setState({
-                        page: this.page,
-                        stocks: this.state.stocks.map(
-                                          x => x.url.includes(updatedStock)
-                                              ? stock : x),
-                        attributes: Object.keys(this.schema.properties),
-                        pageSize: this.state.pageSize,
-                        links: this.links
-                    });
-                  }
           });
   }
   render() {
