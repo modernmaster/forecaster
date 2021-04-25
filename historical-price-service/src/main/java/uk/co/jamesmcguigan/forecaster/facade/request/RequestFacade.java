@@ -33,12 +33,14 @@ public class RequestFacade implements Runnable {
     private static final String MAKING_REQUEST_FOR = "Making request for {}";
     private static final String RESPONSE_RECEIVED_FOR = "Response received for {}";
     private static final String CALLING_OUT_TO_STOCK_SERVICE_FOR = "Calling out to stock service for {}";
+    private static final String EXECUTOR_HISTORICAL_PRICE_REQUEST_FOR = "Executor historical price request for {}";
     private final String symbol;
     private final StockServiceClient stockServiceClient;
     private final HistoricalPriceRepresentationTransformer historicalPriceRepresentationTransformer;
 
     @Override
     public void run() {
+        log.debug(EXECUTOR_HISTORICAL_PRICE_REQUEST_FOR, symbol);
         if (symbol.length() < 4) {
             throw new IllegalArgumentException(String.format(SYMBOL_IS_TOO_SHORT_S, symbol));
         }
