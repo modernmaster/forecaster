@@ -8,5 +8,6 @@ import uk.co.jamesmcguigan.forecaster.stock.Stock;
         types = {Stock.class})
 
 public interface StockProjection {
+    String getId();
     String getSymbol();
 }

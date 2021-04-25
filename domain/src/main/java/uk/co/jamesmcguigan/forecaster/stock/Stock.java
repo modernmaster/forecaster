@@ -19,52 +19,29 @@ import java.util.Map;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Stock {
     @Id
-    @NonNull
     private String id;
-    @NonNull
     private String admissionDate;
-    @NonNull
     private String companyName;
-    @NonNull
     private String symbol;
-    @NonNull
     private String icbIndustry;
-    @NonNull
     private String icbSuperSector;
-    @NonNull
     private String countryOfIncorporation;
-    @NonNull
     private String worldRegion;
-    @NonNull
     private String market;
-    @NonNull
     private String internationalIssuer;
-    @NonNull
     private String companyMarketCap;
-    @NonNull
-
     @JsonDeserialize(using = DoubleConvertor.class)
     private Double price;
-    @NonNull
-
     @JsonDeserialize(using = DoubleConvertor.class)
     private Double percentageChange;
-    @NonNull
     private Integer volume;
-    @NonNull
     private Integer avgVolume;
-
     @JsonDeserialize(using = DoubleConvertor.class)
     private Double pe;
-    @NonNull
-
     @JsonDeserialize(using = DoubleConvertor.class)
     private Double high52;
-    @NonNull
-
     @JsonDeserialize(using = DoubleConvertor.class)
     private Double low52;
-    @NonNull
     private String delay;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private List<HistoricalPrice> historicalPrices;
@@ -75,7 +52,6 @@ public class Stock {
     public int hashCode() {
         return String.join("", getCompanyName(), getPrice().toString()).hashCode();
     }
-
     @Override
     public boolean equals(Object obj) {
         if (obj.getClass().equals(Stock.class)) {
@@ -85,5 +61,4 @@ public class Stock {
         }
         return false;
     }
-
 }
