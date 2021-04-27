@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.*;
 import org.springframework.data.annotation.Id;
+import uk.co.jamesmcguigan.forecaster.stock.pattern.Pattern;
 import uk.co.jamesmcguigan.forecaster.stock.price.HistoricalPrice;
 import uk.co.jamesmcguigan.forecaster.stock.trend.Trend;
 
@@ -47,6 +48,8 @@ public class Stock {
     private List<HistoricalPrice> historicalPrices;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Map<String, Trend> trends;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private List<Pattern> patterns;
 
     @Override
     public int hashCode() {

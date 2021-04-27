@@ -15,8 +15,12 @@ logging:
       co:
         jamesmcguigan: INFO
 message:
-  topic:
-    name: trendrequests
+  subscribe:
+    topic:
+      name: trendrequests
+  publish:
+    topic:
+      name: patternrequests
 server:
   forward-headers-strategy: FRAMEWORK
   port: 8080

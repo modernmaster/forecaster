@@ -3,6 +3,8 @@ package uk.co.jamesmcguigan.forecaster.service.trends;
 import com.google.common.collect.Maps;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import uk.co.jamesmcguigan.forecaster.facade.StockApiClient;
@@ -10,6 +12,7 @@ import uk.co.jamesmcguigan.forecaster.facade.TrendRepresentation;
 import uk.co.jamesmcguigan.forecaster.service.trends.strategies.MovingAverageStrategy;
 import uk.co.jamesmcguigan.forecaster.service.trends.strategies.RelativeStrengthIndicatorStrategy;
 import uk.co.jamesmcguigan.forecaster.stock.Stock;
+import uk.co.jamesmcguigan.forecaster.stock.pattern.PatternEvent;
 import uk.co.jamesmcguigan.forecaster.stock.price.LivePriceEvent;
 import uk.co.jamesmcguigan.forecaster.stock.trend.Trend;
 
@@ -32,6 +35,7 @@ public class TrendEngine implements TrendEngineService {
     private final MovingAverageStrategy movingAverageStrategy;
     private final RelativeStrengthIndicatorStrategy relativeStrengthIndicatorStrategy;
     private final StockApiClient stockApiClient;
+    private final PatternMessageProducer patternMessageProducer;
 
     @Override
     public void processTrendsForPriceEvent(LivePriceEvent livePriceEvent) {
@@ -54,7 +58,13 @@ public class TrendEngine implements TrendEngineService {
         log.debug(CALLING_OUT_TO_STOCK_SERVICE_TO_SAVE_TRENDS_FOR, stock.getSymbol());
         stockApiClient.patch(stock.getSymbol(), new TrendRepresentation(stock.getTrends()));
         log.debug(TREND_SAVED_FOR, stock.getSymbol());
-        //push out live event to pattern queue
+        PatternEvent patternEvent = PatternEvent.builder()
+                .symbol(livePriceEvent.getSymbol())
+                .trendList(stock.getTrends())
+                .price(livePriceEvent.getPrice())
+//                .historicalPriceEvent()
+                .build();
+        patternMessageProducer.sendMessage(patternEvent);
     }
 
     private void updateStockWith(Stock stock, LivePriceEvent livePriceEvent) {

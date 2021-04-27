@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pattern-identification-service
+  namespace: forecaster
+  labels:
+    app: pattern-identification-service
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pattern-identification-service
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: pattern-identification-service
+        tier: backend
+    spec:
+      containers:
+      - name: pattern-identification-service
+        image: pattern-identification-service
+        ports:
+        - name: http-server
+          containerPort: 8080
+        env:
+        - name: HOST_NAME
+          value: pattern-identification-service
+        - name: eureka.client.service-url.defaultZone
+          value: http://discovery-service:8761/eureka

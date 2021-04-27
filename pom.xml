@@ -37,6 +37,7 @@
         <module>domain</module>
         <module>historical-price-service</module>
         <module>trend-service</module>
+        <module>pattern-identification-service</module>
     </modules>
     <dependencyManagement>
         <dependencies>
