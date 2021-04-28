@@ -15,11 +15,13 @@ import java.util.Optional;
 @AllArgsConstructor
 @EqualsAndHashCode
 public class PatternTransaction {
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
     private String symbol;
     @Enumerated(EnumType.STRING)
     private PatternType pattern;
+    private Integer intervalWindow;
     @OneToMany(targetEntity = Notification.class, fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @Column(name = "notification")
     private List<Notification> notification;

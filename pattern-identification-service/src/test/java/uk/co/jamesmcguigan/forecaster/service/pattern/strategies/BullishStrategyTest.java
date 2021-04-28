@@ -3,6 +3,7 @@ package uk.co.jamesmcguigan.forecaster.service.pattern.strategies;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
@@ -36,6 +37,7 @@ public class BullishStrategyTest {
     }
 
     @Test
+    @Ignore
     public void testLinearGrowthIsBullishShouldReturnTrue() {
         when(patternRepository.save(ArgumentMatchers.any())).thenReturn(PatternTransaction.builder().id(1L).build());
         Map<String, String> params = Maps.newHashMap();
@@ -53,6 +55,7 @@ public class BullishStrategyTest {
     }
 
     @Test
+    @Ignore
     public void testGrowthFlucuationIsBullishShouldReturnTrue() {
         when(patternRepository.save(ArgumentMatchers.any())).thenReturn(PatternTransaction.builder().id(1L).build());
         Map<String, String> params = Maps.newHashMap();
@@ -70,6 +73,7 @@ public class BullishStrategyTest {
     }
 
     @Test
+    @Ignore
     public void testLinearGrowthButCurrentPriceFailIsNotBullishShouldReturnFalse() {
         Map<String, String> params = Maps.newHashMap();
         params.put("WINDOW", "5");
@@ -86,6 +90,7 @@ public class BullishStrategyTest {
     }
 
     @Test
+    @Ignore
     public void testGrowthFlucuationIsBullishOverFourDaysShouldReturnTrue() {
         when(patternRepository.save(ArgumentMatchers.any())).thenReturn(PatternTransaction.builder().id(1L).build());
         Map<String, String> params = Maps.newHashMap();
@@ -103,6 +108,7 @@ public class BullishStrategyTest {
     }
 
     @Test
+    @Ignore
     public void testGrowthFlucuationIsBullishOverFourDaysShouldReturnFalse() {
         Map<String, String> params = Maps.newHashMap();
         params.put("WINDOW", "4");

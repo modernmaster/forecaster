@@ -8,6 +8,16 @@ class StockDetails extends React.Component {
   render() {
     var symbol = this.props.match.params.topicId;
     var stock = this.props.stocks.find(x=>x.key===symbol).props.stock;
+	var patterns = stock.patterns.map(pattern =>
+			<tr>
+			    <td>{pattern.patternType}</td>
+			    <td>{pattern.window}</td>
+			    <td>{pattern.identifiedPrice}</td>
+			    <td>{pattern.targetPrice}</td>
+			    <td>{pattern.dateTimeCreated}</td>
+			    <td>Change in price</td>
+			</tr>
+		);
 
     return (
         <aside className="col-6">
@@ -21,6 +31,9 @@ class StockDetails extends React.Component {
             </li>
             <li className="nav-item">
                <a className="nav-link" href="#trends" data-toggle="tab">Current Trends</a>
+            </li>
+            <li className="nav-item">
+               <a className="nav-link" href="#patterns" data-toggle="tab">Current Trends</a>
             </li>
            </ul>
           <div className="tab-content">
@@ -126,6 +139,25 @@ class StockDetails extends React.Component {
       <section role="tabpanel" className="tab-pane container" id="trends">
           <h3>Current Trends</h3>
           List of trends here...
+      </section>
+      <section role="tabpanel" className="tab-pane container" id="patterns">
+          <h3>Current Patterns</h3>
+          List of patterns here...
+          <table>
+            <thead>
+             <tr>
+			    <td>Pattern</td>
+			    <td>Window</td>
+			    <td>Identified Price</td>
+			    <td>Target Price</td>
+			    <td>DateTime Created</td>
+			    <td>Change in price</td>
+             </tr>
+            </thead>
+              <tbody>
+                  {patterns}
+              </tbody>
+          </table>
       </section>
       </div>
         </aside>

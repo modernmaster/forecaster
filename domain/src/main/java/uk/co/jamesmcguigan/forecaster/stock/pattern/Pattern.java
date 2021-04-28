@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Builder
 public class Pattern {
     private PatternType patternType;
-    private Integer window;
+    private IntervalWindow window;
     private Double identifiedPrice;
     private Double targetPrice;
     @NonNull

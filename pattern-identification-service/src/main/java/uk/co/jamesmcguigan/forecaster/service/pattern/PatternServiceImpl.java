@@ -11,6 +11,7 @@ import uk.co.jamesmcguigan.forecaster.facade.PatternRepresentation;
 import uk.co.jamesmcguigan.forecaster.facade.StockApiClient;
 import uk.co.jamesmcguigan.forecaster.service.pattern.strategies.PatternStrategy;
 import uk.co.jamesmcguigan.forecaster.stock.Stock;
+import uk.co.jamesmcguigan.forecaster.stock.pattern.IntervalWindow;
 import uk.co.jamesmcguigan.forecaster.stock.pattern.Pattern;
 import uk.co.jamesmcguigan.forecaster.stock.pattern.PatternEvent;
 
@@ -42,12 +43,12 @@ public class PatternServiceImpl implements PatternService {
             log.debug(NO_HISTORICAL_PRICES_FOR_STOCK, stock.getSymbol());
             return;
         }
-        if(stock.getPatterns()==null) {
+        if (stock.getPatterns() == null) {
             stock.setPatterns(Lists.newArrayList());
         }
         List<PatternTransaction> patternTransactionList = Lists.newArrayList();
         Map<String, String> params = Maps.newHashMap();
-        params.put("WINDOW", "4");
+        params.put("WINDOW", String.valueOf(IntervalWindow.FIVE_DAY.getValue()));
         bullishStrategy.process(stock, params).ifPresent(patternTransactionList::add);
         List<Pattern> patterns = patternTransactionList.stream().map(patternTransformer::transform).collect(Collectors.toList());
         List<Pattern> updatedPatternList = removedExpiredAndAddNewPatterns(stock, patterns);

@@ -10,6 +10,8 @@ public interface StockRepository extends MongoRepository<Stock, String> {
 
     Stock findBySymbol(@Param("symbol") String symbol);
 
+    Page<Stock> findByPatterns_PatternType(@Param("patternType") String patternType, Pageable pageable);
+
     Page<Stock> findByCompanyNameStartsWith(@Param("companyName") String companyName,
                                             Pageable pageable);
 }
