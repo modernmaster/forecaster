@@ -23,6 +23,9 @@ build:
   - image: trend-service
     jib:
       project: trend-service
+  - image: pattern-identification-service
+    jib:
+      project: pattern-identification-service
   - image: ui
     jib:
       project: ui
@@ -54,5 +57,7 @@ profiles:
       context: notification-service
     - image: trend-service
       context: trend-service
+    - image: pattern-identification-service
+      context: pattern-identification-service
     - image: ui
       context: ui

@@ -1,5 +1,5 @@
 spring:
   application:
-    name: trend-service
+    name: pattern-identification-service
   profiles:
     active: prod

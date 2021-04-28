@@ -14,7 +14,7 @@ public class PriceEventListener {
 
     private final TrendEngineService trendEngineService;
 
-    @KafkaListener(topics = "${message.topic.name}", groupId = "livePriceEvent", concurrency = "10", containerFactory = "livePriceEventKafkaListenerContainerFactory")
+    @KafkaListener(topics = "${message.subscribe.topic.name}", groupId = "livePriceEvent", concurrency = "10", containerFactory = "livePriceEventKafkaListenerContainerFactory")
     public void process(LivePriceEvent livePriceEvent) {
         log.debug("Received price event for symbol {}", livePriceEvent.getSymbol());
         trendEngineService.processTrendsForPriceEvent(livePriceEvent);
