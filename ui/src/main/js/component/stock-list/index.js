@@ -106,9 +106,8 @@ class StockList extends React.Component {
                 {navLinks}
               </div>
         </article>
-        <Route path={`/stock/:topicId`}
+        <Route path={`/ui/stock/:topicId`}
             render = {(props) => <StockDetails {...props} stocks={stocks} />} />
-        <Route exact path='stock' render={() => <h3>Please select a topic.</h3>} />
     </div>
     )
   }

@@ -10,7 +10,7 @@ public class PatternTransformer {
     public Pattern transform(PatternTransaction patternTransaction) {
         return Pattern.builder()
                 .patternType(patternTransaction.getPattern())
-                .targetPrice(patternTransaction.getTargetPrice().get())
+                .targetPrice(patternTransaction.getTargetPrice().orElse(0d))
                 .identifiedPrice(patternTransaction.getIdentifiedPrice())
                 .window(IntervalWindow.fromValue(patternTransaction.getIntervalWindow()))
                 .dateTimeCreated(patternTransaction.getCreatedDateTime())

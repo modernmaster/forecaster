@@ -32,7 +32,7 @@ class Stock extends React.Component {
     return (
         <tr className={className}>
           <td>{this.props.stock.companyName}</td>
-          <td><Link to={`/stock/${this.props.stock.symbol}`}>{this.props.stock.symbol}</Link></td>
+          <td><Link to={`/ui/stock/${this.props.stock.symbol}`}>{this.props.stock.symbol}</Link></td>
           <td>{this.props.stock.percentageChange}</td>
           <td>{this.props.stock.volume}</td>
           <td>{this.props.stock.avgVolume}</td>

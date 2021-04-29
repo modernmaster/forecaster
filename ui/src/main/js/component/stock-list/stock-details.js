@@ -8,16 +8,19 @@ class StockDetails extends React.Component {
   render() {
     var symbol = this.props.match.params.topicId;
     var stock = this.props.stocks.find(x=>x.key===symbol).props.stock;
-	var patterns = stock.patterns.map(pattern =>
+    var patterns = [];
+    if(stock.patterns) {
+	    patterns = stock.patterns.map(pattern =>
 			<tr>
 			    <td>{pattern.patternType}</td>
 			    <td>{pattern.window}</td>
 			    <td>{pattern.identifiedPrice}</td>
 			    <td>{pattern.targetPrice}</td>
 			    <td>{pattern.dateTimeCreated}</td>
-			    <td>Change in price</td>
+			    <td>{pattern.identifiedPrice - stock.price}</td>
 			</tr>
 		);
+    }
 
     return (
         <aside className="col-6">
@@ -27,18 +30,17 @@ class StockDetails extends React.Component {
           </figure>
           <ul className="nav nav-tabs">
             <li className="nav-item">
-              <a className="nav-link active" href="#details" data-toggle="tab">Stock Details</a>
+              <a className="nav-link active" href="#details" data-toggle="tab"><h5>Stock Details</h5></a>
             </li>
             <li className="nav-item">
-               <a className="nav-link" href="#trends" data-toggle="tab">Current Trends</a>
+               <a className="nav-link" href="#trends" data-toggle="tab"><h5>Current Trends</h5></a>
             </li>
             <li className="nav-item">
-               <a className="nav-link" href="#patterns" data-toggle="tab">Current Trends</a>
+               <a className="nav-link" href="#patterns" data-toggle="tab"><h5>Current Patterns</h5></a>
             </li>
            </ul>
           <div className="tab-content">
           <section role="tabpanel" className="tab-pane container active" id="details">
-          <h3>Stock details</h3>
           <table>
           <tbody>
               <tr>
@@ -133,16 +135,59 @@ class StockDetails extends React.Component {
                 <td>{stock.delay}</td>
                </tr>
           </tbody>
-
           </table>
         </section>
       <section role="tabpanel" className="tab-pane container" id="trends">
-          <h3>Current Trends</h3>
-          List of trends here...
+          <table>
+            <thead>
+             <tr>
+                <td>Trend</td>
+                <td>Value</td>
+                <td>Peak</td>
+                <td>Trough</td>
+                <td>Price target for next peak</td>
+             </tr>
+            </thead>
+           <tbody>
+             <tr>
+                <td>MOVING_AVERAGE_DURATION_9</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+             </tr>
+             <tr>
+                <td>MOVING_AVERAGE_DURATION_20</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+             </tr>
+             <tr>
+                <td>RSI_14</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+             </tr>
+             <tr>
+                <td>MOVING_AVERAGE_DURATION_200</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+             </tr>
+             <tr>
+                <td>MOVING_AVERAGE_DURATION_50</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+             </tr>
+           </tbody>
+         </table>
       </section>
       <section role="tabpanel" className="tab-pane container" id="patterns">
-          <h3>Current Patterns</h3>
-          List of patterns here...
           <table>
             <thead>
              <tr>

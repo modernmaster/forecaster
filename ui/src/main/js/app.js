@@ -1,8 +1,9 @@
 'use strict';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PushNotification from './component/push-notification';
 import Stocks from './page/stocks/index.js';
+import Patterns from './page/patterns/index.js';
 
 const React = require('react');
 const ReactDOM = require('react-dom');
@@ -19,14 +20,13 @@ class App extends React.Component {
   render() {
 
     return (
-      <Router>
-      <div>
+        <Router>
         <PushNotification/>
-        <Stocks/>
-        <footer>
-        </footer>
-        </div>
-      </Router>
+        <Switch>
+          <Route path="/ui/patterns/" component={Patterns}/>
+          <Route path="/ui/" component={Stocks}/>
+        </Switch>
+        </Router>
     )
   }
 }

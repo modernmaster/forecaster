@@ -8,7 +8,7 @@ const client = require('../../api/client');
 const follow = require('../../api/follow');
 const stompClient = require('../../websocket-listener');
 const when = require('when');
-const root = "https://localhost/stock-service/api";
+const root = "https://localhost/stock-service/api/stocks/search";
 
 //allow react dev tools work
 window.React = React;
@@ -16,27 +16,19 @@ window.React = React;
 class Patterns extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {stocks: [], attributes: [], pageSize: 30, links: {}};
+        this.state = {stocks: [], attributes: [], pageSize: 30, pageIndex: 0, links: {}};
+        this.onNavigate = this.onNavigate.bind(this);
     }
 
     componentDidMount() {
-        this.loadFromServer(this.state.pageSize);
+        this.loadFromServer(this.state.pageIndex, this.state.pageSize);
     }
 
-    loadFromServer(pageSize) {
+    loadFromServer(pageIndex, pageSize) {
         follow(client, root, [
-                {rel: "stocks/search/findByPatterns_PatternType", params: {patternType='BULLISH', size: pageSize, sort:'percentageChange,desc'}}]
+                {rel: "findByPatterns_PatternType", params: {patternType:'BULLISH', size: pageSize, page: pageIndex, sort:'percentageChange,desc'}}]
         ).then(stockCollection => {
-                return client({
-                    method: 'GET',
-                    path: stockCollection.entity._links.profile.href,
-                    headers: {"Accept": 'application/schema+json'}
-                }).then((schema) => {
-                    this.schema = schema.entity;
-                    this.links = stockCollection.entity._links;
-                    return stockCollection;
-                });
-        }).then(stockCollection => {
+        	this.links = stockCollection.entity._links;
             this.page = stockCollection.entity.page;
             return stockCollection.entity._embedded.stocks.map(stock =>
                     client({
@@ -49,12 +41,19 @@ class Patterns extends React.Component {
         }).then(stocks => {
             this.setState({
                 page: this.page,
+                links: this.links,
                 stocks,
-                attributes: Object.keys(this.schema.properties),
-                pageSize: pageSize,
-                links: this.links
+                pageSize: pageSize
             });
         });
+    }
+
+    onNavigate(navUri) {
+        var pageSize = navUri.substring(navUri.indexOf("size=")+5);
+        pageSize = pageSize.substring(0, pageSize.indexOf("&"));
+        var pageIndex = navUri.substring(navUri.indexOf("page=")+5);
+        pageIndex = pageIndex.substring(0, pageIndex.indexOf("&"));
+        this.loadFromServer(pageIndex, pageSize);
     }
 
     render() {
